@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\PIC18LF4550_RTC.X.production.sym \
   --cmf=dist/default/production\PIC18LF4550_RTC.X.production.cmf -z \
-  -Q18LF4550 -oC:\Users\Nestor\AppData\Local\Temp\xcAsmr0.4 \
+  -Q18LF4550 -oC:\Users\kolel\AppData\Local\Temp\xcAsakg.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/PIC18LF4550_RTC.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02C4h-07FFh -pstack=STACK \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Nestor\AppData\Local\Temp\xcAsmr0.o \
+  C:\Users\kolel\AppData\Local\Temp\xcAsakg.o \
   dist/default/production\PIC18LF4550_RTC.X.production.o 
 
 Object code version is 3.11
@@ -33,7 +33,7 @@ Machine type is 18LF4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Nestor\AppData\Local\Temp\xcAsmr0.o
+C:\Users\kolel\AppData\Local\Temp\xcAsakg.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                 60       60        4        C       0

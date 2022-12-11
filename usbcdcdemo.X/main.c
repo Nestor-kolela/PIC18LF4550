@@ -37,7 +37,9 @@ void main(void)
                         break;
                 }
             }
-
+            
+            putUSBUSART("Hello World\r\n", 13); 
+            __delay_ms(100); 
             if(numBytesRead > 0)
             {
                 putUSBUSART(usbWriteBuffer,numBytesRead);

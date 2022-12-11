@@ -1076,6 +1076,7 @@ USB_HANDLE USBTransferOnePacket(uint8_t ep,uint8_t dir,uint8_t* data,uint8_t len
         None
 
  *******************************************************************/
+USBCtrlEPService
 void USBStallEndpoint(uint8_t ep, uint8_t dir)
 {
     BDT_ENTRY *p;

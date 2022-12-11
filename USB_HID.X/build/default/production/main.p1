@@ -1,0 +1,2198 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"38 main.c
+[; ;main.c: 38: enum usbState usbTimerState = INITIALIZATION;
+[c E4564 0 1 2 .. ]
+[n E4564 usbState INITIALIZATION USB_RUN IDLE  ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt high_priority ]
+"4391 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4391:     struct {
+[s S190 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S190 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE SPPIE ]
+"4401
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4401:     struct {
+[s S191 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S191 . . TX1IE RC1IE . PSPIE ]
+"4390
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4390: typedef union {
+[u S189 `S190 1 `S191 1 ]
+[n S189 . . . ]
+"4409
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4409: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS189 ~T0 @X0 0 e@3997 ]
+"4475
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4475:     struct {
+[s S193 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S193 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
+"4485
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4485:     struct {
+[s S194 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S194 . . TX1IF RC1IF . PSPIF ]
+"4474
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4474: typedef union {
+[u S192 `S193 1 `S194 1 ]
+[n S192 . . . ]
+"4493
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4493: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS192 ~T0 @X0 0 e@3998 ]
+"7533
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7533: extern volatile unsigned char TMR1H __attribute__((address(0xFCF)));
+[v _TMR1H `Vuc ~T0 @X0 0 e@4047 ]
+"7526
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7526: extern volatile unsigned char TMR1L __attribute__((address(0xFCE)));
+[v _TMR1L `Vuc ~T0 @X0 0 e@4046 ]
+"303 ./usb_device.h
+[; ;./usb_device.h: 303: void USBDeviceTasks(void);
+[v _USBDeviceTasks `(v ~T0 @X0 0 ef ]
+"3382 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3382:     struct {
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . LATE0 LATE1 LATE2 ]
+"3387
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3387:     struct {
+[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S155 . LE0 LE1 LE2 ]
+"3381
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3381: typedef union {
+[u S153 `S154 1 `S155 1 ]
+[n S153 . . . ]
+"3393
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3393: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
+[v _LATEbits `VS153 ~T0 @X0 0 e@3981 ]
+"31 ./uart.h
+[; ;./uart.h: 31: void UART_rx_complete_irq(void);
+[v _UART_rx_complete_irq `(v ~T0 @X0 0 ef ]
+"32
+[; ;./uart.h: 32: void UART_tx_udr_empty_irq(void);
+[v _UART_tx_udr_empty_irq `(v ~T0 @X0 0 ef ]
+[t T2 __interrupt low_priority ]
+"8589 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8589:     struct {
+[s S375 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S375 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"8599
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8599:     struct {
+[s S376 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S376 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"8609
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8609:     struct {
+[s S377 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S377 . . GIEL GIEH ]
+"8588
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8588: typedef union {
+[u S374 `S375 1 `S376 1 `S377 1 ]
+[n S374 . . . . ]
+"8615
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8615: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS374 ~T0 @X0 0 e@4082 ]
+"8154
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8154: extern volatile unsigned char TMR0H __attribute__((address(0xFD7)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
+"8147
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8147: extern volatile unsigned char TMR0L __attribute__((address(0xFD6)));
+[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
+"2980
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2980:     struct {
+[s S142 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S142 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+"2989
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2989:     struct {
+[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S143 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 ]
+"2979
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2979: typedef union {
+[u S141 `S142 1 `S143 1 ]
+[n S141 . . . ]
+"2999
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2999: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS141 ~T0 @X0 0 e@3977 ]
+[p mainexit ]
+"19 main.c
+[; ;main.c: 19: static void gpioInitialize(void);
+[v _gpioInitialize `(v ~T0 @X0 0 sf ]
+"24
+[; ;main.c: 24: static void timerZero_Init(void);
+[v _timerZero_Init `(v ~T0 @X0 0 sf ]
+"22
+[; ;main.c: 22: static void Interrupt_Init(void);
+[v _Interrupt_Init `(v ~T0 @X0 0 sf ]
+"25
+[; ;main.c: 25: static void timerStart(void);
+[v _timerStart `(v ~T0 @X0 0 sf ]
+"26
+[; ;main.c: 26: static void timer1_Init(void);
+[v _timer1_Init `(v ~T0 @X0 0 sf ]
+"23
+[; ;main.c: 23: static void Enable_Interrupt(void);
+[v _Enable_Interrupt `(v ~T0 @X0 0 sf ]
+"42
+[; ;main.c: 42: static void InitializeSystem(void);
+[v _InitializeSystem `(v ~T0 @X0 0 sf ]
+"21 ./uart.h
+[; ;./uart.h: 21: void UART_Init(uint24_t baudRate);
+[v _UART_Init `(v ~T0 @X0 0 ef1`um ]
+"22
+[; ;./uart.h: 22: void UART_putrs(const char * ptr);
+[v _UART_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
+"2321 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2321:     struct {
+[s S116 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S116 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
+"2330
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2330:     struct {
+[s S117 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S117 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
+"2339
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2339:     struct {
+[s S118 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S118 . . VREFM VREFP . LVDIN ]
+"2346
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2346:     struct {
+[s S119 :5 `uc 1 :1 `uc 1 ]
+[n S119 . . HLVDIN ]
+"2350
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2350:     struct {
+[s S120 :1 `uc 1 ]
+[n S120 . ULPWUIN ]
+"2320
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2320: typedef union {
+[u S115 `S116 1 `S117 1 `S118 1 `S119 1 `S120 1 ]
+[n S115 . . . . . . ]
+"2354
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2354: extern volatile PORTAbits_t PORTAbits __attribute__((address(0xF80)));
+[v _PORTAbits `VS115 ~T0 @X0 0 e@3968 ]
+[v F397 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\builtins.h
+[v __delay `JF397 ~T0 @X0 0 e ]
+[p i __delay ]
+"174 main.c
+[; ;main.c: 174:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
+[c E105 0 1 2 4 8 16 32 .. ]
+[n E105 . DETACHED_STATE ATTACHED_STATE POWERED_STATE DEFAULT_STATE ADR_PENDING_STATE ADDRESS_STATE CONFIGURED_STATE  ]
+"2050 ./usb_device.h
+[; ;./usb_device.h: 2050: extern USB_DEVICE_STATE USBDeviceState;
+[v _USBDeviceState `E105 ~T0 @X0 0 e ]
+"655 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 655:     struct {
+[s S51 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S51 . . SUSPND RESUME USBEN PKTDIS SE0 PPBRST ]
+"654
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 654: typedef union {
+[u S50 `S51 1 ]
+[n S50 . . ]
+"665
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 665: extern volatile UCONbits_t UCONbits __attribute__((address(0xF6D)));
+[v _UCONbits `VS50 ~T0 @X0 0 e@3949 ]
+"448 ./usb_device.h
+[; ;./usb_device.h: 448: void* USBTransferOnePacket(uint8_t ep,uint8_t dir,uint8_t* data,uint8_t len);
+[v _USBTransferOnePacket `(*v ~T0 @X0 0 ef4`uc`uc`*uc`uc ]
+"6673 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6673:     struct {
+[s S288 :1 `uc 1 :1 `uc 1 ]
+[n S288 . . GO_NOT_DONE ]
+"6677
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6677:     struct {
+[s S289 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S289 . ADON GO_nDONE CHS ]
+"6682
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6682:     struct {
+[s S290 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S290 . . GO_DONE CHS0 CHS1 CHS2 CHS3 ]
+"6690
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6690:     struct {
+[s S291 :1 `uc 1 :1 `uc 1 ]
+[n S291 . . DONE ]
+"6694
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6694:     struct {
+[s S292 :1 `uc 1 :1 `uc 1 ]
+[n S292 . . GO ]
+"6698
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6698:     struct {
+[s S293 :1 `uc 1 :1 `uc 1 ]
+[n S293 . . NOT_DONE ]
+"6702
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6702:     struct {
+[s S294 :1 `uc 1 :1 `uc 1 ]
+[n S294 . . nDONE ]
+"6706
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6706:     struct {
+[s S295 :1 `uc 1 :1 `uc 1 ]
+[n S295 . . GODONE ]
+"6672
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6672: typedef union {
+[u S287 `S288 1 `S289 1 `S290 1 `S291 1 `S292 1 `S293 1 `S294 1 `S295 1 ]
+[n S287 . . . . . . . . . ]
+"6711
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6711: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
+[v _ADCON0bits `VS287 ~T0 @X0 0 e@4034 ]
+"6786
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6786: extern volatile unsigned short ADRES __attribute__((address(0xFC3)));
+[v _ADRES `Vus ~T0 @X0 0 e@4035 ]
+"109 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h: 109: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"23 ./uart.h
+[; ;./uart.h: 23: void UART_puts(char * ptr);
+[v _UART_puts `(v ~T0 @X0 0 ef1`*uc ]
+"6582 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6582: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"3439
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3439:     struct {
+[s S157 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S157 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 ]
+"3448
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3448:     struct {
+[s S158 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S158 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
+"3438
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3438: typedef union {
+[u S156 `S157 1 `S158 1 ]
+[n S156 . . . ]
+"3458
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3458: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
+[v _TRISAbits `VS156 ~T0 @X0 0 e@3986 ]
+"4235
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4235:     struct {
+[s S181 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S181 . TRISE0 TRISE1 TRISE2 ]
+"4240
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4240:     struct {
+[s S182 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S182 . RE0 RE1 RE2 ]
+"4234
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4234: typedef union {
+[u S180 `S181 1 `S182 1 ]
+[n S180 . . . ]
+"4246
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4246: extern volatile TRISEbits_t TRISEbits __attribute__((address(0xF96)));
+[v _TRISEbits `VS180 ~T0 @X0 0 e@3990 ]
+"7546
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7546:     struct {
+[s S337 :1 `uc 1 ]
+[n S337 . NOT_BOR ]
+"7549
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7549:     struct {
+[s S338 :1 `uc 1 :1 `uc 1 ]
+[n S338 . . NOT_POR ]
+"7553
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7553:     struct {
+[s S339 :2 `uc 1 :1 `uc 1 ]
+[n S339 . . NOT_PD ]
+"7557
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7557:     struct {
+[s S340 :3 `uc 1 :1 `uc 1 ]
+[n S340 . . NOT_TO ]
+"7561
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7561:     struct {
+[s S341 :4 `uc 1 :1 `uc 1 ]
+[n S341 . . NOT_RI ]
+"7565
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7565:     struct {
+[s S342 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S342 . nBOR nPOR nPD nTO nRI . SBOREN IPEN ]
+"7575
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7575:     struct {
+[s S343 :7 `uc 1 :1 `uc 1 ]
+[n S343 . . NOT_IPEN ]
+"7579
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7579:     struct {
+[s S344 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S344 . BOR POR PD TO RI . nIPEN ]
+"7545
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7545: typedef union {
+[u S336 `S337 1 `S338 1 `S339 1 `S340 1 `S341 1 `S342 1 `S343 1 `S344 1 ]
+[n S336 . . . . . . . . . ]
+"7589
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7589: extern volatile RCONbits_t RCONbits __attribute__((address(0xFD0)));
+[v _RCONbits `VS336 ~T0 @X0 0 e@4048 ]
+"8070
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8070: extern volatile unsigned char T0CON __attribute__((address(0xFD5)));
+[v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
+"8512
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8512:     struct {
+[s S371 :7 `uc 1 :1 `uc 1 ]
+[n S371 . . NOT_RBPU ]
+"8516
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8516:     struct {
+[s S372 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S372 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
+"8526
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8526:     struct {
+[s S373 :2 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S373 . . T0IP . RBPU ]
+"8511
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8511: typedef union {
+[u S370 `S371 1 `S372 1 `S373 1 ]
+[n S370 . . . . ]
+"8533
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8533: extern volatile INTCON2bits_t INTCON2bits __attribute__((address(0xFF1)));
+[v _INTCON2bits `VS370 ~T0 @X0 0 e@4081 ]
+"7416
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7416: extern volatile unsigned char T1CON __attribute__((address(0xFCD)));
+[v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"4559
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4559:     struct {
+[s S196 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S196 . TMR1IP TMR2IP CCP1IP SSPIP TXIP RCIP ADIP SPPIP ]
+"4569
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4569:     struct {
+[s S197 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S197 . . TX1IP RC1IP . PSPIP ]
+"4558
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4558: typedef union {
+[u S195 `S196 1 `S197 1 ]
+[n S195 . . . ]
+"4577
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4577: extern volatile IPR1bits_t IPR1bits __attribute__((address(0xF9F)));
+[v _IPR1bits `VS195 ~T0 @X0 0 e@3999 ]
+"8076
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8076:     struct {
+[s S362 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S362 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
+"8084
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8084:     struct {
+[s S363 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S363 . T0PS0 T0PS1 T0PS2 ]
+"8075
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8075: typedef union {
+[u S361 `S362 1 `S363 1 ]
+[n S361 . . . ]
+"8090
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8090: extern volatile T0CONbits_t T0CONbits __attribute__((address(0xFD5)));
+[v _T0CONbits `VS361 ~T0 @X0 0 e@4053 ]
+"355 ./usb_device.h
+[; ;./usb_device.h: 355: void USBEnableEndpoint(uint8_t ep, uint8_t options);
+[v _USBEnableEndpoint `(v ~T0 @X0 0 ef2`uc`uc ]
+"199
+[; ;./usb_device.h: 199: void USBDeviceInit(void);
+[v _USBDeviceInit `(v ~T0 @X0 0 ef ]
+"474 main.c
+[; ;main.c: 474: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
+[c E46 0 1 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 400 500 600 700 800 900 1000 10000 32767 .. ]
+[n E46 . EVENT_NONE EVENT_DEVICE_STACK_BASE EVENT_HOST_STACK_BASE EVENT_HUB_ATTACH EVENT_STALL EVENT_VBUS_SES_REQUEST EVENT_VBUS_OVERCURRENT EVENT_VBUS_REQUEST_POWER EVENT_VBUS_RELEASE_POWER EVENT_VBUS_POWER_AVAILABLE EVENT_UNSUPPORTED_DEVICE EVENT_CANNOT_ENUMERATE EVENT_CLIENT_INIT_ERROR EVENT_OUT_OF_MEMORY EVENT_UNSPECIFIED_ERROR EVENT_DETACH EVENT_TRANSFER EVENT_SOF EVENT_RESUME EVENT_SUSPEND EVENT_RESET EVENT_DATA_ISOC_READ EVENT_DATA_ISOC_WRITE EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION EVENT_1MS EVENT_ALT_INTERFACE EVENT_HOLD_BEFORE_CONFIGURATION EVENT_GENERIC_BASE EVENT_MSD_BASE EVENT_HID_BASE EVENT_PRINTER_BASE EVENT_CDC_BASE EVENT_CHARGER_BASE EVENT_AUDIO_BASE EVENT_USER_BASE EVENT_BUS_ERROR  ]
+"45
+[; ;main.c: 45: void USBCBStdSetDscHandler(void);
+[v _USBCBStdSetDscHandler `(v ~T0 @X0 0 ef ]
+"46
+[; ;main.c: 46: void USBCBCheckOtherReq(void);
+[v _USBCBCheckOtherReq `(v ~T0 @X0 0 ef ]
+"48
+[; ;main.c: 48: void USBCB_SOF_Handler(void);
+[v _USBCB_SOF_Handler `(v ~T0 @X0 0 ef ]
+"50
+[; ;main.c: 50: void USBCBSuspend(void);
+[v _USBCBSuspend `(v ~T0 @X0 0 ef ]
+"49
+[; ;main.c: 49: void USBCBWakeFromSuspend(void);
+[v _USBCBWakeFromSuspend `(v ~T0 @X0 0 ef ]
+"47
+[; ;main.c: 47: void USBCBErrorHandler(void);
+[v _USBCBErrorHandler `(v ~T0 @X0 0 ef ]
+"8 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"503 main.c
+[; ;main.c: 503:     }
+[c E114 1 2 3 4 5 .. ]
+[n E114 . EVENT_CONFIGURED EVENT_SET_DESCRIPTOR EVENT_EP0_REQUEST EVENT_ATTACH EVENT_TRANSFER_TERMINATED  ]
+"504
+[; ;main.c: 504:     return TRUE;
+[c E3631 0 1 .. ]
+[n E3631 _BOOL FALSE TRUE  ]
+"98 ./usb_function_hid.h
+[; ;./usb_function_hid.h: 98: void USBCheckHIDRequest(void);
+[v _USBCheckHIDRequest `(v ~T0 @X0 0 ef ]
+"9 ./system.h
+[p x PLLDIV  =  3        ]
+"10
+[p x CPUDIV  =  OSC1_PLL2 ]
+"11
+[p x USBDIV  =  2        ]
+"14
+[p x FOSC  =  HSPLL_HS   ]
+"15
+[p x FCMEN  =  OFF       ]
+"16
+[p x IESO  =  OFF        ]
+"19
+[p x PWRT  =  OFF        ]
+"20
+[p x BOR  =  ON          ]
+"21
+[p x BORV  =  3          ]
+"22
+[p x VREGEN  =  ON       ]
+"25
+[p x WDT  =  ON          ]
+"26
+[p x WDTPS  =  32768     ]
+"29
+[p x CCP2MX  =  ON       ]
+"30
+[p x PBADEN  =  OFF      ]
+"31
+[p x LPT1OSC  =  OFF     ]
+"32
+[p x MCLRE  =  OFF       ]
+"35
+[p x STVREN  =  ON       ]
+"36
+[p x LVP  =  OFF         ]
+"37
+[p x ICPRT  =  OFF       ]
+"38
+[p x XINST  =  OFF       ]
+"41
+[p x CP0  =  OFF         ]
+"42
+[p x CP1  =  OFF         ]
+"43
+[p x CP2  =  OFF         ]
+"44
+[p x CP3  =  OFF         ]
+"47
+[p x CPB  =  OFF         ]
+"48
+[p x CPD  =  OFF         ]
+"51
+[p x WRT0  =  OFF        ]
+"52
+[p x WRT1  =  OFF        ]
+"53
+[p x WRT2  =  OFF        ]
+"54
+[p x WRT3  =  OFF        ]
+"57
+[p x WRTC  =  OFF        ]
+"58
+[p x WRTB  =  OFF        ]
+"59
+[p x WRTD  =  OFF        ]
+"62
+[p x EBTR0  =  OFF       ]
+"63
+[p x EBTR1  =  OFF       ]
+"64
+[p x EBTR2  =  OFF       ]
+"65
+[p x EBTR3  =  OFF       ]
+"68
+[p x EBTRB  =  OFF       ]
+"55 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 55: __asm("SPPDATA equ 0F62h");
+[; <" SPPDATA equ 0F62h ;# ">
+"75
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 75: __asm("SPPCFG equ 0F63h");
+[; <" SPPCFG equ 0F63h ;# ">
+"152
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 152: __asm("SPPEPS equ 0F64h");
+[; <" SPPEPS equ 0F64h ;# ">
+"226
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 226: __asm("SPPCON equ 0F65h");
+[; <" SPPCON equ 0F65h ;# ">
+"252
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 252: __asm("UFRM equ 0F66h");
+[; <" UFRM equ 0F66h ;# ">
+"259
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 259: __asm("UFRML equ 0F66h");
+[; <" UFRML equ 0F66h ;# ">
+"337
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 337: __asm("UFRMH equ 0F67h");
+[; <" UFRMH equ 0F67h ;# ">
+"377
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 377: __asm("UIR equ 0F68h");
+[; <" UIR equ 0F68h ;# ">
+"433
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 433: __asm("UIE equ 0F69h");
+[; <" UIE equ 0F69h ;# ">
+"489
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 489: __asm("UEIR equ 0F6Ah");
+[; <" UEIR equ 0F6Ah ;# ">
+"540
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 540: __asm("UEIE equ 0F6Bh");
+[; <" UEIE equ 0F6Bh ;# ">
+"591
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 591: __asm("USTAT equ 0F6Ch");
+[; <" USTAT equ 0F6Ch ;# ">
+"651
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 651: __asm("UCON equ 0F6Dh");
+[; <" UCON equ 0F6Dh ;# ">
+"702
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 702: __asm("UADDR equ 0F6Eh");
+[; <" UADDR equ 0F6Eh ;# ">
+"766
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 766: __asm("UCFG equ 0F6Fh");
+[; <" UCFG equ 0F6Fh ;# ">
+"845
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 845: __asm("UEP0 equ 0F70h");
+[; <" UEP0 equ 0F70h ;# ">
+"953
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 953: __asm("UEP1 equ 0F71h");
+[; <" UEP1 equ 0F71h ;# ">
+"1061
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1061: __asm("UEP2 equ 0F72h");
+[; <" UEP2 equ 0F72h ;# ">
+"1169
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1169: __asm("UEP3 equ 0F73h");
+[; <" UEP3 equ 0F73h ;# ">
+"1277
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1277: __asm("UEP4 equ 0F74h");
+[; <" UEP4 equ 0F74h ;# ">
+"1385
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1385: __asm("UEP5 equ 0F75h");
+[; <" UEP5 equ 0F75h ;# ">
+"1493
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1493: __asm("UEP6 equ 0F76h");
+[; <" UEP6 equ 0F76h ;# ">
+"1601
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1601: __asm("UEP7 equ 0F77h");
+[; <" UEP7 equ 0F77h ;# ">
+"1709
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1709: __asm("UEP8 equ 0F78h");
+[; <" UEP8 equ 0F78h ;# ">
+"1785
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1785: __asm("UEP9 equ 0F79h");
+[; <" UEP9 equ 0F79h ;# ">
+"1861
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1861: __asm("UEP10 equ 0F7Ah");
+[; <" UEP10 equ 0F7Ah ;# ">
+"1937
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 1937: __asm("UEP11 equ 0F7Bh");
+[; <" UEP11 equ 0F7Bh ;# ">
+"2013
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2013: __asm("UEP12 equ 0F7Ch");
+[; <" UEP12 equ 0F7Ch ;# ">
+"2089
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2089: __asm("UEP13 equ 0F7Dh");
+[; <" UEP13 equ 0F7Dh ;# ">
+"2165
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2165: __asm("UEP14 equ 0F7Eh");
+[; <" UEP14 equ 0F7Eh ;# ">
+"2241
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2241: __asm("UEP15 equ 0F7Fh");
+[; <" UEP15 equ 0F7Fh ;# ">
+"2317
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2317: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"2456
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2456: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"2566
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2566: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"2708
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2708: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"2829
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2829: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"2976
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2976: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3076
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3076: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"3188
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3188: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"3266
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3266: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"3378
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3378: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"3430
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3430: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"3435
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3435: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"3628
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3628: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"3633
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3633: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"3850
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3850: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"3855
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 3855: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"4004
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4004: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"4009
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4009: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"4226
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4226: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"4231
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4231: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"4328
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4328: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4387
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4387: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"4471
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4471: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"4555
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4555: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"4639
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4639: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"4710
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4710: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"4781
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4781: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"4852
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4852: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"4918
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4918: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"4925
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4925: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"4932
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4932: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"4939
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4939: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"4944
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 4944: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"5149
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5149: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"5154
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5154: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"5405
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5405: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"5410
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5410: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"5417
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5417: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"5422
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5422: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"5429
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5429: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"5434
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5434: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5441
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5441: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"5448
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5448: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"5569
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5569: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"5576
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5576: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"5583
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5583: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"5590
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5590: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"5680
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5680: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"5765
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5765: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5770
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5770: __asm("CCP1AS equ 0FB6h");
+[; <" CCP1AS equ 0FB6h ;# ">
+"5927
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5927: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5932
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 5932: __asm("CCP1DEL equ 0FB7h");
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6065
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6065: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"6070
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6070: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6245
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6245: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"6309
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6309: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"6316
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6316: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"6323
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6323: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"6330
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6330: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"6335
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6335: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6492
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6492: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"6499
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6499: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"6506
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6506: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"6513
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6513: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"6584
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6584: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"6669
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6669: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"6788
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6788: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"6795
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6795: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"6802
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6802: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"6809
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6809: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6871
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6871: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6941
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 6941: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7189
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7189: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"7196
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7196: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"7203
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7203: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"7301
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7301: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"7306
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7306: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"7411
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7411: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"7418
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7418: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"7521
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7521: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"7528
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7528: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"7535
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7535: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"7542
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7542: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"7691
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7691: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"7719
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7719: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"7724
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7724: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"7989
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 7989: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"8072
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8072: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"8142
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8142: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"8149
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8149: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"8156
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8156: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"8163
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8163: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"8234
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8234: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"8241
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8241: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"8248
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8248: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"8255
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8255: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8262
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8262: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"8269
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8269: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8276
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8276: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8283
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8283: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"8290
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8290: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"8297
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8297: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"8304
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8304: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"8311
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8311: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"8318
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8318: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8325
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8325: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"8332
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8332: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8339
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8339: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8346
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8346: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"8353
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8353: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"8360
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8360: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"8367
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8367: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"8374
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8374: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"8381
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8381: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8388
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8388: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"8395
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8395: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8402
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8402: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8409
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8409: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"8416
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8416: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"8508
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8508: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"8585
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8585: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"8702
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8702: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"8709
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8709: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"8716
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8716: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"8723
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8723: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"8732
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8732: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"8739
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8739: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8746
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8746: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8753
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8753: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8762
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8762: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"8769
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8769: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"8776
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8776: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"8783
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8783: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"8790
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8790: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"8797
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8797: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"8873
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8873: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"8880
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8880: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"8887
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8887: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"8894
+[; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8894: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"34 main.c
+[; ;main.c: 34: uint8_t pushButtonCount = 0;
+[v _pushButtonCount `uc ~T0 @X0 1 e ]
+[i _pushButtonCount
+-> -> 0 `i `uc
+]
+"38
+[; ;main.c: 38: enum usbState usbTimerState = INITIALIZATION;
+[v _usbTimerState `E4564 ~T0 @X0 1 e ]
+[i _usbTimerState
+. `E4564 0
+]
+"54
+[; ;main.c: 54: volatile _Bool runFlag = 0;
+[v _runFlag `Va ~T0 @X0 1 e ]
+[i _runFlag
+-> -> 0 `i `a
+]
+"69
+[; ;main.c: 69:     unsigned char ReceivedDataBuffer[64];
+[v _ReceivedDataBuffer `uc ~T0 @X0 -> 64 `i e ]
+"70
+[; ;main.c: 70:     unsigned char ToSendDataBuffer[64];
+[v _ToSendDataBuffer `uc ~T0 @X0 -> 64 `i e ]
+"73
+[; ;main.c: 73: volatile void* USBOutHandle;
+[v _USBOutHandle `*Vv ~T0 @X0 1 e ]
+"74
+[; ;main.c: 74: volatile void* USBInHandle;
+[v _USBInHandle `*Vv ~T0 @X0 1 e ]
+[v $root$_myISR_high `(v ~T0 @X0 0 e ]
+"76
+[; ;main.c: 76: void __attribute__((picinterrupt(("high_priority")))) myISR_high(void) {
+[v _myISR_high `(v ~T1 @X0 1 ef ]
+{
+[e :U _myISR_high ]
+[f ]
+"77
+[; ;main.c: 77:     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
+[e $ ! && != -> . . _PIE1bits 0 0 `i -> 0 `i != -> . . _PIR1bits 0 0 `i -> 0 `i 454  ]
+{
+"79
+[; ;main.c: 79:         TMR1H = (uint8_t) (64037u >> 8);
+[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
+"80
+[; ;main.c: 80:         TMR1L = (64037u & 0xFF);
+[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
+"81
+[; ;main.c: 81:         PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"82
+[; ;main.c: 82:         switch (usbTimerState) {
+[e $U 456  ]
+{
+"83
+[; ;main.c: 83:             case IDLE:
+[e :U 457 ]
+"84
+[; ;main.c: 84:             {
+{
+"86
+[; ;main.c: 86:             }
+}
+"87
+[; ;main.c: 87:                 break;
+[e $U 455  ]
+"89
+[; ;main.c: 89:             case INITIALIZATION:
+[e :U 458 ]
+"90
+[; ;main.c: 90:             {
+{
+"92
+[; ;main.c: 92:             }
+}
+"93
+[; ;main.c: 93:                 break;
+[e $U 455  ]
+"95
+[; ;main.c: 95:             case USB_RUN:
+[e :U 459 ]
+"96
+[; ;main.c: 96:             {
+{
+"98
+[; ;main.c: 98:                 USBDeviceTasks();
+[e ( _USBDeviceTasks ..  ]
+"99
+[; ;main.c: 99:                 LATEbits.LATE2 ^= 1;
+[e =^ . . _LATEbits 0 2 -> -> 1 `i `Vuc ]
+"101
+[; ;main.c: 101:             }
+}
+"102
+[; ;main.c: 102:                 break;
+[e $U 455  ]
+"104
+[; ;main.c: 104:             default:
+[e :U 460 ]
+"105
+[; ;main.c: 105:             {
+{
+"107
+[; ;main.c: 107:             }
+}
+"108
+[; ;main.c: 108:                 break;
+[e $U 455  ]
+"109
+[; ;main.c: 109:         }
+}
+[e $U 455  ]
+[e :U 456 ]
+[e [\ -> _usbTimerState `ui , $ -> . `E4564 2 `ui 457
+ , $ -> . `E4564 0 `ui 458
+ , $ -> . `E4564 1 `ui 459
+ 460 ]
+[e :U 455 ]
+"110
+[; ;main.c: 110:     }
+}
+[e :U 454 ]
+"112
+[; ;main.c: 112:     if (PIE1bits.RC1IE && PIR1bits.RC1IF) {
+[e $ ! && != -> . . _PIE1bits 1 2 `i -> 0 `i != -> . . _PIR1bits 1 2 `i -> 0 `i 461  ]
+{
+"113
+[; ;main.c: 113:         UART_rx_complete_irq();
+[e ( _UART_rx_complete_irq ..  ]
+"114
+[; ;main.c: 114:     }
+}
+[e :U 461 ]
+"115
+[; ;main.c: 115:     if (PIE1bits.TX1IE && PIR1bits.TX1IF) {
+[e $ ! && != -> . . _PIE1bits 1 1 `i -> 0 `i != -> . . _PIR1bits 1 1 `i -> 0 `i 462  ]
+{
+"116
+[; ;main.c: 116:         UART_tx_udr_empty_irq();
+[e ( _UART_tx_udr_empty_irq ..  ]
+"117
+[; ;main.c: 117:     }
+}
+[e :U 462 ]
+"118
+[; ;main.c: 118: }
+[e :UE 453 ]
+}
+[v $root$_myISR_low `(v ~T0 @X0 0 e ]
+"120
+[; ;main.c: 120: void __attribute__((picinterrupt(("low_priority")))) myISR_low(void) {
+[v _myISR_low `(v ~T2 @X0 1 ef ]
+{
+[e :U _myISR_low ]
+[f ]
+"121
+[; ;main.c: 121:     if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+[e $ ! && != -> . . _INTCONbits 0 5 `i -> 0 `i != -> . . _INTCONbits 0 2 `i -> 0 `i 464  ]
+{
+"122
+[; ;main.c: 122:         TMR0H = 0xC2;
+[e = _TMR0H -> -> 194 `i `uc ]
+"123
+[; ;main.c: 123:         TMR0L = 0xF7;
+[e = _TMR0L -> -> 247 `i `uc ]
+"124
+[; ;main.c: 124:         LATAbits.LA1 ^= 1;
+[e =^ . . _LATAbits 1 1 -> -> 1 `i `Vuc ]
+"125
+[; ;main.c: 125:         runFlag = 1;
+[e = _runFlag -> -> 1 `i `a ]
+"126
+[; ;main.c: 126:         INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"127
+[; ;main.c: 127:     }
+}
+[e :U 464 ]
+"130
+[; ;main.c: 130: }
+[e :UE 463 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"132
+[; ;main.c: 132: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"134
+[; ;main.c: 134:     gpioInitialize();
+[e ( _gpioInitialize ..  ]
+"136
+[; ;main.c: 136:     timerZero_Init();
+[e ( _timerZero_Init ..  ]
+"138
+[; ;main.c: 138:     Interrupt_Init();
+[e ( _Interrupt_Init ..  ]
+"140
+[; ;main.c: 140:     timerStart();
+[e ( _timerStart ..  ]
+"142
+[; ;main.c: 142:     timer1_Init();
+[e ( _timer1_Init ..  ]
+"144
+[; ;main.c: 144:     Enable_Interrupt();
+[e ( _Enable_Interrupt ..  ]
+"148
+[; ;main.c: 148:     InitializeSystem();
+[e ( _InitializeSystem ..  ]
+"149
+[; ;main.c: 149:     (INTCONbits.GIE = 0);
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"150
+[; ;main.c: 150:     usbTimerState = USB_RUN;
+[e = _usbTimerState . `E4564 1 ]
+"151
+[; ;main.c: 151:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"154
+[; ;main.c: 154:     UART_Init(115200);
+[e ( _UART_Init (1 -> -> 115200 `l `um ]
+"156
+[; ;main.c: 156:     UART_putrs("Hello World\r\n");
+[e ( _UART_putrs (1 :s 1C ]
+"158
+[; ;main.c: 158:     while (1)
+[e :U 467 ]
+"159
+[; ;main.c: 159:     {
+{
+"160
+[; ;main.c: 160:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"161
+[; ;main.c: 161:         if(PORTAbits.RA4 == 0)
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 469  ]
+"162
+[; ;main.c: 162:         {
+{
+"163
+[; ;main.c: 163:             _delay((unsigned long)((20)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"164
+[; ;main.c: 164:             if(PORTAbits.RA4 == 0)
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 470  ]
+"165
+[; ;main.c: 165:             {
+{
+"166
+[; ;main.c: 166:                 while(PORTAbits.RA4 == 0);
+[e $U 471  ]
+[e :U 472 ]
+[e :U 471 ]
+[e $ == -> . . _PORTAbits 0 4 `i -> 0 `i 472  ]
+[e :U 473 ]
+"167
+[; ;main.c: 167:                 __asm("reset");
+[; <" reset ;# ">
+"168
+[; ;main.c: 168:             }
+}
+[e :U 470 ]
+"169
+[; ;main.c: 169:         }else
+}
+[e $U 474  ]
+[e :U 469 ]
+"170
+[; ;main.c: 170:         {
+{
+"171
+[; ;main.c: 171:             pushButtonCount = 0;
+[e = _pushButtonCount -> -> 0 `i `uc ]
+"172
+[; ;main.c: 172:         }
+}
+[e :U 474 ]
+"174
+[; ;main.c: 174:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
+[e $ ! || < -> _USBDeviceState `ui -> . `E105 6 `ui == -> . . _UCONbits 0 1 `i -> 1 `i 475  ]
+"175
+[; ;main.c: 175:         {
+{
+"177
+[; ;main.c: 177:         } else {
+}
+[e $U 476  ]
+[e :U 475 ]
+{
+"179
+[; ;main.c: 179:             if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)) && runFlag == 1)
+[e $ ! && ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i == -> _runFlag `i -> 1 `i 477  ]
+"180
+[; ;main.c: 180:             {
+{
+"181
+[; ;main.c: 181:                 for (uint8_t cnt = 0; cnt < 64; cnt++)
+{
+[v _cnt `uc ~T0 @X0 1 a ]
+[e = _cnt -> -> 0 `i `uc ]
+[e $ < -> _cnt `i -> 64 `i 478  ]
+[e $U 479  ]
+[e :U 478 ]
+"182
+[; ;main.c: 182:                 {
+{
+"183
+[; ;main.c: 183:                     ToSendDataBuffer[cnt] = '#';
+[e = *U + &U _ToSendDataBuffer * -> _cnt `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 35 `ui `uc ]
+"184
+[; ;main.c: 184:                 }
+}
+[e ++ _cnt -> -> 1 `i `uc ]
+[e $ < -> _cnt `i -> 64 `i 478  ]
+[e :U 479 ]
+}
+"186
+[; ;main.c: 186:                 USBInHandle = USBTransferOnePacket(1,1,(uint8_t*) &ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"188
+[; ;main.c: 188:                 if(USBInHandle == 0)
+[e $ ! == _USBInHandle -> -> 0 `i `*Vv 481  ]
+"189
+[; ;main.c: 189:                 {
+{
+"190
+[; ;main.c: 190:                     UART_putrs("It is zero brother...\r\n");
+[e ( _UART_putrs (1 :s 2C ]
+"191
+[; ;main.c: 191:                 }
+}
+[e :U 481 ]
+"192
+[; ;main.c: 192:                 runFlag = 0;
+[e = _runFlag -> -> 0 `i `a ]
+"193
+[; ;main.c: 193:                 UART_putrs("Hello World\r\n");
+[e ( _UART_putrs (1 :s 3C ]
+"194
+[; ;main.c: 194:             }
+}
+[e :U 477 ]
+"201
+[; ;main.c: 201:             if (!((USBOutHandle != 0x0000) && ((*(volatile uint8_t*)USBOutHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBOutHandle -> -> 0 `i `*Vv != & -> *U -> _USBOutHandle `*Vuc `i -> 128 `i -> 0 `i 482  ]
+"202
+[; ;main.c: 202:             {
+{
+"203
+[; ;main.c: 203:                 switch (ReceivedDataBuffer[0])
+[e $U 484  ]
+"204
+[; ;main.c: 204:                 {
+{
+"205
+[; ;main.c: 205:                     case 0x80:
+[e :U 485 ]
+"206
+[; ;main.c: 206:                     {
+{
+"207
+[; ;main.c: 207:                         UART_putrs("mTouch callibration command");
+[e ( _UART_putrs (1 :s 4C ]
+"209
+[; ;main.c: 209:                     }
+}
+"210
+[; ;main.c: 210:                         break;
+[e $U 483  ]
+"212
+[; ;main.c: 212:                     case 0x20:
+[e :U 486 ]
+"213
+[; ;main.c: 213:                     {
+{
+"214
+[; ;main.c: 214:                         uint16_t potVoltage;
+[v _potVoltage `us ~T0 @X0 1 a ]
+"215
+[; ;main.c: 215:                         UART_putrs("Read ADC Voltage");
+[e ( _UART_putrs (1 :s 5C ]
+"216
+[; ;main.c: 216:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 487  ]
+{
+"218
+[; ;main.c: 218:                             ADCON0bits.CHS = 4;
+[e = . . _ADCON0bits 1 2 -> -> 4 `i `uc ]
+"221
+[; ;main.c: 221:                             PIR1bits.ADIF = 0;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"224
+[; ;main.c: 224:                             ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
+"226
+[; ;main.c: 226:                             while (!PIR1bits.ADIF);
+[e $U 488  ]
+[e :U 489 ]
+[e :U 488 ]
+[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 489  ]
+[e :U 490 ]
+"229
+[; ;main.c: 229:                             potVoltage = ADRES;
+[e = _potVoltage _ADRES ]
+"231
+[; ;main.c: 231:                             ToSendDataBuffer[0] = 0x20;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 32 `i `uc ]
+"232
+[; ;main.c: 232:                             ToSendDataBuffer[1] = (BYTE) (potVoltage);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _potVoltage `uc ]
+"233
+[; ;main.c: 233:                             ToSendDataBuffer[2] = (BYTE) (potVoltage >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _potVoltage `ui -> 8 `i `uc ]
+"235
+[; ;main.c: 235:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"236
+[; ;main.c: 236:                         }
+}
+[e :U 487 ]
+"237
+[; ;main.c: 237:                     }
+}
+"238
+[; ;main.c: 238:                         break;
+[e $U 483  ]
+"240
+[; ;main.c: 240:                     case 0x30:
+[e :U 491 ]
+"241
+[; ;main.c: 241:                     {
+{
+"242
+[; ;main.c: 242:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"243
+[; ;main.c: 243:                         UART_putrs("Read Button Brother 1....");
+[e ( _UART_putrs (1 :s 6C ]
+"244
+[; ;main.c: 244:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 492  ]
+{
+"247
+[; ;main.c: 247:                             ToSendDataBuffer[0] = 0x30;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 48 `i `uc ]
+"248
+[; ;main.c: 248:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
+"249
+[; ;main.c: 249:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"251
+[; ;main.c: 251:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"252
+[; ;main.c: 252:                         }
+}
+[e :U 492 ]
+"253
+[; ;main.c: 253:                     }
+}
+"254
+[; ;main.c: 254:                         break;
+[e $U 483  ]
+"256
+[; ;main.c: 256:                     case 0x31:
+[e :U 493 ]
+"257
+[; ;main.c: 257:                     {
+{
+"258
+[; ;main.c: 258:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"259
+[; ;main.c: 259:                         UART_putrs("Read Button Brother 2....");
+[e ( _UART_putrs (1 :s 7C ]
+"260
+[; ;main.c: 260:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 494  ]
+{
+"263
+[; ;main.c: 263:                             ToSendDataBuffer[0] = 0x31;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 49 `i `uc ]
+"264
+[; ;main.c: 264:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
+"265
+[; ;main.c: 265:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"267
+[; ;main.c: 267:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"268
+[; ;main.c: 268:                         }
+}
+[e :U 494 ]
+"269
+[; ;main.c: 269:                     }
+}
+"270
+[; ;main.c: 270:                         break;
+[e $U 483  ]
+"272
+[; ;main.c: 272:                     case 0x32:
+[e :U 495 ]
+"273
+[; ;main.c: 273:                     {
+{
+"274
+[; ;main.c: 274:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"275
+[; ;main.c: 275:                         UART_putrs("Read Button Brother 3....");
+[e ( _UART_putrs (1 :s 8C ]
+"276
+[; ;main.c: 276:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 496  ]
+"277
+[; ;main.c: 277:                         {
+{
+"280
+[; ;main.c: 280:                             ToSendDataBuffer[0] = 0x32;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 50 `i `uc ]
+"281
+[; ;main.c: 281:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
+"282
+[; ;main.c: 282:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"284
+[; ;main.c: 284:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"285
+[; ;main.c: 285:                         }
+}
+[e :U 496 ]
+"286
+[; ;main.c: 286:                     }
+}
+"287
+[; ;main.c: 287:                         break;
+[e $U 483  ]
+"289
+[; ;main.c: 289:                     case 0x33:
+[e :U 497 ]
+"290
+[; ;main.c: 290:                     {
+{
+"291
+[; ;main.c: 291:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"292
+[; ;main.c: 292:                         UART_putrs("Read Button Brother 4....");
+[e ( _UART_putrs (1 :s 9C ]
+"293
+[; ;main.c: 293:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 498  ]
+{
+"296
+[; ;main.c: 296:                             ToSendDataBuffer[0] = 0x33;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 51 `i `uc ]
+"297
+[; ;main.c: 297:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
+"298
+[; ;main.c: 298:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"300
+[; ;main.c: 300:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"301
+[; ;main.c: 301:                         }
+}
+[e :U 498 ]
+"302
+[; ;main.c: 302:                     }
+}
+"303
+[; ;main.c: 303:                         break;
+[e $U 483  ]
+"305
+[; ;main.c: 305:                     case 0x40:
+[e :U 499 ]
+"306
+[; ;main.c: 306:                     {
+{
+"309
+[; ;main.c: 309:                         UART_putrs("BMA150_REG regX_MSB...");
+[e ( _UART_putrs (1 :s 10C ]
+"310
+[; ;main.c: 310:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 500  ]
+{
+"312
+[; ;main.c: 312:                             ToSendDataBuffer[0] = 0x40;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc ]
+"313
+[; ;main.c: 313:                             ToSendDataBuffer[1] = (BYTE) 0;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
+"314
+[; ;main.c: 314:                             ToSendDataBuffer[2] = (BYTE) 1;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+"316
+[; ;main.c: 316:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"317
+[; ;main.c: 317:                         }
+}
+[e :U 500 ]
+"318
+[; ;main.c: 318:                     }
+}
+"319
+[; ;main.c: 319:                         break;
+[e $U 483  ]
+"321
+[; ;main.c: 321:                     case 0x41:
+[e :U 501 ]
+"322
+[; ;main.c: 322:                     {
+{
+"325
+[; ;main.c: 325:                         UART_putrs("BMA150_REG regY_MSB...");
+[e ( _UART_putrs (1 :s 11C ]
+"326
+[; ;main.c: 326:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 502  ]
+{
+"330
+[; ;main.c: 330:                             ToSendDataBuffer[0] = 0x41;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 65 `i `uc ]
+"331
+[; ;main.c: 331:                             ToSendDataBuffer[1] = (BYTE) 0;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
+"332
+[; ;main.c: 332:                             ToSendDataBuffer[2] = (BYTE) 1;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+"334
+[; ;main.c: 334:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"335
+[; ;main.c: 335:                         }
+}
+[e :U 502 ]
+"336
+[; ;main.c: 336:                     }
+}
+"337
+[; ;main.c: 337:                         break;
+[e $U 483  ]
+"339
+[; ;main.c: 339:                     case 0x42:
+[e :U 503 ]
+"340
+[; ;main.c: 340:                     {
+{
+"343
+[; ;main.c: 343:                         UART_putrs("BMA150_REG regZ_MSB...");
+[e ( _UART_putrs (1 :s 12C ]
+"344
+[; ;main.c: 344:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 504  ]
+{
+"348
+[; ;main.c: 348:                             ToSendDataBuffer[0] = 0x42;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 66 `i `uc ]
+"349
+[; ;main.c: 349:                             ToSendDataBuffer[1] = (BYTE) 6;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 6 `i `uc ]
+"350
+[; ;main.c: 350:                             ToSendDataBuffer[2] = (BYTE) 8;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 8 `i `uc ]
+"352
+[; ;main.c: 352:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"353
+[; ;main.c: 353:                         }
+}
+[e :U 504 ]
+"354
+[; ;main.c: 354:                     }
+}
+"355
+[; ;main.c: 355:                         break;
+[e $U 483  ]
+"357
+[; ;main.c: 357:                     case 0x43:
+[e :U 505 ]
+"358
+[; ;main.c: 358:                     {
+{
+"360
+[; ;main.c: 360:                         UART_putrs("BMA150_REG regT_MSB...");
+[e ( _UART_putrs (1 :s 13C ]
+"361
+[; ;main.c: 361:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 506  ]
+"362
+[; ;main.c: 362:                         {
+{
+"365
+[; ;main.c: 365:                             ToSendDataBuffer[0] = 0x43;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 67 `i `uc ]
+"366
+[; ;main.c: 366:                             ToSendDataBuffer[1] = (BYTE) 5;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 5 `i `uc ]
+"367
+[; ;main.c: 367:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"368
+[; ;main.c: 368:                         }
+}
+[e :U 506 ]
+"369
+[; ;main.c: 369:                     }
+}
+"370
+[; ;main.c: 370:                         break;
+[e $U 483  ]
+"372
+[; ;main.c: 372:                     default:
+[e :U 507 ]
+"373
+[; ;main.c: 373:                     {
+{
+"374
+[; ;main.c: 374:                         UART_putrs("Invalid...\r\n");
+[e ( _UART_putrs (1 :s 14C ]
+"375
+[; ;main.c: 375:                         char temp[100];
+[v _temp `uc ~T0 @X0 -> 100 `i a ]
+"376
+[; ;main.c: 376:                         uint8_t cnt;
+[v _cnt `uc ~T0 @X0 1 a ]
+"377
+[; ;main.c: 377:                         for (cnt = 0; cnt < 64; cnt++) {
+{
+[e = _cnt -> -> 0 `i `uc ]
+[e $ < -> _cnt `i -> 64 `i 508  ]
+[e $U 509  ]
+[e :U 508 ]
+{
+"379
+[; ;main.c: 379:                             sprintf(temp, "cnt %u is %u\r\n", cnt, ReceivedDataBuffer[cnt]);
+[e ( _sprintf (1 , , (. , &U _temp :s 15C -> _cnt `i -> *U + &U _ReceivedDataBuffer * -> _cnt `ux -> -> # *U &U _ReceivedDataBuffer `ui `ux `i ]
+"380
+[; ;main.c: 380:                             UART_puts(temp);
+[e ( _UART_puts (1 &U _temp ]
+"381
+[; ;main.c: 381:                         }
+}
+[e ++ _cnt -> -> 1 `i `uc ]
+[e $ < -> _cnt `i -> 64 `i 508  ]
+[e :U 509 ]
+}
+"383
+[; ;main.c: 383:                     }
+}
+"384
+[; ;main.c: 384:                     break;
+[e $U 483  ]
+"386
+[; ;main.c: 386:                 }
+}
+[e $U 483  ]
+[e :U 484 ]
+[e [\ -> *U + &U _ReceivedDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ReceivedDataBuffer `ui `ux `i , $ -> 128 `i 485
+ , $ -> 32 `i 486
+ , $ -> 48 `i 491
+ , $ -> 49 `i 493
+ , $ -> 50 `i 495
+ , $ -> 51 `i 497
+ , $ -> 64 `i 499
+ , $ -> 65 `i 501
+ , $ -> 66 `i 503
+ , $ -> 67 `i 505
+ 507 ]
+[e :U 483 ]
+"388
+[; ;main.c: 388:                 USBOutHandle = USBTransferOnePacket(1,0,(BYTE*) & ReceivedDataBuffer,64);
+[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
+"389
+[; ;main.c: 389:             }
+}
+[e :U 482 ]
+"390
+[; ;main.c: 390:         }
+}
+[e :U 476 ]
+"391
+[; ;main.c: 391:     }
+}
+[e :U 466 ]
+[e $U 467  ]
+[e :U 468 ]
+"393
+[; ;main.c: 393:     return;
+[e $UE 465  ]
+"394
+[; ;main.c: 394: }
+[e :UE 465 ]
+}
+"396
+[; ;main.c: 396: static void gpioInitialize(void) {
+[v _gpioInitialize `(v ~T0 @X0 1 sf ]
+{
+[e :U _gpioInitialize ]
+[f ]
+"397
+[; ;main.c: 397:     ADCON1 |= 0x0F;
+[e =| _ADCON1 -> -> 15 `i `Vuc ]
+"398
+[; ;main.c: 398:     TRISAbits.RA1 = 0;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+"399
+[; ;main.c: 399:     LATAbits.LA1 = 0;
+[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
+"401
+[; ;main.c: 401:     TRISAbits.RA4 = 1;
+[e = . . _TRISAbits 1 4 -> -> 1 `i `uc ]
+"402
+[; ;main.c: 402:     TRISEbits.TRISE2 = 0;
+[e = . . _TRISEbits 0 2 -> -> 0 `i `uc ]
+"405
+[; ;main.c: 405: }
+[e :UE 511 ]
+}
+"407
+[; ;main.c: 407: static void Interrupt_Init(void) {
+[v _Interrupt_Init `(v ~T0 @X0 1 sf ]
+{
+[e :U _Interrupt_Init ]
+[f ]
+"408
+[; ;main.c: 408:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"409
+[; ;main.c: 409:     INTCONbits.GIEH = 1;
+[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
+"410
+[; ;main.c: 410:     INTCONbits.GIEL = 1;
+[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
+"411
+[; ;main.c: 411:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"412
+[; ;main.c: 412:     INTCONbits.PEIE_GIEL = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"413
+[; ;main.c: 413:     RCONbits.IPEN = 1;
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+"414
+[; ;main.c: 414: }
+[e :UE 512 ]
+}
+"416
+[; ;main.c: 416: static void timerZero_Init(void) {
+[v _timerZero_Init `(v ~T0 @X0 1 sf ]
+{
+[e :U _timerZero_Init ]
+[f ]
+"417
+[; ;main.c: 417:     TMR0H = 0xC2;
+[e = _TMR0H -> -> 194 `i `uc ]
+"418
+[; ;main.c: 418:     TMR0L = 0xF7;
+[e = _TMR0L -> -> 247 `i `uc ]
+"419
+[; ;main.c: 419:     T0CON = 0b10000111;
+[e = _T0CON -> -> 135 `i `uc ]
+"420
+[; ;main.c: 420:     INTCON2bits.TMR0IP = 0;
+[e = . . _INTCON2bits 1 2 -> -> 0 `i `uc ]
+"421
+[; ;main.c: 421:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"422
+[; ;main.c: 422:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"423
+[; ;main.c: 423: }
+[e :UE 513 ]
+}
+"425
+[; ;main.c: 425: static void timer1_Init(void) {
+[v _timer1_Init `(v ~T0 @X0 1 sf ]
+{
+[e :U _timer1_Init ]
+[f ]
+"426
+[; ;main.c: 426:     TMR1H = (uint8_t) (64037u >> 8);
+[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
+"427
+[; ;main.c: 427:     TMR1L = (64037u & 0xFF);
+[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
+"428
+[; ;main.c: 428:     T1CON = 0b10110001;
+[e = _T1CON -> -> 177 `i `uc ]
+"430
+[; ;main.c: 430:     IPR1bits.TMR1IP = 1;
+[e = . . _IPR1bits 0 0 -> -> 1 `i `uc ]
+"431
+[; ;main.c: 431:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"432
+[; ;main.c: 432:     PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"433
+[; ;main.c: 433: }
+[e :UE 514 ]
+}
+"435
+[; ;main.c: 435: static void Enable_Interrupt(void) {
+[v _Enable_Interrupt `(v ~T0 @X0 1 sf ]
+{
+[e :U _Enable_Interrupt ]
+[f ]
+"436
+[; ;main.c: 436:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"437
+[; ;main.c: 437:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"438
+[; ;main.c: 438: }
+[e :UE 515 ]
+}
+"440
+[; ;main.c: 440: static void timerStart(void) {
+[v _timerStart `(v ~T0 @X0 1 sf ]
+{
+[e :U _timerStart ]
+[f ]
+"441
+[; ;main.c: 441:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"442
+[; ;main.c: 442:     T0CONbits.TMR0ON = 1;
+[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
+"443
+[; ;main.c: 443:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"444
+[; ;main.c: 444: }
+[e :UE 516 ]
+}
+"446
+[; ;main.c: 446: static void timerStop(void) {
+[v _timerStop `(v ~T0 @X0 1 sf ]
+{
+[e :U _timerStop ]
+[f ]
+"447
+[; ;main.c: 447:     T0CONbits.TMR0ON = 0;
+[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
+"448
+[; ;main.c: 448:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"449
+[; ;main.c: 449:     INTCONbits.TMR0IE = 0;
+[e = . . _INTCONbits 0 5 -> -> 0 `i `uc ]
+"450
+[; ;main.c: 450: }
+[e :UE 517 ]
+}
+"452
+[; ;main.c: 452: void USBCBInitEP(void) {
+[v _USBCBInitEP `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBInitEP ]
+[f ]
+"454
+[; ;main.c: 454:     USBEnableEndpoint(1, 0x02 | 0x04 | 0x10 | 0x08);
+[e ( _USBEnableEndpoint (2 , -> -> 1 `i `uc -> | | | -> 2 `i -> 4 `i -> 16 `i -> 8 `i `uc ]
+"456
+[; ;main.c: 456:     USBOutHandle = (volatile void*) USBTransferOnePacket(1,0,(uint8_t *) & ReceivedDataBuffer,64);
+[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
+"457
+[; ;main.c: 457: }
+[e :UE 518 ]
+}
+"459
+[; ;main.c: 459: void UserInit(void) {
+[v _UserInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _UserInit ]
+[f ]
+"462
+[; ;main.c: 462:     USBOutHandle = 0;
+[e = _USBOutHandle -> -> 0 `i `*Vv ]
+"463
+[; ;main.c: 463:     USBInHandle = 0;
+[e = _USBInHandle -> -> 0 `i `*Vv ]
+"464
+[; ;main.c: 464: }
+[e :UE 519 ]
+}
+"466
+[; ;main.c: 466: static void InitializeSystem(void) {
+[v _InitializeSystem `(v ~T0 @X0 1 sf ]
+{
+[e :U _InitializeSystem ]
+[f ]
+"468
+[; ;main.c: 468:     USBDeviceInit();
+[e ( _USBDeviceInit ..  ]
+"470
+[; ;main.c: 470:     UserInit();
+[e ( _UserInit ..  ]
+"472
+[; ;main.c: 472: }
+[e :UE 520 ]
+}
+"474
+[; ;main.c: 474: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
+[v _USER_USB_CALLBACK_EVENT_HANDLER `(a ~T0 @X0 1 ef3`E46`*v`us ]
+{
+[e :U _USER_USB_CALLBACK_EVENT_HANDLER ]
+[v _event `E46 ~T0 @X0 1 r1 ]
+[v _pdata `*v ~T0 @X0 1 r2 ]
+[v _size `us ~T0 @X0 1 r3 ]
+[f ]
+"475
+[; ;main.c: 475:     switch (event) {
+[e $U 523  ]
+{
+"476
+[; ;main.c: 476:         case EVENT_CONFIGURED:
+[e :U 524 ]
+"477
+[; ;main.c: 477:             USBCBInitEP();
+[e ( _USBCBInitEP ..  ]
+"478
+[; ;main.c: 478:             break;
+[e $U 522  ]
+"479
+[; ;main.c: 479:         case EVENT_SET_DESCRIPTOR:
+[e :U 525 ]
+"480
+[; ;main.c: 480:             USBCBStdSetDscHandler();
+[e ( _USBCBStdSetDscHandler ..  ]
+"481
+[; ;main.c: 481:             break;
+[e $U 522  ]
+"482
+[; ;main.c: 482:         case EVENT_EP0_REQUEST:
+[e :U 526 ]
+"483
+[; ;main.c: 483:             USBCBCheckOtherReq();
+[e ( _USBCBCheckOtherReq ..  ]
+"484
+[; ;main.c: 484:             break;
+[e $U 522  ]
+"485
+[; ;main.c: 485:         case EVENT_SOF:
+[e :U 527 ]
+"486
+[; ;main.c: 486:             USBCB_SOF_Handler();
+[e ( _USBCB_SOF_Handler ..  ]
+"487
+[; ;main.c: 487:             break;
+[e $U 522  ]
+"488
+[; ;main.c: 488:         case EVENT_SUSPEND:
+[e :U 528 ]
+"489
+[; ;main.c: 489:             USBCBSuspend();
+[e ( _USBCBSuspend ..  ]
+"490
+[; ;main.c: 490:             break;
+[e $U 522  ]
+"491
+[; ;main.c: 491:         case EVENT_RESUME:
+[e :U 529 ]
+"492
+[; ;main.c: 492:             USBCBWakeFromSuspend();
+[e ( _USBCBWakeFromSuspend ..  ]
+"493
+[; ;main.c: 493:             break;
+[e $U 522  ]
+"494
+[; ;main.c: 494:         case EVENT_BUS_ERROR:
+[e :U 530 ]
+"495
+[; ;main.c: 495:             USBCBErrorHandler();
+[e ( _USBCBErrorHandler ..  ]
+"496
+[; ;main.c: 496:             break;
+[e $U 522  ]
+"497
+[; ;main.c: 497:         case EVENT_TRANSFER:
+[e :U 531 ]
+"498
+[; ;main.c: 498:             __nop();
+[e ( ___nop ..  ]
+"500
+[; ;main.c: 500:             break;
+[e $U 522  ]
+"501
+[; ;main.c: 501:         default:
+[e :U 532 ]
+"502
+[; ;main.c: 502:             break;
+[e $U 522  ]
+"503
+[; ;main.c: 503:     }
+}
+[e $U 522  ]
+[e :U 523 ]
+[e [\ -> _event `ui , $ -> . `E114 0 `ui 524
+ , $ -> . `E114 1 `ui 525
+ , $ -> . `E114 2 `ui 526
+ , $ -> . `E46 17 `ui 527
+ , $ -> . `E46 19 `ui 528
+ , $ -> . `E46 18 `ui 529
+ , $ -> . `E46 35 `ui 530
+ , $ -> . `E46 16 `ui 531
+ 532 ]
+[e :U 522 ]
+"504
+[; ;main.c: 504:     return TRUE;
+[e ) -> . `E3631 1 `a ]
+[e $UE 521  ]
+"505
+[; ;main.c: 505: }
+[e :UE 521 ]
+}
+"507
+[; ;main.c: 507: void USBCBStdSetDscHandler(void) {
+[v _USBCBStdSetDscHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBStdSetDscHandler ]
+[f ]
+"509
+[; ;main.c: 509: }
+[e :UE 533 ]
+}
+"511
+[; ;main.c: 511: void USBCBCheckOtherReq(void) {
+[v _USBCBCheckOtherReq `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBCheckOtherReq ]
+[f ]
+"512
+[; ;main.c: 512:     USBCheckHIDRequest();
+[e ( _USBCheckHIDRequest ..  ]
+"513
+[; ;main.c: 513: }
+[e :UE 534 ]
+}
+"515
+[; ;main.c: 515: void USBCBErrorHandler(void) {
+[v _USBCBErrorHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBErrorHandler ]
+[f ]
+"534
+[; ;main.c: 534: }
+[e :UE 535 ]
+}
+"536
+[; ;main.c: 536: void USBCB_SOF_Handler(void) {
+[v _USBCB_SOF_Handler `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCB_SOF_Handler ]
+[f ]
+"539
+[; ;main.c: 539: }
+[e :UE 536 ]
+}
+"541
+[; ;main.c: 541: void USBCBWakeFromSuspend(void) {
+[v _USBCBWakeFromSuspend `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBWakeFromSuspend ]
+[f ]
+"546
+[; ;main.c: 546: }
+[e :UE 537 ]
+}
+"548
+[; ;main.c: 548: void USBCBSuspend(void) {
+[v _USBCBSuspend `(v ~T0 @X0 1 ef ]
+{
+[e :U _USBCBSuspend ]
+[f ]
+"551
+[; ;main.c: 551: }
+[e :UE 538 ]
+}
+[p f _sprintf 8389632 ]
+[a 5C 82 101 97 100 32 65 68 67 32 86 111 108 116 97 103 101 0 ]
+[a 4C 109 84 111 117 99 104 32 99 97 108 108 105 98 114 97 116 105 111 110 32 99 111 109 109 97 110 100 0 ]
+[a 12C 66 77 65 49 53 48 95 82 69 71 32 114 101 103 90 95 77 83 66 46 46 46 0 ]
+[a 11C 66 77 65 49 53 48 95 82 69 71 32 114 101 103 89 95 77 83 66 46 46 46 0 ]
+[a 10C 66 77 65 49 53 48 95 82 69 71 32 114 101 103 88 95 77 83 66 46 46 46 0 ]
+[a 13C 66 77 65 49 53 48 95 82 69 71 32 114 101 103 84 95 77 83 66 46 46 46 0 ]
+[a 9C 82 101 97 100 32 66 117 116 116 111 110 32 66 114 111 116 104 101 114 32 52 46 46 46 46 0 ]
+[a 8C 82 101 97 100 32 66 117 116 116 111 110 32 66 114 111 116 104 101 114 32 51 46 46 46 46 0 ]
+[a 7C 82 101 97 100 32 66 117 116 116 111 110 32 66 114 111 116 104 101 114 32 50 46 46 46 46 0 ]
+[a 6C 82 101 97 100 32 66 117 116 116 111 110 32 66 114 111 116 104 101 114 32 49 46 46 46 46 0 ]
+[a 15C 99 110 116 32 37 117 32 105 115 32 37 117 13 10 0 ]
+[a 1C 72 101 108 108 111 32 87 111 114 108 100 13 10 0 ]
+[a 3C 72 101 108 108 111 32 87 111 114 108 100 13 10 0 ]
+[a 2C 73 116 32 105 115 32 122 101 114 111 32 98 114 111 116 104 101 114 46 46 46 13 10 0 ]
+[a 14C 73 110 118 97 108 105 100 46 46 46 13 10 0 ]

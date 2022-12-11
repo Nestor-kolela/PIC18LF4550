@@ -1,0 +1,1795 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18LF4550 ]
+[d frameptr 4065 ]
+"38 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[e E4564 usbState `uc
+INITIALIZATION 0
+USB_RUN 1
+IDLE 2
+]
+"174
+[e E105 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"474
+[e E46 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"503
+[e E114 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"504
+[e E3631 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"144 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[e E3976 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"720
+[e E3725 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2027
+[e E3985 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"133 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+[v i2_pad pad `(v  1 s 1 i2_pad ]
+"894
+[v _utoa utoa `(v  1 s 1 utoa ]
+[v i2_utoa utoa `(v  1 s 1 i2_utoa ]
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+[v i2_vfpfcnvrt vfpfcnvrt `(v  1 s 1 i2_vfpfcnvrt ]
+"1520
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+[v i2_vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+[v i2___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+[v i2___lomod __lomod `(uo  1 e 8 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+[v i2_fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+[v i2_fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+[v i2_putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"76 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _myISR_high myISR_high `IIH(v  1 e 1 0 ]
+"120
+[v _myISR_low myISR_low `IIL(v  1 e 1 0 ]
+"132
+[v _main main `(v  1 e 1 0 ]
+"396
+[v _gpioInitialize gpioInitialize `(v  1 s 1 gpioInitialize ]
+"407
+[v _Interrupt_Init Interrupt_Init `(v  1 s 1 Interrupt_Init ]
+"416
+[v _timerZero_Init timerZero_Init `(v  1 s 1 timerZero_Init ]
+"425
+[v _timer1_Init timer1_Init `(v  1 s 1 timer1_Init ]
+"435
+[v _Enable_Interrupt Enable_Interrupt `(v  1 s 1 Enable_Interrupt ]
+"440
+[v _timerStart timerStart `(v  1 s 1 timerStart ]
+"452
+[v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
+"459
+[v _UserInit UserInit `(v  1 e 1 0 ]
+"466
+[v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
+"474
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+"507
+[v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 1 0 ]
+"511
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
+"515
+[v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 1 0 ]
+"536
+[v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 1 0 ]
+"541
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
+"548
+[v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
+"16 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\uart.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"53
+[v _UART_putrs UART_putrs `(v  1 e 1 0 ]
+"60
+[v _UART_puts UART_puts `(v  1 e 1 0 ]
+[v i2_UART_puts UART_puts `(v  1 e 1 0 ]
+"118
+[v _UART_write UART_write `(v  1 e 1 0 ]
+[v i2_UART_write UART_write `(v  1 e 1 0 ]
+"127
+[v _UART_rx_complete_irq UART_rx_complete_irq `(v  1 e 1 0 ]
+"151
+[v _UART_tx_udr_empty_irq UART_tx_udr_empty_irq `(v  1 e 1 0 ]
+"284 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"484
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"885
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"1002
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1426
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1498
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1553
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1626
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1781
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1862
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1978
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2053
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2139
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2215
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2258
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2316
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2385
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2478
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2551
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2605
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2699
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2767
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"3004
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+"161 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_function_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+"375 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
+[v _UIR UIR `VEuc  1 e 1 @3944 ]
+[s S1217 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"391
+[u S1225 . 1 `S1217 1 . 1 0 ]
+[v _UIRbits UIRbits `VES1225  1 e 1 @3944 ]
+"431
+[v _UIE UIE `VEuc  1 e 1 @3945 ]
+[s S1265 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"447
+[u S1273 . 1 `S1265 1 . 1 0 ]
+[v _UIEbits UIEbits `VES1273  1 e 1 @3945 ]
+"487
+[v _UEIR UEIR `VEuc  1 e 1 @3946 ]
+"538
+[v _UEIE UEIE `VEuc  1 e 1 @3947 ]
+"589
+[v _USTAT USTAT `VEuc  1 e 1 @3948 ]
+"649
+[v _UCON UCON `VEuc  1 e 1 @3949 ]
+[s S331 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"665
+[u S339 . 1 `S331 1 . 1 0 ]
+[v _UCONbits UCONbits `VES339  1 e 1 @3949 ]
+"700
+[v _UADDR UADDR `VEuc  1 e 1 @3950 ]
+"764
+[v _UCFG UCFG `VEuc  1 e 1 @3951 ]
+"843
+[v _UEP0 UEP0 `VEuc  1 e 1 @3952 ]
+[s S1396 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"871
+[s S1402 . 1 `uc 1 EP0STALL 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+`uc 1 EP0OUTEN 1 0 :1:2 
+`uc 1 EP0CONDIS 1 0 :1:3 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S1408 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+`uc 1 EPOUTEN0 1 0 :1:2 
+`uc 1 EPCONDIS0 1 0 :1:3 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[u S1414 . 1 `S1396 1 . 1 0 `S1402 1 . 1 0 `S1408 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES1414  1 e 1 @3952 ]
+"951
+[v _UEP1 UEP1 `VEuc  1 e 1 @3953 ]
+[s S255 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+"2354
+[s S263 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+]
+[s S271 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S277 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S280 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+]
+[u S282 . 1 `S255 1 . 1 0 `S263 1 . 1 0 `S271 1 . 1 0 `S277 1 . 1 0 `S280 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES282  1 e 1 @3968 ]
+[s S181 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+]
+"2999
+[s S189 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+]
+[u S197 . 1 `S181 1 . 1 0 `S189 1 . 1 0 ]
+[v _LATAbits LATAbits `VES197  1 e 1 @3977 ]
+[s S102 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3393
+[s S106 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S110 . 1 `S102 1 . 1 0 `S106 1 . 1 0 ]
+[v _LATEbits LATEbits `VES110  1 e 1 @3981 ]
+[s S439 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"3458
+[u S455 . 1 `S439 1 . 1 0 `S255 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES455  1 e 1 @3986 ]
+[s S475 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+]
+"4246
+[s S479 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S483 . 1 `S475 1 . 1 0 `S479 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES483  1 e 1 @3990 ]
+[s S28 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4409
+[s S37 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S43 . 1 `S28 1 . 1 0 `S37 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES43  1 e 1 @3997 ]
+[s S62 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4493
+[s S71 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S77 . 1 `S62 1 . 1 0 `S71 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES77  1 e 1 @3998 ]
+[s S614 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 SPPIP 1 0 :1:7 
+]
+"4577
+[s S623 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIP 1 0 :1:7 
+]
+[u S629 . 1 `S614 1 . 1 0 `S623 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES629  1 e 1 @3999 ]
+[s S1163 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 USBIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"4658
+[s S1172 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+[u S1175 . 1 `S1163 1 . 1 0 `S1172 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1175  1 e 1 @4000 ]
+[s S1237 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 USBIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"4729
+[s S1246 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S1249 . 1 `S1237 1 . 1 0 `S1246 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1249  1 e 1 @4001 ]
+"4937
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S2898 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4978
+[s S2907 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S2910 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S2913 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S2916 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S2919 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S2921 . 1 `S2898 1 . 1 0 `S2907 1 . 1 0 `S2910 1 . 1 0 `S2913 1 . 1 0 `S2916 1 . 1 0 `S2919 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES2921  1 e 1 @4011 ]
+"5147
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S2754 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5186
+[s S2763 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S2772 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S2775 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S2777 . 1 `S2754 1 . 1 0 `S2763 1 . 1 0 `S2772 1 . 1 0 `S2775 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES2777  1 e 1 @4012 ]
+"5403
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5415
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5427
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5439
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"6063
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+[s S2806 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"6099
+[s S2815 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S2820 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S2823 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S2826 . 1 `S2806 1 . 1 0 `S2815 1 . 1 0 `S2820 1 . 1 0 `S2823 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES2826  1 e 1 @4024 ]
+"6582
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+[s S358 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"6711
+[s S361 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S365 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S372 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S375 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S378 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S381 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S384 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S387 . 1 `S358 1 . 1 0 `S361 1 . 1 0 `S365 1 . 1 0 `S372 1 . 1 0 `S375 1 . 1 0 `S378 1 . 1 0 `S381 1 . 1 0 `S384 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES387  1 e 1 @4034 ]
+"6786
+[v _ADRES ADRES `VEus  1 e 2 @4035 ]
+"7416
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"7526
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"7533
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S495 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"7589
+[s S497 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S500 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S503 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S506 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S509 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S518 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S521 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S529 . 1 `S495 1 . 1 0 `S497 1 . 1 0 `S500 1 . 1 0 `S503 1 . 1 0 `S506 1 . 1 0 `S509 1 . 1 0 `S518 1 . 1 0 `S521 1 . 1 0 ]
+[v _RCONbits RCONbits `VES529  1 e 1 @4048 ]
+"8070
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S648 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"8090
+[s S655 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S659 . 1 `S648 1 . 1 0 `S655 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES659  1 e 1 @4053 ]
+"8147
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8154
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S574 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"8533
+[s S577 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S586 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S591 . 1 `S574 1 . 1 0 `S577 1 . 1 0 `S586 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES591  1 e 1 @4081 ]
+[s S130 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8615
+[s S139 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S148 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S152 . 1 `S130 1 . 1 0 `S139 1 . 1 0 `S148 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES152  1 e 1 @4082 ]
+"99 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"100
+[v _flags flags `uc  1 s 1 flags ]
+"125
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"34 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _pushButtonCount pushButtonCount `uc  1 e 1 0 ]
+"38
+[v _usbTimerState usbTimerState `E4564  1 e 1 0 ]
+"54
+[v _runFlag runFlag `VEa  1 e 1 0 ]
+"69
+[v _ReceivedDataBuffer ReceivedDataBuffer `[64]uc  1 e 64 0 ]
+"70
+[v _ToSendDataBuffer ToSendDataBuffer `[64]uc  1 e 64 0 ]
+"73
+[v _USBOutHandle USBOutHandle `*.39VEv  1 e 2 0 ]
+"74
+[v _USBInHandle USBInHandle `*.39VEv  1 e 2 0 ]
+"6 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\uart.c
+[v __rx_buffer_head _rx_buffer_head `VEus  1 e 2 0 ]
+"7
+[v __rx_buffer_tail _rx_buffer_tail `VEus  1 e 2 0 ]
+"8
+[v __tx_buffer_head _tx_buffer_head `VEuc  1 e 1 0 ]
+"9
+[v __tx_buffer_tail _tx_buffer_tail `VEuc  1 e 1 0 ]
+"11
+[v __rx_buffer _rx_buffer `[512]uc  1 e 512 0 ]
+"12
+[v __tx_buffer _tx_buffer `[64]uc  1 e 64 0 ]
+[s S1362 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"152 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_descriptors.c
+[v _device_dsc device_dsc `CS1362  1 e 18 0 ]
+"171
+[v _configDescriptor1 configDescriptor1 `C[41]uc  1 e 41 0 ]
+[s S2719 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
+"220
+[v _sd000 sd000 `CS2719  1 e 4 0 ]
+[s S2723 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
+"225
+[v _sd001 sd001 `CS2723  1 e 52 0 ]
+[s S2727 . 46 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[22]us 1 string 44 2 ]
+"232
+[v _sd002 sd002 `CS2727  1 e 46 0 ]
+[s S2674 . 29 `[29]uc 1 report 29 0 ]
+"239
+[v _hid_rpt01 hid_rpt01 `CS2674  1 e 29 0 ]
+"259
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
+"265
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
+"144 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBDeviceState USBDeviceState `E105  1 e 1 0 ]
+"145
+[v _USBActiveConfiguration USBActiveConfiguration `uc  1 e 1 0 ]
+"146
+[v _USBAlternateInterface USBAlternateInterface `[1]uc  1 e 1 0 ]
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"147
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES986  1 e 2 0 ]
+"148
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES986  1 e 2 0 ]
+"149
+[v _pBDTEntryOut pBDTEntryOut `[2]*.39VES986  1 e 4 0 ]
+"150
+[v _pBDTEntryIn pBDTEntryIn `[2]*.39VES986  1 e 4 0 ]
+"151
+[v _shortPacketStatus shortPacketStatus `uc  1 e 1 0 ]
+"152
+[v _controlTransferState controlTransferState `uc  1 e 1 0 ]
+[u S991 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2us 1 wRam 3 0 `*.2Cus 1 wRom 3 0 ]
+"153
+[s S996 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S1001 . 1 `S996 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S1004 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S1007 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1004 1 byte 2 0 ]
+[s S1011 . 6 `S991 1 pSrc 3 0 `S1001 1 info 1 3 `S1007 1 wCount 2 4 ]
+[v _inPipes inPipes `[1]S1011  1 e 6 0 ]
+[u S1015 . 3 `*.2uc 1 bRam 3 0 `*.2us 1 wRam 3 0 ]
+"154
+[s S1018 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S1021 . 1 `S1018 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S1025 . 8 `S1015 1 pDst 3 0 `S1021 1 info 1 3 `S1007 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `[1]S1025  1 e 8 0 ]
+"155
+[v _pDst pDst `*.39uc  1 e 2 0 ]
+"156
+[v _RemoteWakeup RemoteWakeup `a  1 e 1 0 ]
+"157
+[v _USBBusIsSuspended USBBusIsSuspended `a  1 e 1 0 ]
+[s S1030 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"158
+[u S1035 __USTAT 1 `S1030 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `S1035  1 e 1 0 ]
+"159
+[v _endpoint_number endpoint_number `uc  1 e 1 0 ]
+"160
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `a  1 e 1 0 ]
+[s S1038 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"161
+[u S1041 . 1 `S1038 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `[2]S1041  1 e 2 0 ]
+"162
+[v _ep_data_out ep_data_out `[2]S1041  1 e 2 0 ]
+"164
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEa  1 e 1 0 ]
+"165
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEa  1 e 1 0 ]
+"166
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEa  1 e 1 0 ]
+"167
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEa  1 e 1 0 ]
+"168
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEa  1 e 1 0 ]
+"169
+[v _USB1msTickCount USB1msTickCount `ul  1 e 4 0 ]
+"170
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `uc  1 e 1 0 ]
+"177
+[v _BDT BDT `VE[8]S986  1 e 32 @1024 ]
+[s S1044 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
+"182
+[s S1071 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S1007 1 W_Value 2 2 `S1007 1 W_Index 2 4 `S1007 1 W_Length 2 6 ]
+[s S1077 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1088 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S1092 . 1 `uc 1 bmRequestType 1 0 `S1088 1 . 1 0 ]
+[s S1095 . 1 `S1092 1 requestInfo 1 0 ]
+[s S1097 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `us 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1105 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1114 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1123 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1132 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1141 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S1152 . 8 `S1044 1 . 8 0 `S1071 1 . 8 0 `S1077 1 . 8 0 `S1095 1 . 1 0 `S1097 1 . 8 0 `S1105 1 . 8 0 `S1114 1 . 8 0 `S1123 1 . 8 0 `S1132 1 . 8 0 `S1141 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES1152  1 e 8 @1056 ]
+"183
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1064 ]
+"87 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_function_hid.c
+[v _idle_rate idle_rate `uc  1 s 1 idle_rate ]
+"88
+[v _active_protocol active_protocol `uc  1 s 1 active_protocol ]
+"132 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"375
+[v main@temp temp `[100]uc  1 a 100 0 ]
+"376
+[v main@cnt_877 cnt `uc  1 a 1 111 ]
+"291
+[v main@w_869 w `us  1 a 2 106 ]
+"274
+[v main@w_867 w `us  1 a 2 104 ]
+"258
+[v main@w_865 w `us  1 a 2 102 ]
+"242
+[v main@w w `us  1 a 2 100 ]
+"214
+[v main@potVoltage potVoltage `us  1 a 2 108 ]
+"181
+[v main@cnt cnt `uc  1 a 1 110 ]
+"394
+} 0
+"416
+[v _timerZero_Init timerZero_Init `(v  1 s 1 timerZero_Init ]
+{
+"423
+} 0
+"440
+[v _timerStart timerStart `(v  1 s 1 timerStart ]
+{
+"444
+} 0
+"425
+[v _timer1_Init timer1_Init `(v  1 s 1 timer1_Init ]
+{
+"433
+} 0
+"396
+[v _gpioInitialize gpioInitialize `(v  1 s 1 gpioInitialize ]
+{
+"405
+} 0
+"1002 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+"1047
+[v USBTransferOnePacket@buf buf `[200]uc  1 a 200 0 ]
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1004
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES986  1 a 2 201 ]
+"1002
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 113 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 114 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 116 ]
+"1007
+[v USBTransferOnePacket@ep ep `uc  1 a 1 200 ]
+"1057
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S3466  1 a 11 102 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 100 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 90 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 92 ]
+"23
+} 0
+"1520 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1523
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 88 ]
+[s S3498 _IO_FILE 0 ]
+"1520
+[v vfprintf@fp fp `*.39S3498  1 p 2 82 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 84 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 86 ]
+"1543
+} 0
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S3511 . 8 `o 1 ll 8 0 `uo 1 llu 8 0 `*.2v 1 vp 3 0 `d 1 f 4 0 ]
+"1016
+[v vfpfcnvrt@convarg convarg `S3511  1 a 8 72 ]
+"1009
+[v vfpfcnvrt@cp cp `*.25uc  1 a 2 80 ]
+[s S3498 _IO_FILE 0 ]
+"1007
+[v vfpfcnvrt@fp fp `*.39S3498  1 p 2 62 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 64 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 66 ]
+"1517
+} 0
+"894
+[v _utoa utoa `(v  1 s 1 utoa ]
+{
+"897
+[v utoa@n n `uo  1 a 8 52 ]
+"896
+[v utoa@i i `i  1 a 2 60 ]
+[v utoa@p p `i  1 a 2 50 ]
+[v utoa@w w `i  1 a 2 48 ]
+[s S3498 _IO_FILE 0 ]
+"894
+[v utoa@fp fp `*.39S3498  1 p 2 30 ]
+[v utoa@d d `uo  1 p 8 32 ]
+"926
+} 0
+"133
+[v _pad pad `(v  1 s 1 pad ]
+{
+"135
+[v pad@w w `i  1 a 2 28 ]
+[v pad@i i `i  1 a 2 26 ]
+[s S3498 _IO_FILE 0 ]
+"133
+[v pad@fp fp `*.39S3498  1 p 2 19 ]
+[v pad@buf buf `*.39uc  1 p 2 21 ]
+[v pad@p p `i  1 p 2 23 ]
+"164
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 17 ]
+"10
+[v fputs@c c `uc  1 a 1 16 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 12 ]
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S3466  1 p 2 14 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 3 ]
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S3466  1 p 2 5 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 19 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 3 ]
+[v ___lomod@divisor divisor `uo  1 p 8 11 ]
+"27
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 19 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 27 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 3 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 11 ]
+"32
+} 0
+"60 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\uart.c
+[v _UART_puts UART_puts `(v  1 e 1 0 ]
+{
+[v UART_puts@ptr ptr `*.39uc  1 p 2 5 ]
+"67
+} 0
+"53
+[v _UART_putrs UART_putrs `(v  1 e 1 0 ]
+{
+[v UART_putrs@ptr ptr `*.25Cuc  1 p 2 5 ]
+"59
+} 0
+"118
+[v _UART_write UART_write `(v  1 e 1 0 ]
+{
+[v UART_write@data data `uc  1 a 1 wreg ]
+"119
+[v UART_write@i i `uc  1 a 1 4 ]
+"118
+[v UART_write@data data `uc  1 a 1 wreg ]
+[v UART_write@data data `uc  1 a 1 3 ]
+"126
+} 0
+"16
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"21
+[v UART_Init@temp temp `us  1 a 2 23 ]
+"16
+[v UART_Init@baudRate baudRate `um  1 p 3 16 ]
+"49
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 11 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 15 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 3 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 7 ]
+"30
+} 0
+"407 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _Interrupt_Init Interrupt_Init `(v  1 s 1 Interrupt_Init ]
+{
+"414
+} 0
+"466
+[v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
+{
+"472
+} 0
+"459
+[v _UserInit UserInit `(v  1 e 1 0 ]
+{
+"464
+} 0
+"284 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"286
+[v USBDeviceInit@i i `uc  1 a 1 15 ]
+"378
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 13 ]
+"7
+[v memset@k k `ui  1 a 2 11 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 3 ]
+[v memset@c c `i  1 p 2 5 ]
+[v memset@n n `ui  1 p 2 7 ]
+"90
+} 0
+"435 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _Enable_Interrupt Enable_Interrupt `(v  1 s 1 Enable_Interrupt ]
+{
+"438
+} 0
+"120
+[v _myISR_low myISR_low `IIL(v  1 e 1 0 ]
+{
+"130
+} 0
+"76
+[v _myISR_high myISR_high `IIH(v  1 e 1 0 ]
+{
+"118
+} 0
+"484 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+"486
+[v USBDeviceTasks@i i `uc  1 a 1 43 ]
+"834
+} 0
+"284
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"286
+[v i2USBDeviceInit@i i `uc  1 a 1 12 ]
+"378
+} 0
+"2316
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+{
+"2362
+} 0
+"2258
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+{
+"2299
+} 0
+"2215
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+{
+"2240
+} 0
+"3004
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+{
+"3022
+} 0
+"2385
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+{
+"2436
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"2478 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+{
+"2528
+} 0
+"1626
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+{
+"1758
+} 0
+"1498
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+{
+"1528
+} 0
+"2699
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+{
+"2746
+} 0
+"1978
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+{
+"1980
+[v USBStdSetCfgHandler@i i `uc  1 a 1 93 ]
+"2034
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v i2memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v i2memset@k k `ui  1 a 2 8 ]
+"4
+[v i2memset@dest dest `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"2139 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+{
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2172
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S986  1 a 2 2 ]
+"2197
+} 0
+"2053
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+{
+"2122
+} 0
+"2767
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+{
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2769
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S986  1 a 2 38 ]
+"2774
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 35 ]
+[s S1038 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2770
+[u S1041 . 1 `S1038 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S1041  1 a 1 37 ]
+"2959
+} 0
+"474 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E46  1 p 2 27 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 29 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `us  1 p 2 31 ]
+"505
+} 0
+"536
+[v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 1 0 ]
+{
+"539
+} 0
+"541
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
+{
+"546
+} 0
+"548
+[v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
+{
+"551
+} 0
+"507
+[v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 1 0 ]
+{
+"509
+} 0
+"452
+[v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
+{
+"457
+} 0
+"1002 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+"1047
+[v i2USBTransferOnePacket@buf buf `[200]uc  1 a 200 0 ]
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1004
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v i2USBTransferOnePacket@handle handle `*.39VES986  1 a 2 201 ]
+"1002
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v i2USBTransferOnePacket@dir dir `uc  1 p 1 87 ]
+[v i2USBTransferOnePacket@data data `*.39uc  1 p 2 88 ]
+[v i2USBTransferOnePacket@len len `uc  1 p 1 90 ]
+"1007
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 200 ]
+"1057
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2sprintf@f f `S3466  1 a 11 12 ]
+"12
+[v i2sprintf@ap ap `[1]*.39v  1 a 2 10 ]
+"9
+[v i2sprintf@s s `*.39uc  1 p 2 0 ]
+[v i2sprintf@fmt fmt `*.25Cuc  1 p 2 2 ]
+"23
+} 0
+"1520 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v i2_vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1523
+[v i2vfprintf@cfmt cfmt `*.25uc  1 a 2 85 ]
+[s S3498 _IO_FILE 0 ]
+"1520
+[v i2vfprintf@fp fp `*.39S3498  1 p 2 79 ]
+[v i2vfprintf@fmt fmt `*.25Cuc  1 p 2 81 ]
+[v i2vfprintf@ap ap `*.39*.39v  1 p 2 83 ]
+"1543
+} 0
+"1007
+[v i2_vfpfcnvrt vfpfcnvrt `(v  1 s 1 i2_vfpfcnvrt ]
+{
+[u S3511 . 8 `o 1 ll 8 0 `uo 1 llu 8 0 `*.2v 1 vp 3 0 `d 1 f 4 0 ]
+"1016
+[v i2vfpfcnvrt@convarg convarg `S3511  1 a 8 69 ]
+"1009
+[v i2vfpfcnvrt@cp cp `*.25uc  1 a 2 77 ]
+[s S3498 _IO_FILE 0 ]
+"1007
+[v i2vfpfcnvrt@fp fp `*.39S3498  1 p 2 59 ]
+[v i2vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 61 ]
+[v i2vfpfcnvrt@ap ap `*.39*.39v  1 p 2 63 ]
+"1517
+} 0
+"894
+[v i2_utoa utoa `(v  1 s 1 i2_utoa ]
+{
+"897
+[v i2utoa@n n `uo  1 a 8 49 ]
+"896
+[v i2utoa@i i `i  1 a 2 57 ]
+[v i2utoa@p p `i  1 a 2 47 ]
+[v i2utoa@w w `i  1 a 2 45 ]
+[s S3498 _IO_FILE 0 ]
+"894
+[v i2utoa@fp fp `*.39S3498  1 p 2 27 ]
+[v i2utoa@d d `uo  1 p 8 29 ]
+"926
+} 0
+"133
+[v i2_pad pad `(v  1 s 1 i2_pad ]
+{
+"135
+[v i2pad@w w `i  1 a 2 25 ]
+[v i2pad@i i `i  1 a 2 23 ]
+[s S3498 _IO_FILE 0 ]
+"133
+[v i2pad@fp fp `*.39S3498  1 p 2 16 ]
+[v i2pad@buf buf `*.39uc  1 p 2 18 ]
+[v i2pad@p p `i  1 p 2 20 ]
+"164
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v i2_fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v i2fputs@i i `i  1 a 2 14 ]
+"10
+[v i2fputs@c c `uc  1 a 1 13 ]
+"8
+[v i2fputs@s s `*.39Cuc  1 p 2 9 ]
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputs@fp fp `*.39S3466  1 p 2 11 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v i2_fputc fputc `(i  1 e 2 0 ]
+{
+[v i2fputc@c c `i  1 p 2 0 ]
+[u S3463 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3466 _IO_FILE 11 `S3463 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputc@fp fp `*.39S3466  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+[v i2_putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+[v i2___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v i2___lomod@counter counter `uc  1 a 1 16 ]
+"9
+[v i2___lomod@dividend dividend `uo  1 p 8 0 ]
+[v i2___lomod@divisor divisor `uo  1 p 8 8 ]
+"27
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+[v i2___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v i2___lodiv@quotient quotient `uo  1 a 8 16 ]
+"13
+[v i2___lodiv@counter counter `uc  1 a 1 24 ]
+"9
+[v i2___lodiv@dividend dividend `uo  1 p 8 0 ]
+[v i2___lodiv@divisor divisor `uo  1 p 8 8 ]
+"32
+} 0
+"60 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\uart.c
+[v i2_UART_puts UART_puts `(v  1 e 1 0 ]
+{
+[v i2UART_puts@ptr ptr `*.39uc  1 p 2 2 ]
+"67
+} 0
+"118
+[v i2_UART_write UART_write `(v  1 e 1 0 ]
+{
+[v i2UART_write@data data `uc  1 a 1 wreg ]
+"119
+[v i2UART_write@i i `uc  1 a 1 1 ]
+"118
+[v i2UART_write@data data `uc  1 a 1 wreg ]
+[v i2UART_write@data data `uc  1 a 1 0 ]
+"126
+} 0
+"885 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"887
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 11 ]
+"885
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 10 ]
+"891
+[v USBEnableEndpoint@ep ep `uc  1 a 1 13 ]
+"909
+} 0
+"1553
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S952 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1555
+[s S961 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S968 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S972 _BD_STAT 1 `uc 1 Val 1 0 `S952 1 . 1 0 `S961 1 . 1 0 `S968 1 . 1 0 ]
+[s S977 . 4 `S972 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S982 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S986 __BDT 4 `S977 1 . 4 0 `S982 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES986  1 a 2 8 ]
+"1553
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1559
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 7 ]
+"1595
+} 0
+"515 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\main.c
+[v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 1 0 ]
+{
+"534
+} 0
+"511
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
+{
+"513
+} 0
+"161 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_function_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+{
+"249
+} 0
+"2551 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\usb_device.c
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+{
+"2580
+} 0
+"1862
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+{
+"1864
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1865
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1957
+} 0
+"1426
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+{
+"1469
+} 0
+"2605
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+{
+"2607
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2680
+} 0
+"1781
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+{
+"1783
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1835
+} 0
+"151 C:\Users\kolel\OneDrive\Documents\MPLAB X USB\USB_HID.X\uart.c
+[v _UART_tx_udr_empty_irq UART_tx_udr_empty_irq `(v  1 e 1 0 ]
+{
+"153
+[v UART_tx_udr_empty_irq@c c `uc  1 a 1 0 ]
+"162
+} 0
+"127
+[v _UART_rx_complete_irq UART_rx_complete_irq `(v  1 e 1 0 ]
+{
+"139
+[v UART_rx_complete_irq@i i `us  1 a 2 3 ]
+"128
+[v UART_rx_complete_irq@c c `uc  1 a 1 2 ]
+"150
+} 0

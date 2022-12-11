@@ -47,6 +47,7 @@ please contact mla_licensing@microchip.com
 #include <stdbool.h>
 #include <stdint.h>
 
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: USB Constants

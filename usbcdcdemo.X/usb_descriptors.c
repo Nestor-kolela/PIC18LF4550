@@ -262,7 +262,7 @@ sizeof(sd000),USB_DESCRIPTOR_STRING,{0x0409}};
 //Manufacturer string descriptor
 const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[18];}sd001={
 sizeof(sd001),USB_DESCRIPTOR_STRING,
-{'D','i','l','s','h','a','n',' ','R',' ','J','a','y','a','k','o','d','y'}
+{'F','e','y','-', 'T','e','c','h',' ','P','t','y',' ','L','t','d'}
 };
 
 //Product string descriptor

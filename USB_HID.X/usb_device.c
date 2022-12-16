@@ -57,6 +57,8 @@ please contact mla_licensing@microchip.com
 #include "uart.h"
 #include <stdbool.h>
 #include <stdio.h>
+
+#define _XTAL_FREQ  48000000UL
 extern void UART_puts(char * ptr); 
 #ifndef uintptr_t
     #if  defined(__XC8__) || defined(__XC16__)
@@ -1044,9 +1046,16 @@ USB_HANDLE USBTransferOnePacket(uint8_t ep,uint8_t dir,uint8_t* data,uint8_t len
     {
         //toggle over the to the next buffer for an IN endpoint
         pBDTEntryIn[ep] = (BDT_ENTRY*) (((uintptr_t)pBDTEntryIn[ep]) ^ USB_NEXT_PING_PONG);
-        char buf[200]; 
-        sprintf(buf, "handle->ADR is %u. handle->ADR ,handle->STAT.Val is %u. Pointer is %u\r\n",handle->ADR ,handle->CNT, &data[0]);
-        UART_puts(buf); 
+        
+        //char buf[200]; 
+        //sprintf(buf, "handle->ADR is %u. handle->ADR ,handle->STAT.Val is %u. Pointer is %u\r\n",1000 ,64, 1000);
+        
+        //sprintf(buf, "handle->ADR is %u. handle->ADR ,handle->STAT.Val is %u. Pointer is %u\r\n",handle->ADR ,handle->CNT, &data[0]);
+        //volatile uint16_t addrOne = handle->ADR; 
+        //volatile uint16_t counter = handle->CNT; 
+        //volatile uint16_t pointer = &data[0]; 
+        //UART_puts(buf); 
+        //__delay_ms(10);
     }
     else
     {

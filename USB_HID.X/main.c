@@ -26,18 +26,22 @@ static void timerStart(void);
 static void timer1_Init(void);
 
 //#define TIMER_RELOAD    50535u // wait 10 milliseconds... 
+
 #define TIMER_RELOAD    64037u
 #define _XTAL_FREQ      48000000
 #define SW_IS_LOW       !PORTAbits.RA4
 #define SW_IS_HIGH      PORTAbits.RA4
 #define PUSH_BUTTON     PORTAbits.RA4
+
 uint8_t pushButtonCount = 0; 
+
+
 enum usbState {
-    INITIALIZATION = 0, USB_RUN, IDLE
+    INITIALIZATION = 0, 
+    USB_RUN, 
+    IDLE
 };
 enum usbState usbTimerState = INITIALIZATION;
-
-
 
 static void InitializeSystem(void);
 void UserInit(void);
@@ -52,7 +56,9 @@ void USBCBSuspend(void);
 /** VARIABLES ******************************************************/
 
 volatile bool runFlag = false;
-
+#define FIXED_ADDRESS_MEMORY true
+#define HID_CUSTOM_OUT_DATA_BUFFER_ADDRESS  __at (0x500)
+#define HID_CUSTOM_IN_DATA_BUFFER_ADDRESS   __at (0x600)
 #if defined(FIXED_ADDRESS_MEMORY)
     #if defined(COMPILER_MPLAB_C18)
         #pragma udata HID_CUSTOM_OUT_DATA_BUFFER = HID_CUSTOM_OUT_DATA_BUFFER_ADDRESS
@@ -180,7 +186,7 @@ void main(void) {
             {
                 for (uint8_t cnt = 0; cnt < 64; cnt++) 
                 {
-                    ToSendDataBuffer[cnt] = '#';
+                    ToSendDataBuffer[cnt] = '@';
                 }
 
                 USBInHandle = HIDTxPacket(HID_EP, (uint8_t*) &ToSendDataBuffer[0], 64);

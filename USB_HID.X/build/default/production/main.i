@@ -7236,20 +7236,16 @@ static void Enable_Interrupt(void);
 static void timerZero_Init(void);
 static void timerStart(void);
 static void timer1_Init(void);
-
-
-
-
-
-
-
+# 36 "main.c"
 uint8_t pushButtonCount = 0;
+
+
 enum usbState {
-    INITIALIZATION = 0, USB_RUN, IDLE
+    INITIALIZATION = 0,
+    USB_RUN,
+    IDLE
 };
 enum usbState usbTimerState = INITIALIZATION;
-
-
 
 static void InitializeSystem(void);
 void UserInit(void);
@@ -7264,9 +7260,13 @@ void USBCBSuspend(void);
 
 
 volatile _Bool runFlag = 0;
-# 69 "main.c"
-    unsigned char ReceivedDataBuffer[64];
-    unsigned char ToSendDataBuffer[64];
+# 71 "main.c"
+        unsigned char ReceivedDataBuffer[64] __attribute__((address(0x500)));
+        unsigned char ToSendDataBuffer[64] __attribute__((address(0x600)));
+
+
+
+
 
 
 volatile void* USBOutHandle;
@@ -7379,7 +7379,7 @@ void main(void) {
             {
                 for (uint8_t cnt = 0; cnt < 64; cnt++)
                 {
-                    ToSendDataBuffer[cnt] = '#';
+                    ToSendDataBuffer[cnt] = '@';
                 }
 
                 USBInHandle = USBTransferOnePacket(1,1,(uint8_t*) &ToSendDataBuffer[0],64);
@@ -7712,7 +7712,7 @@ void USBCBCheckOtherReq(void) {
 }
 
 void USBCBErrorHandler(void) {
-# 534 "main.c"
+# 540 "main.c"
 }
 
 void USBCB_SOF_Handler(void) {

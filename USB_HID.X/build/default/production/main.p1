@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"44 main.c
-[; ;main.c: 44: enum usbState usbTimerState = INITIALIZATION;
+"46 main.c
+[; ;main.c: 46: enum usbState usbTimerState = INITIALIZATION;
 [c E4564 0 1 2 .. ]
 [n E4564 usbState INITIALIZATION USB_RUN IDLE  ]
 [t ~ __interrupt . k ]
@@ -107,26 +107,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 2999: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
 [v _LATAbits `VS141 ~T0 @X0 0 e@3977 ]
 [p mainexit ]
-"19 main.c
-[; ;main.c: 19: static void gpioInitialize(void);
+"21 main.c
+[; ;main.c: 21: static void gpioInitialize(void);
 [v _gpioInitialize `(v ~T0 @X0 0 sf ]
-"24
-[; ;main.c: 24: static void timerZero_Init(void);
-[v _timerZero_Init `(v ~T0 @X0 0 sf ]
-"22
-[; ;main.c: 22: static void Interrupt_Init(void);
-[v _Interrupt_Init `(v ~T0 @X0 0 sf ]
-"25
-[; ;main.c: 25: static void timerStart(void);
-[v _timerStart `(v ~T0 @X0 0 sf ]
 "26
-[; ;main.c: 26: static void timer1_Init(void);
+[; ;main.c: 26: static void timerZero_Init(void);
+[v _timerZero_Init `(v ~T0 @X0 0 sf ]
+"24
+[; ;main.c: 24: static void Interrupt_Init(void);
+[v _Interrupt_Init `(v ~T0 @X0 0 sf ]
+"27
+[; ;main.c: 27: static void timerStart(void);
+[v _timerStart `(v ~T0 @X0 0 sf ]
+"28
+[; ;main.c: 28: static void timer1_Init(void);
 [v _timer1_Init `(v ~T0 @X0 0 sf ]
-"23
-[; ;main.c: 23: static void Enable_Interrupt(void);
+"25
+[; ;main.c: 25: static void Enable_Interrupt(void);
 [v _Enable_Interrupt `(v ~T0 @X0 0 sf ]
-"46
-[; ;main.c: 46: static void InitializeSystem(void);
+"48
+[; ;main.c: 48: static void InitializeSystem(void);
 [v _InitializeSystem `(v ~T0 @X0 0 sf ]
 "21 ./uart.h
 [; ;./uart.h: 21: void UART_Init(uint24_t baudRate);
@@ -165,8 +165,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\builtins.h
 [v __delay `JF397 ~T0 @X0 0 e ]
 [p i __delay ]
-"180 main.c
-[; ;main.c: 180:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
+"182 main.c
+[; ;main.c: 182:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
 [c E105 0 1 2 4 8 16 32 .. ]
 [n E105 . DETACHED_STATE ATTACHED_STATE POWERED_STATE DEFAULT_STATE ADR_PENDING_STATE ADDRESS_STATE CONFIGURED_STATE  ]
 "2050 ./usb_device.h
@@ -367,37 +367,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 "199
 [; ;./usb_device.h: 199: void USBDeviceInit(void);
 [v _USBDeviceInit `(v ~T0 @X0 0 ef ]
-"480 main.c
-[; ;main.c: 480: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
+"481 main.c
+[; ;main.c: 481: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
 [c E46 0 1 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 400 500 600 700 800 900 1000 10000 32767 .. ]
 [n E46 . EVENT_NONE EVENT_DEVICE_STACK_BASE EVENT_HOST_STACK_BASE EVENT_HUB_ATTACH EVENT_STALL EVENT_VBUS_SES_REQUEST EVENT_VBUS_OVERCURRENT EVENT_VBUS_REQUEST_POWER EVENT_VBUS_RELEASE_POWER EVENT_VBUS_POWER_AVAILABLE EVENT_UNSUPPORTED_DEVICE EVENT_CANNOT_ENUMERATE EVENT_CLIENT_INIT_ERROR EVENT_OUT_OF_MEMORY EVENT_UNSPECIFIED_ERROR EVENT_DETACH EVENT_TRANSFER EVENT_SOF EVENT_RESUME EVENT_SUSPEND EVENT_RESET EVENT_DATA_ISOC_READ EVENT_DATA_ISOC_WRITE EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION EVENT_1MS EVENT_ALT_INTERFACE EVENT_HOLD_BEFORE_CONFIGURATION EVENT_GENERIC_BASE EVENT_MSD_BASE EVENT_HID_BASE EVENT_PRINTER_BASE EVENT_CDC_BASE EVENT_CHARGER_BASE EVENT_AUDIO_BASE EVENT_USER_BASE EVENT_BUS_ERROR  ]
-"49
-[; ;main.c: 49: void USBCBStdSetDscHandler(void);
-[v _USBCBStdSetDscHandler `(v ~T0 @X0 0 ef ]
-"50
-[; ;main.c: 50: void USBCBCheckOtherReq(void);
-[v _USBCBCheckOtherReq `(v ~T0 @X0 0 ef ]
-"52
-[; ;main.c: 52: void USBCB_SOF_Handler(void);
-[v _USBCB_SOF_Handler `(v ~T0 @X0 0 ef ]
-"54
-[; ;main.c: 54: void USBCBSuspend(void);
-[v _USBCBSuspend `(v ~T0 @X0 0 ef ]
-"53
-[; ;main.c: 53: void USBCBWakeFromSuspend(void);
-[v _USBCBWakeFromSuspend `(v ~T0 @X0 0 ef ]
 "51
-[; ;main.c: 51: void USBCBErrorHandler(void);
+[; ;main.c: 51: void USBCBStdSetDscHandler(void);
+[v _USBCBStdSetDscHandler `(v ~T0 @X0 0 ef ]
+"52
+[; ;main.c: 52: void USBCBCheckOtherReq(void);
+[v _USBCBCheckOtherReq `(v ~T0 @X0 0 ef ]
+"54
+[; ;main.c: 54: void USBCB_SOF_Handler(void);
+[v _USBCB_SOF_Handler `(v ~T0 @X0 0 ef ]
+"56
+[; ;main.c: 56: void USBCBSuspend(void);
+[v _USBCBSuspend `(v ~T0 @X0 0 ef ]
+"55
+[; ;main.c: 55: void USBCBWakeFromSuspend(void);
+[v _USBCBWakeFromSuspend `(v ~T0 @X0 0 ef ]
+"53
+[; ;main.c: 53: void USBCBErrorHandler(void);
 [v _USBCBErrorHandler `(v ~T0 @X0 0 ef ]
 "8 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"509 main.c
-[; ;main.c: 509:     }
+"510 main.c
+[; ;main.c: 510:     }
 [c E114 1 2 3 4 5 .. ]
 [n E114 . EVENT_CONFIGURED EVENT_SET_DESCRIPTOR EVENT_EP0_REQUEST EVENT_ATTACH EVENT_TRANSFER_TERMINATED  ]
-"510
-[; ;main.c: 510:     return TRUE;
+"511
+[; ;main.c: 511:     return TRUE;
 [c E3631 0 1 .. ]
 [n E3631 _BOOL FALSE TRUE  ]
 "98 ./usb_function_hid.h
@@ -989,116 +989,116 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8894
 [; ;C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h: 8894: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"36 main.c
-[; ;main.c: 36: uint8_t pushButtonCount = 0;
+"38 main.c
+[; ;main.c: 38: uint8_t pushButtonCount = 0;
 [v _pushButtonCount `uc ~T0 @X0 1 e ]
 [i _pushButtonCount
 -> -> 0 `i `uc
 ]
-"44
-[; ;main.c: 44: enum usbState usbTimerState = INITIALIZATION;
+"46
+[; ;main.c: 46: enum usbState usbTimerState = INITIALIZATION;
 [v _usbTimerState `E4564 ~T0 @X0 1 e ]
 [i _usbTimerState
 . `E4564 0
 ]
-"58
-[; ;main.c: 58: volatile _Bool runFlag = 0;
+"60
+[; ;main.c: 60: volatile _Bool runFlag = 0;
 [v _runFlag `Va ~T0 @X0 1 e ]
 [i _runFlag
 -> -> 0 `i `a
 ]
-"71
-[; ;main.c: 71:         unsigned char ReceivedDataBuffer[64] __attribute__((address(0x500)));
+"73
+[; ;main.c: 73:         unsigned char ReceivedDataBuffer[64] __attribute__((address(0x500)));
 [v _ReceivedDataBuffer `uc ~T0 @X0 -> 64 `i e@1280 ]
-"72
-[; ;main.c: 72:         unsigned char ToSendDataBuffer[64] __attribute__((address(0x600)));
+"74
+[; ;main.c: 74:         unsigned char ToSendDataBuffer[64] __attribute__((address(0x600)));
 [v _ToSendDataBuffer `uc ~T0 @X0 -> 64 `i e@1536 ]
-"79
-[; ;main.c: 79: volatile void* USBOutHandle;
+"81
+[; ;main.c: 81: volatile void* USBOutHandle;
 [v _USBOutHandle `*Vv ~T0 @X0 1 e ]
-"80
-[; ;main.c: 80: volatile void* USBInHandle;
+"82
+[; ;main.c: 82: volatile void* USBInHandle;
 [v _USBInHandle `*Vv ~T0 @X0 1 e ]
 [v $root$_myISR_high `(v ~T0 @X0 0 e ]
-"82
-[; ;main.c: 82: void __attribute__((picinterrupt(("high_priority")))) myISR_high(void) {
+"84
+[; ;main.c: 84: void __attribute__((picinterrupt(("high_priority")))) myISR_high(void) {
 [v _myISR_high `(v ~T1 @X0 1 ef ]
 {
 [e :U _myISR_high ]
 [f ]
-"83
-[; ;main.c: 83:     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
+"85
+[; ;main.c: 85:     if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
 [e $ ! && != -> . . _PIE1bits 0 0 `i -> 0 `i != -> . . _PIR1bits 0 0 `i -> 0 `i 454  ]
 {
-"85
-[; ;main.c: 85:         TMR1H = (uint8_t) (64037u >> 8);
-[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
-"86
-[; ;main.c: 86:         TMR1L = (64037u & 0xFF);
-[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
 "87
-[; ;main.c: 87:         PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 87:         TMR1H = (uint8_t) (64037u >> 8);
+[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
 "88
-[; ;main.c: 88:         switch (usbTimerState) {
+[; ;main.c: 88:         TMR1L = (64037u & 0xFF);
+[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
+"89
+[; ;main.c: 89:         PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"90
+[; ;main.c: 90:         switch (usbTimerState) {
 [e $U 456  ]
 {
-"89
-[; ;main.c: 89:             case IDLE:
+"91
+[; ;main.c: 91:             case IDLE:
 [e :U 457 ]
-"90
-[; ;main.c: 90:             {
-{
 "92
-[; ;main.c: 92:             }
+[; ;main.c: 92:             {
+{
+"94
+[; ;main.c: 94:             }
 }
-"93
-[; ;main.c: 93:                 break;
-[e $U 455  ]
 "95
-[; ;main.c: 95:             case INITIALIZATION:
+[; ;main.c: 95:                 break;
+[e $U 455  ]
+"97
+[; ;main.c: 97:             case INITIALIZATION:
 [e :U 458 ]
-"96
-[; ;main.c: 96:             {
-{
 "98
-[; ;main.c: 98:             }
+[; ;main.c: 98:             {
+{
+"100
+[; ;main.c: 100:             }
 }
-"99
-[; ;main.c: 99:                 break;
-[e $U 455  ]
 "101
-[; ;main.c: 101:             case USB_RUN:
+[; ;main.c: 101:                 break;
+[e $U 455  ]
+"103
+[; ;main.c: 103:             case USB_RUN:
 [e :U 459 ]
-"102
-[; ;main.c: 102:             {
-{
 "104
-[; ;main.c: 104:                 USBDeviceTasks();
-[e ( _USBDeviceTasks ..  ]
-"105
-[; ;main.c: 105:                 LATEbits.LATE2 ^= 1;
-[e =^ . . _LATEbits 0 2 -> -> 1 `i `Vuc ]
-"107
-[; ;main.c: 107:             }
-}
-"108
-[; ;main.c: 108:                 break;
-[e $U 455  ]
-"110
-[; ;main.c: 110:             default:
-[e :U 460 ]
-"111
-[; ;main.c: 111:             {
+[; ;main.c: 104:             {
 {
-"113
-[; ;main.c: 113:             }
+"106
+[; ;main.c: 106:                 USBDeviceTasks();
+[e ( _USBDeviceTasks ..  ]
+"107
+[; ;main.c: 107:                 LATEbits.LATE2 ^= 1;
+[e =^ . . _LATEbits 0 2 -> -> 1 `i `Vuc ]
+"109
+[; ;main.c: 109:             }
 }
-"114
-[; ;main.c: 114:                 break;
+"110
+[; ;main.c: 110:                 break;
 [e $U 455  ]
+"112
+[; ;main.c: 112:             default:
+[e :U 460 ]
+"113
+[; ;main.c: 113:             {
+{
 "115
-[; ;main.c: 115:         }
+[; ;main.c: 115:             }
+}
+"116
+[; ;main.c: 116:                 break;
+[e $U 455  ]
+"117
+[; ;main.c: 117:         }
 }
 [e $U 455  ]
 [e :U 456 ]
@@ -1107,652 +1107,652 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> . `E4564 1 `ui 459
  460 ]
 [e :U 455 ]
-"116
-[; ;main.c: 116:     }
+"118
+[; ;main.c: 118:     }
 }
 [e :U 454 ]
-"118
-[; ;main.c: 118:     if (PIE1bits.RC1IE && PIR1bits.RC1IF) {
+"120
+[; ;main.c: 120:     if (PIE1bits.RC1IE && PIR1bits.RC1IF) {
 [e $ ! && != -> . . _PIE1bits 1 2 `i -> 0 `i != -> . . _PIR1bits 1 2 `i -> 0 `i 461  ]
 {
-"119
-[; ;main.c: 119:         UART_rx_complete_irq();
+"121
+[; ;main.c: 121:         UART_rx_complete_irq();
 [e ( _UART_rx_complete_irq ..  ]
-"120
-[; ;main.c: 120:     }
+"122
+[; ;main.c: 122:     }
 }
 [e :U 461 ]
-"121
-[; ;main.c: 121:     if (PIE1bits.TX1IE && PIR1bits.TX1IF) {
+"123
+[; ;main.c: 123:     if (PIE1bits.TX1IE && PIR1bits.TX1IF) {
 [e $ ! && != -> . . _PIE1bits 1 1 `i -> 0 `i != -> . . _PIR1bits 1 1 `i -> 0 `i 462  ]
 {
-"122
-[; ;main.c: 122:         UART_tx_udr_empty_irq();
+"124
+[; ;main.c: 124:         UART_tx_udr_empty_irq();
 [e ( _UART_tx_udr_empty_irq ..  ]
-"123
-[; ;main.c: 123:     }
+"125
+[; ;main.c: 125:     }
 }
 [e :U 462 ]
-"124
-[; ;main.c: 124: }
+"126
+[; ;main.c: 126: }
 [e :UE 453 ]
 }
 [v $root$_myISR_low `(v ~T0 @X0 0 e ]
-"126
-[; ;main.c: 126: void __attribute__((picinterrupt(("low_priority")))) myISR_low(void) {
+"128
+[; ;main.c: 128: void __attribute__((picinterrupt(("low_priority")))) myISR_low(void) {
 [v _myISR_low `(v ~T2 @X0 1 ef ]
 {
 [e :U _myISR_low ]
 [f ]
-"127
-[; ;main.c: 127:     if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+"129
+[; ;main.c: 129:     if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
 [e $ ! && != -> . . _INTCONbits 0 5 `i -> 0 `i != -> . . _INTCONbits 0 2 `i -> 0 `i 464  ]
 {
-"128
-[; ;main.c: 128:         TMR0H = 0xC2;
-[e = _TMR0H -> -> 194 `i `uc ]
-"129
-[; ;main.c: 129:         TMR0L = 0xF7;
-[e = _TMR0L -> -> 247 `i `uc ]
 "130
-[; ;main.c: 130:         LATAbits.LA1 ^= 1;
-[e =^ . . _LATAbits 1 1 -> -> 1 `i `Vuc ]
+[; ;main.c: 130:         TMR0H = 0xC2;
+[e = _TMR0H -> -> 194 `i `uc ]
 "131
-[; ;main.c: 131:         runFlag = 1;
-[e = _runFlag -> -> 1 `i `a ]
+[; ;main.c: 131:         TMR0L = 0xF7;
+[e = _TMR0L -> -> 247 `i `uc ]
 "132
-[; ;main.c: 132:         INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 132:         LATAbits.LA1 ^= 1;
+[e =^ . . _LATAbits 1 1 -> -> 1 `i `Vuc ]
 "133
-[; ;main.c: 133:     }
+[; ;main.c: 133:         runFlag = 1;
+[e = _runFlag -> -> 1 `i `a ]
+"134
+[; ;main.c: 134:         INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"135
+[; ;main.c: 135:     }
 }
 [e :U 464 ]
-"136
-[; ;main.c: 136: }
+"138
+[; ;main.c: 138: }
 [e :UE 463 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"138
-[; ;main.c: 138: void main(void) {
+"140
+[; ;main.c: 140: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"140
-[; ;main.c: 140:     gpioInitialize();
-[e ( _gpioInitialize ..  ]
 "142
-[; ;main.c: 142:     timerZero_Init();
-[e ( _timerZero_Init ..  ]
+[; ;main.c: 142:     gpioInitialize();
+[e ( _gpioInitialize ..  ]
 "144
-[; ;main.c: 144:     Interrupt_Init();
-[e ( _Interrupt_Init ..  ]
+[; ;main.c: 144:     timerZero_Init();
+[e ( _timerZero_Init ..  ]
 "146
-[; ;main.c: 146:     timerStart();
-[e ( _timerStart ..  ]
+[; ;main.c: 146:     Interrupt_Init();
+[e ( _Interrupt_Init ..  ]
 "148
-[; ;main.c: 148:     timer1_Init();
-[e ( _timer1_Init ..  ]
+[; ;main.c: 148:     timerStart();
+[e ( _timerStart ..  ]
 "150
-[; ;main.c: 150:     Enable_Interrupt();
+[; ;main.c: 150:     timer1_Init();
+[e ( _timer1_Init ..  ]
+"152
+[; ;main.c: 152:     Enable_Interrupt();
 [e ( _Enable_Interrupt ..  ]
-"154
-[; ;main.c: 154:     InitializeSystem();
-[e ( _InitializeSystem ..  ]
-"155
-[; ;main.c: 155:     (INTCONbits.GIE = 0);
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
 "156
-[; ;main.c: 156:     usbTimerState = USB_RUN;
-[e = _usbTimerState . `E4564 1 ]
+[; ;main.c: 156:     InitializeSystem();
+[e ( _InitializeSystem ..  ]
 "157
-[; ;main.c: 157:     (INTCONbits.GIE = 1);
+[; ;main.c: 157:     (INTCONbits.GIE = 0);
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+"158
+[; ;main.c: 158:     usbTimerState = USB_RUN;
+[e = _usbTimerState . `E4564 1 ]
+"159
+[; ;main.c: 159:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"160
-[; ;main.c: 160:     UART_Init(115200);
-[e ( _UART_Init (1 -> -> 115200 `l `um ]
 "162
-[; ;main.c: 162:     UART_putrs("Hello World\r\n");
-[e ( _UART_putrs (1 :s 1C ]
+[; ;main.c: 162:     UART_Init(115200);
+[e ( _UART_Init (1 -> -> 115200 `l `um ]
 "164
-[; ;main.c: 164:     while (1)
-[e :U 467 ]
-"165
-[; ;main.c: 165:     {
-{
+[; ;main.c: 164:     UART_putrs("Hello World\r\n");
+[e ( _UART_putrs (1 :s 1C ]
 "166
-[; ;main.c: 166:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
+[; ;main.c: 166:     while (1)
+[e :U 467 ]
 "167
-[; ;main.c: 167:         if(PORTAbits.RA4 == 0)
-[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 469  ]
+[; ;main.c: 167:     {
+{
 "168
-[; ;main.c: 168:         {
-{
+[; ;main.c: 168:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
 "169
-[; ;main.c: 169:             _delay((unsigned long)((20)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+[; ;main.c: 169:         if(PORTAbits.RA4 == 0)
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 469  ]
 "170
-[; ;main.c: 170:             if(PORTAbits.RA4 == 0)
-[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 470  ]
-"171
-[; ;main.c: 171:             {
+[; ;main.c: 170:         {
 {
+"171
+[; ;main.c: 171:             _delay((unsigned long)((20)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "172
-[; ;main.c: 172:                 while(PORTAbits.RA4 == 0);
+[; ;main.c: 172:             if(PORTAbits.RA4 == 0)
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 470  ]
+"173
+[; ;main.c: 173:             {
+{
+"174
+[; ;main.c: 174:                 while(PORTAbits.RA4 == 0);
 [e $U 471  ]
 [e :U 472 ]
 [e :U 471 ]
 [e $ == -> . . _PORTAbits 0 4 `i -> 0 `i 472  ]
 [e :U 473 ]
-"173
-[; ;main.c: 173:                 __asm("reset");
+"175
+[; ;main.c: 175:                 __asm("reset");
 [; <" reset ;# ">
-"174
-[; ;main.c: 174:             }
+"176
+[; ;main.c: 176:             }
 }
 [e :U 470 ]
-"175
-[; ;main.c: 175:         }else
+"177
+[; ;main.c: 177:         }else
 }
 [e $U 474  ]
 [e :U 469 ]
-"176
-[; ;main.c: 176:         {
-{
-"177
-[; ;main.c: 177:             pushButtonCount = 0;
-[e = _pushButtonCount -> -> 0 `i `uc ]
 "178
-[; ;main.c: 178:         }
+[; ;main.c: 178:         {
+{
+"179
+[; ;main.c: 179:             pushButtonCount = 0;
+[e = _pushButtonCount -> -> 0 `i `uc ]
+"180
+[; ;main.c: 180:         }
 }
 [e :U 474 ]
-"180
-[; ;main.c: 180:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
+"182
+[; ;main.c: 182:         if (USBDeviceState < CONFIGURED_STATE || UCONbits.SUSPND == 1)
 [e $ ! || < -> _USBDeviceState `ui -> . `E105 6 `ui == -> . . _UCONbits 0 1 `i -> 1 `i 475  ]
-"181
-[; ;main.c: 181:         {
-{
 "183
-[; ;main.c: 183:         } else {
+[; ;main.c: 183:         {
+{
+"185
+[; ;main.c: 185:         } else {
 }
 [e $U 476  ]
 [e :U 475 ]
 {
-"185
-[; ;main.c: 185:             if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)) && runFlag == 1)
-[e $ ! && ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i == -> _runFlag `i -> 1 `i 477  ]
-"186
-[; ;main.c: 186:             {
-{
 "187
-[; ;main.c: 187:                 for (uint8_t cnt = 0; cnt < 64; cnt++)
+[; ;main.c: 187:             if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)) && runFlag == 1)
+[e $ ! && ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i == -> _runFlag `i -> 1 `i 477  ]
+"188
+[; ;main.c: 188:             {
+{
+"189
+[; ;main.c: 189:                 for (uint8_t cnt = 0; cnt < 64; cnt++)
 {
 [v _cnt `uc ~T0 @X0 1 a ]
 [e = _cnt -> -> 0 `i `uc ]
 [e $ < -> _cnt `i -> 64 `i 478  ]
 [e $U 479  ]
 [e :U 478 ]
-"188
-[; ;main.c: 188:                 {
-{
-"189
-[; ;main.c: 189:                     ToSendDataBuffer[cnt] = '@';
-[e = *U + &U _ToSendDataBuffer * -> _cnt `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `ui `uc ]
 "190
-[; ;main.c: 190:                 }
+[; ;main.c: 190:                 {
+{
+"191
+[; ;main.c: 191:                     ToSendDataBuffer[cnt] = '@';
+[e = *U + &U _ToSendDataBuffer * -> _cnt `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `ui `uc ]
+"192
+[; ;main.c: 192:                 }
 }
 [e ++ _cnt -> -> 1 `i `uc ]
 [e $ < -> _cnt `i -> 64 `i 478  ]
 [e :U 479 ]
 }
-"192
-[; ;main.c: 192:                 USBInHandle = USBTransferOnePacket(1,1,(uint8_t*) &ToSendDataBuffer[0],64);
-[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
 "194
-[; ;main.c: 194:                 if(USBInHandle == 0)
-[e $ ! == _USBInHandle -> -> 0 `i `*Vv 481  ]
-"195
-[; ;main.c: 195:                 {
-{
+[; ;main.c: 194:                 USBInHandle = USBTransferOnePacket(1,1,(uint8_t*) &ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
 "196
-[; ;main.c: 196:                     UART_putrs("It is zero brother...\r\n");
-[e ( _UART_putrs (1 :s 2C ]
+[; ;main.c: 196:                 if(USBInHandle == 0)
+[e $ ! == _USBInHandle -> -> 0 `i `*Vv 481  ]
 "197
-[; ;main.c: 197:                 }
+[; ;main.c: 197:                 {
+{
+"198
+[; ;main.c: 198:                     UART_putrs("It is zero brother...\r\n");
+[e ( _UART_putrs (1 :s 2C ]
+"199
+[; ;main.c: 199:                 }
 }
 [e :U 481 ]
-"198
-[; ;main.c: 198:                 runFlag = 0;
-[e = _runFlag -> -> 0 `i `a ]
-"199
-[; ;main.c: 199:                 UART_putrs("Hello World\r\n");
-[e ( _UART_putrs (1 :s 3C ]
 "200
-[; ;main.c: 200:             }
+[; ;main.c: 200:                 runFlag = 0;
+[e = _runFlag -> -> 0 `i `a ]
+"201
+[; ;main.c: 201:                 UART_putrs("Hello World from PIC18\r\n");
+[e ( _UART_putrs (1 :s 3C ]
+"202
+[; ;main.c: 202:             }
 }
 [e :U 477 ]
-"207
-[; ;main.c: 207:             if (!((USBOutHandle != 0x0000) && ((*(volatile uint8_t*)USBOutHandle & 0x80) != 0x00)))
-[e $ ! ! && != _USBOutHandle -> -> 0 `i `*Vv != & -> *U -> _USBOutHandle `*Vuc `i -> 128 `i -> 0 `i 482  ]
-"208
-[; ;main.c: 208:             {
-{
 "209
-[; ;main.c: 209:                 switch (ReceivedDataBuffer[0])
-[e $U 484  ]
+[; ;main.c: 209:             if (!((USBOutHandle != 0x0000) && ((*(volatile uint8_t*)USBOutHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBOutHandle -> -> 0 `i `*Vv != & -> *U -> _USBOutHandle `*Vuc `i -> 128 `i -> 0 `i 482  ]
 "210
-[; ;main.c: 210:                 {
+[; ;main.c: 210:             {
 {
 "211
-[; ;main.c: 211:                     case 0x80:
-[e :U 485 ]
+[; ;main.c: 211:                 switch (ReceivedDataBuffer[0])
+[e $U 484  ]
 "212
-[; ;main.c: 212:                     {
+[; ;main.c: 212:                 {
 {
 "213
-[; ;main.c: 213:                         UART_putrs("mTouch callibration command");
-[e ( _UART_putrs (1 :s 4C ]
-"215
-[; ;main.c: 215:                     }
-}
-"216
-[; ;main.c: 216:                         break;
-[e $U 483  ]
-"218
-[; ;main.c: 218:                     case 0x20:
-[e :U 486 ]
-"219
-[; ;main.c: 219:                     {
+[; ;main.c: 213:                     case 0x80:
+[e :U 485 ]
+"214
+[; ;main.c: 214:                     {
 {
+"215
+[; ;main.c: 215:                         UART_putrs("mTouch callibration command");
+[e ( _UART_putrs (1 :s 4C ]
+"217
+[; ;main.c: 217:                     }
+}
+"218
+[; ;main.c: 218:                         break;
+[e $U 483  ]
 "220
-[; ;main.c: 220:                         uint16_t potVoltage;
-[v _potVoltage `us ~T0 @X0 1 a ]
+[; ;main.c: 220:                     case 0x20:
+[e :U 486 ]
 "221
-[; ;main.c: 221:                         UART_putrs("Read ADC Voltage");
-[e ( _UART_putrs (1 :s 5C ]
+[; ;main.c: 221:                     {
+{
 "222
-[; ;main.c: 222:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[; ;main.c: 222:                         uint16_t potVoltage;
+[v _potVoltage `us ~T0 @X0 1 a ]
+"223
+[; ;main.c: 223:                         UART_putrs("Read ADC Voltage");
+[e ( _UART_putrs (1 :s 5C ]
+"224
+[; ;main.c: 224:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 487  ]
 {
-"224
-[; ;main.c: 224:                             ADCON0bits.CHS = 4;
+"226
+[; ;main.c: 226:                             ADCON0bits.CHS = 4;
 [e = . . _ADCON0bits 1 2 -> -> 4 `i `uc ]
-"227
-[; ;main.c: 227:                             PIR1bits.ADIF = 0;
+"229
+[; ;main.c: 229:                             PIR1bits.ADIF = 0;
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"230
-[; ;main.c: 230:                             ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
 "232
-[; ;main.c: 232:                             while (!PIR1bits.ADIF);
+[; ;main.c: 232:                             ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
+"234
+[; ;main.c: 234:                             while (!PIR1bits.ADIF);
 [e $U 488  ]
 [e :U 489 ]
 [e :U 488 ]
 [e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 489  ]
 [e :U 490 ]
-"235
-[; ;main.c: 235:                             potVoltage = ADRES;
-[e = _potVoltage _ADRES ]
 "237
-[; ;main.c: 237:                             ToSendDataBuffer[0] = 0x20;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 32 `i `uc ]
-"238
-[; ;main.c: 238:                             ToSendDataBuffer[1] = (BYTE) (potVoltage);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _potVoltage `uc ]
+[; ;main.c: 237:                             potVoltage = ADRES;
+[e = _potVoltage _ADRES ]
 "239
-[; ;main.c: 239:                             ToSendDataBuffer[2] = (BYTE) (potVoltage >> 8);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _potVoltage `ui -> 8 `i `uc ]
+[; ;main.c: 239:                             ToSendDataBuffer[0] = 0x20;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 32 `i `uc ]
+"240
+[; ;main.c: 240:                             ToSendDataBuffer[1] = (BYTE) (potVoltage);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _potVoltage `uc ]
 "241
-[; ;main.c: 241:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 241:                             ToSendDataBuffer[2] = (BYTE) (potVoltage >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _potVoltage `ui -> 8 `i `uc ]
+"243
+[; ;main.c: 243:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"242
-[; ;main.c: 242:                         }
+"244
+[; ;main.c: 244:                         }
 }
 [e :U 487 ]
-"243
-[; ;main.c: 243:                     }
+"245
+[; ;main.c: 245:                     }
 }
-"244
-[; ;main.c: 244:                         break;
-[e $U 483  ]
 "246
-[; ;main.c: 246:                     case 0x30:
-[e :U 491 ]
-"247
-[; ;main.c: 247:                     {
-{
+[; ;main.c: 246:                         break;
+[e $U 483  ]
 "248
-[; ;main.c: 248:                         uint16_t w;
-[v _w `us ~T0 @X0 1 a ]
+[; ;main.c: 248:                     case 0x30:
+[e :U 491 ]
 "249
-[; ;main.c: 249:                         UART_putrs("Read Button Brother 1....");
-[e ( _UART_putrs (1 :s 6C ]
+[; ;main.c: 249:                     {
+{
 "250
-[; ;main.c: 250:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[; ;main.c: 250:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"251
+[; ;main.c: 251:                         UART_putrs("Read Button Brother 1....");
+[e ( _UART_putrs (1 :s 6C ]
+"252
+[; ;main.c: 252:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 492  ]
 {
-"253
-[; ;main.c: 253:                             ToSendDataBuffer[0] = 0x30;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 48 `i `uc ]
-"254
-[; ;main.c: 254:                             ToSendDataBuffer[1] = (BYTE) w;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "255
-[; ;main.c: 255:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+[; ;main.c: 255:                             ToSendDataBuffer[0] = 0x30;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 48 `i `uc ]
+"256
+[; ;main.c: 256:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "257
-[; ;main.c: 257:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 257:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"259
+[; ;main.c: 259:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"258
-[; ;main.c: 258:                         }
+"260
+[; ;main.c: 260:                         }
 }
 [e :U 492 ]
-"259
-[; ;main.c: 259:                     }
+"261
+[; ;main.c: 261:                     }
 }
-"260
-[; ;main.c: 260:                         break;
-[e $U 483  ]
 "262
-[; ;main.c: 262:                     case 0x31:
-[e :U 493 ]
-"263
-[; ;main.c: 263:                     {
-{
+[; ;main.c: 262:                         break;
+[e $U 483  ]
 "264
-[; ;main.c: 264:                         uint16_t w;
-[v _w `us ~T0 @X0 1 a ]
+[; ;main.c: 264:                     case 0x31:
+[e :U 493 ]
 "265
-[; ;main.c: 265:                         UART_putrs("Read Button Brother 2....");
-[e ( _UART_putrs (1 :s 7C ]
+[; ;main.c: 265:                     {
+{
 "266
-[; ;main.c: 266:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[; ;main.c: 266:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"267
+[; ;main.c: 267:                         UART_putrs("Read Button Brother 2....");
+[e ( _UART_putrs (1 :s 7C ]
+"268
+[; ;main.c: 268:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 494  ]
 {
-"269
-[; ;main.c: 269:                             ToSendDataBuffer[0] = 0x31;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 49 `i `uc ]
-"270
-[; ;main.c: 270:                             ToSendDataBuffer[1] = (BYTE) w;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "271
-[; ;main.c: 271:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+[; ;main.c: 271:                             ToSendDataBuffer[0] = 0x31;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 49 `i `uc ]
+"272
+[; ;main.c: 272:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "273
-[; ;main.c: 273:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 273:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"275
+[; ;main.c: 275:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"274
-[; ;main.c: 274:                         }
+"276
+[; ;main.c: 276:                         }
 }
 [e :U 494 ]
-"275
-[; ;main.c: 275:                     }
+"277
+[; ;main.c: 277:                     }
 }
-"276
-[; ;main.c: 276:                         break;
-[e $U 483  ]
 "278
-[; ;main.c: 278:                     case 0x32:
-[e :U 495 ]
-"279
-[; ;main.c: 279:                     {
-{
+[; ;main.c: 278:                         break;
+[e $U 483  ]
 "280
-[; ;main.c: 280:                         uint16_t w;
-[v _w `us ~T0 @X0 1 a ]
+[; ;main.c: 280:                     case 0x32:
+[e :U 495 ]
 "281
-[; ;main.c: 281:                         UART_putrs("Read Button Brother 3....");
-[e ( _UART_putrs (1 :s 8C ]
-"282
-[; ;main.c: 282:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
-[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 496  ]
-"283
-[; ;main.c: 283:                         {
+[; ;main.c: 281:                     {
 {
-"286
-[; ;main.c: 286:                             ToSendDataBuffer[0] = 0x32;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 50 `i `uc ]
-"287
-[; ;main.c: 287:                             ToSendDataBuffer[1] = (BYTE) w;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
+"282
+[; ;main.c: 282:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"283
+[; ;main.c: 283:                         UART_putrs("Read Button Brother 3....");
+[e ( _UART_putrs (1 :s 8C ]
+"284
+[; ;main.c: 284:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 496  ]
+"285
+[; ;main.c: 285:                         {
+{
 "288
-[; ;main.c: 288:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+[; ;main.c: 288:                             ToSendDataBuffer[0] = 0x32;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 50 `i `uc ]
+"289
+[; ;main.c: 289:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "290
-[; ;main.c: 290:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 290:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"292
+[; ;main.c: 292:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"291
-[; ;main.c: 291:                         }
+"293
+[; ;main.c: 293:                         }
 }
 [e :U 496 ]
-"292
-[; ;main.c: 292:                     }
+"294
+[; ;main.c: 294:                     }
 }
-"293
-[; ;main.c: 293:                         break;
-[e $U 483  ]
 "295
-[; ;main.c: 295:                     case 0x33:
-[e :U 497 ]
-"296
-[; ;main.c: 296:                     {
-{
+[; ;main.c: 295:                         break;
+[e $U 483  ]
 "297
-[; ;main.c: 297:                         uint16_t w;
-[v _w `us ~T0 @X0 1 a ]
+[; ;main.c: 297:                     case 0x33:
+[e :U 497 ]
 "298
-[; ;main.c: 298:                         UART_putrs("Read Button Brother 4....");
-[e ( _UART_putrs (1 :s 9C ]
+[; ;main.c: 298:                     {
+{
 "299
-[; ;main.c: 299:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+[; ;main.c: 299:                         uint16_t w;
+[v _w `us ~T0 @X0 1 a ]
+"300
+[; ;main.c: 300:                         UART_putrs("Read Button Brother 4....");
+[e ( _UART_putrs (1 :s 9C ]
+"301
+[; ;main.c: 301:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 498  ]
 {
-"302
-[; ;main.c: 302:                             ToSendDataBuffer[0] = 0x33;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 51 `i `uc ]
-"303
-[; ;main.c: 303:                             ToSendDataBuffer[1] = (BYTE) w;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "304
-[; ;main.c: 304:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+[; ;main.c: 304:                             ToSendDataBuffer[0] = 0x33;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 51 `i `uc ]
+"305
+[; ;main.c: 305:                             ToSendDataBuffer[1] = (BYTE) w;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> _w `uc ]
 "306
-[; ;main.c: 306:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 306:                             ToSendDataBuffer[2] = (BYTE) (w >> 8);
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> >> -> _w `ui -> 8 `i `uc ]
+"308
+[; ;main.c: 308:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"307
-[; ;main.c: 307:                         }
+"309
+[; ;main.c: 309:                         }
 }
 [e :U 498 ]
-"308
-[; ;main.c: 308:                     }
+"310
+[; ;main.c: 310:                     }
 }
-"309
-[; ;main.c: 309:                         break;
-[e $U 483  ]
 "311
-[; ;main.c: 311:                     case 0x40:
+[; ;main.c: 311:                         break;
+[e $U 483  ]
+"313
+[; ;main.c: 313:                     case 0x40:
 [e :U 499 ]
-"312
-[; ;main.c: 312:                     {
+"314
+[; ;main.c: 314:                     {
 {
-"315
-[; ;main.c: 315:                         UART_putrs("BMA150_REG regX_MSB...");
+"317
+[; ;main.c: 317:                         UART_putrs("BMA150_REG regX_MSB...");
 [e ( _UART_putrs (1 :s 10C ]
-"316
-[; ;main.c: 316:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+"318
+[; ;main.c: 318:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 500  ]
 {
-"318
-[; ;main.c: 318:                             ToSendDataBuffer[0] = 0x40;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc ]
-"319
-[; ;main.c: 319:                             ToSendDataBuffer[1] = (BYTE) 0;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
 "320
-[; ;main.c: 320:                             ToSendDataBuffer[2] = (BYTE) 1;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+[; ;main.c: 320:                             ToSendDataBuffer[0] = 0x40;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc ]
+"321
+[; ;main.c: 321:                             ToSendDataBuffer[1] = (BYTE) 0;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
 "322
-[; ;main.c: 322:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 322:                             ToSendDataBuffer[2] = (BYTE) 1;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+"324
+[; ;main.c: 324:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"323
-[; ;main.c: 323:                         }
+"325
+[; ;main.c: 325:                         }
 }
 [e :U 500 ]
-"324
-[; ;main.c: 324:                     }
+"326
+[; ;main.c: 326:                     }
 }
-"325
-[; ;main.c: 325:                         break;
-[e $U 483  ]
 "327
-[; ;main.c: 327:                     case 0x41:
+[; ;main.c: 327:                         break;
+[e $U 483  ]
+"329
+[; ;main.c: 329:                     case 0x41:
 [e :U 501 ]
-"328
-[; ;main.c: 328:                     {
+"330
+[; ;main.c: 330:                     {
 {
-"331
-[; ;main.c: 331:                         UART_putrs("BMA150_REG regY_MSB...");
+"333
+[; ;main.c: 333:                         UART_putrs("BMA150_REG regY_MSB...");
 [e ( _UART_putrs (1 :s 11C ]
-"332
-[; ;main.c: 332:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+"334
+[; ;main.c: 334:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 502  ]
 {
-"336
-[; ;main.c: 336:                             ToSendDataBuffer[0] = 0x41;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 65 `i `uc ]
-"337
-[; ;main.c: 337:                             ToSendDataBuffer[1] = (BYTE) 0;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
 "338
-[; ;main.c: 338:                             ToSendDataBuffer[2] = (BYTE) 1;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+[; ;main.c: 338:                             ToSendDataBuffer[0] = 0x41;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 65 `i `uc ]
+"339
+[; ;main.c: 339:                             ToSendDataBuffer[1] = (BYTE) 0;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 0 `i `uc ]
 "340
-[; ;main.c: 340:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[; ;main.c: 340:                             ToSendDataBuffer[2] = (BYTE) 1;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 1 `i `uc ]
+"342
+[; ;main.c: 342:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
 [e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
-"341
-[; ;main.c: 341:                         }
+"343
+[; ;main.c: 343:                         }
 }
 [e :U 502 ]
-"342
-[; ;main.c: 342:                     }
+"344
+[; ;main.c: 344:                     }
 }
-"343
-[; ;main.c: 343:                         break;
-[e $U 483  ]
 "345
-[; ;main.c: 345:                     case 0x42:
+[; ;main.c: 345:                         break;
+[e $U 483  ]
+"347
+[; ;main.c: 347:                     case 0x42:
 [e :U 503 ]
-"346
-[; ;main.c: 346:                     {
+"348
+[; ;main.c: 348:                     {
 {
-"349
-[; ;main.c: 349:                         UART_putrs("BMA150_REG regZ_MSB...");
+"351
+[; ;main.c: 351:                         UART_putrs("BMA150_REG regZ_MSB...");
 [e ( _UART_putrs (1 :s 12C ]
-"350
-[; ;main.c: 350:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
+"352
+[; ;main.c: 352:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00))) {
 [e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 504  ]
 {
-"354
-[; ;main.c: 354:                             ToSendDataBuffer[0] = 0x42;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 66 `i `uc ]
-"355
-[; ;main.c: 355:                             ToSendDataBuffer[1] = (BYTE) 6;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 6 `i `uc ]
 "356
-[; ;main.c: 356:                             ToSendDataBuffer[2] = (BYTE) 8;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 8 `i `uc ]
+[; ;main.c: 356:                             ToSendDataBuffer[0] = 0x42;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 66 `i `uc ]
+"357
+[; ;main.c: 357:                             ToSendDataBuffer[1] = (BYTE) 6;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 6 `i `uc ]
 "358
-[; ;main.c: 358:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
-[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+[; ;main.c: 358:                             ToSendDataBuffer[2] = (BYTE) 8;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 8 `i `uc ]
 "359
-[; ;main.c: 359:                         }
+[; ;main.c: 359:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"360
+[; ;main.c: 360:                         }
 }
 [e :U 504 ]
-"360
-[; ;main.c: 360:                     }
-}
 "361
-[; ;main.c: 361:                         break;
+[; ;main.c: 361:                     }
+}
+"362
+[; ;main.c: 362:                         break;
 [e $U 483  ]
-"363
-[; ;main.c: 363:                     case 0x43:
-[e :U 505 ]
 "364
-[; ;main.c: 364:                     {
+[; ;main.c: 364:                     case 0x43:
+[e :U 505 ]
+"365
+[; ;main.c: 365:                     {
 {
-"366
-[; ;main.c: 366:                         UART_putrs("BMA150_REG regT_MSB...");
-[e ( _UART_putrs (1 :s 13C ]
 "367
-[; ;main.c: 367:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
-[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 506  ]
+[; ;main.c: 367:                         UART_putrs("BMA150_REG regT_MSB...");
+[e ( _UART_putrs (1 :s 13C ]
 "368
-[; ;main.c: 368:                         {
+[; ;main.c: 368:                         if (!((USBInHandle != 0x0000) && ((*(volatile uint8_t*)USBInHandle & 0x80) != 0x00)))
+[e $ ! ! && != _USBInHandle -> -> 0 `i `*Vv != & -> *U -> _USBInHandle `*Vuc `i -> 128 `i -> 0 `i 506  ]
+"369
+[; ;main.c: 369:                         {
 {
-"371
-[; ;main.c: 371:                             ToSendDataBuffer[0] = 0x43;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 67 `i `uc ]
 "372
-[; ;main.c: 372:                             ToSendDataBuffer[1] = (BYTE) 5;
-[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 5 `i `uc ]
+[; ;main.c: 372:                             ToSendDataBuffer[0] = 0x43;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 67 `i `uc ]
 "373
-[; ;main.c: 373:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
-[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+[; ;main.c: 373:                             ToSendDataBuffer[1] = (BYTE) 5;
+[e = *U + &U _ToSendDataBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 5 `i `uc ]
 "374
-[; ;main.c: 374:                         }
+[; ;main.c: 374:                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
+[e = _USBInHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc &U *U + &U _ToSendDataBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _ToSendDataBuffer `ui `ux -> -> 64 `i `uc `*Vv ]
+"375
+[; ;main.c: 375:                         }
 }
 [e :U 506 ]
-"375
-[; ;main.c: 375:                     }
-}
 "376
-[; ;main.c: 376:                         break;
+[; ;main.c: 376:                     }
+}
+"377
+[; ;main.c: 377:                         break;
 [e $U 483  ]
-"378
-[; ;main.c: 378:                     default:
-[e :U 507 ]
 "379
-[; ;main.c: 379:                     {
-{
+[; ;main.c: 379:                     default:
+[e :U 507 ]
 "380
-[; ;main.c: 380:                         UART_putrs("Invalid...\r\n");
-[e ( _UART_putrs (1 :s 14C ]
+[; ;main.c: 380:                     {
+{
 "381
-[; ;main.c: 381:                         char temp[100];
-[v _temp `uc ~T0 @X0 -> 100 `i a ]
+[; ;main.c: 381:                         UART_putrs("Invalid...\r\n");
+[e ( _UART_putrs (1 :s 14C ]
 "382
-[; ;main.c: 382:                         uint8_t cnt;
-[v _cnt `uc ~T0 @X0 1 a ]
+[; ;main.c: 382:                         char temp[100];
+[v _temp `uc ~T0 @X0 -> 100 `i a ]
 "383
-[; ;main.c: 383:                         for (cnt = 0; cnt < 64; cnt++) {
+[; ;main.c: 383:                         uint8_t cnt;
+[v _cnt `uc ~T0 @X0 1 a ]
+"384
+[; ;main.c: 384:                         for (cnt = 0; cnt < 64; cnt++) {
 {
 [e = _cnt -> -> 0 `i `uc ]
 [e $ < -> _cnt `i -> 64 `i 508  ]
 [e $U 509  ]
 [e :U 508 ]
 {
-"385
-[; ;main.c: 385:                             sprintf(temp, "cnt %u is %u\r\n", cnt, ReceivedDataBuffer[cnt]);
-[e ( _sprintf (1 , , (. , &U _temp :s 15C -> _cnt `i -> *U + &U _ReceivedDataBuffer * -> _cnt `ux -> -> # *U &U _ReceivedDataBuffer `ui `ux `i ]
 "386
-[; ;main.c: 386:                             UART_puts(temp);
-[e ( _UART_puts (1 &U _temp ]
+[; ;main.c: 386:                             sprintf(temp, "cnt %u is %u\r\n", cnt, ReceivedDataBuffer[cnt]);
+[e ( _sprintf (1 , , (. , &U _temp :s 15C -> _cnt `i -> *U + &U _ReceivedDataBuffer * -> _cnt `ux -> -> # *U &U _ReceivedDataBuffer `ui `ux `i ]
 "387
-[; ;main.c: 387:                         }
+[; ;main.c: 387:                             UART_puts(temp);
+[e ( _UART_puts (1 &U _temp ]
+"388
+[; ;main.c: 388:                         }
 }
 [e ++ _cnt -> -> 1 `i `uc ]
 [e $ < -> _cnt `i -> 64 `i 508  ]
 [e :U 509 ]
 }
-"389
-[; ;main.c: 389:                     }
-}
 "390
-[; ;main.c: 390:                     break;
+[; ;main.c: 390:                     }
+}
+"391
+[; ;main.c: 391:                     break;
 [e $U 483  ]
-"392
-[; ;main.c: 392:                 }
+"393
+[; ;main.c: 393:                 }
 }
 [e $U 483  ]
 [e :U 484 ]
@@ -1768,243 +1768,243 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 67 `i 505
  507 ]
 [e :U 483 ]
-"394
-[; ;main.c: 394:                 USBOutHandle = USBTransferOnePacket(1,0,(BYTE*) & ReceivedDataBuffer,64);
-[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
 "395
-[; ;main.c: 395:             }
+[; ;main.c: 395:                 USBOutHandle = USBTransferOnePacket(1,0,(BYTE*) & ReceivedDataBuffer,64);
+[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
+"396
+[; ;main.c: 396:             }
 }
 [e :U 482 ]
-"396
-[; ;main.c: 396:         }
+"397
+[; ;main.c: 397:         }
 }
 [e :U 476 ]
-"397
-[; ;main.c: 397:     }
+"398
+[; ;main.c: 398:     }
 }
 [e :U 466 ]
 [e $U 467  ]
 [e :U 468 ]
-"399
-[; ;main.c: 399:     return;
-[e $UE 465  ]
 "400
-[; ;main.c: 400: }
+[; ;main.c: 400:     return;
+[e $UE 465  ]
+"401
+[; ;main.c: 401: }
 [e :UE 465 ]
 }
-"402
-[; ;main.c: 402: static void gpioInitialize(void) {
+"403
+[; ;main.c: 403: static void gpioInitialize(void) {
 [v _gpioInitialize `(v ~T0 @X0 1 sf ]
 {
 [e :U _gpioInitialize ]
 [f ]
-"403
-[; ;main.c: 403:     ADCON1 |= 0x0F;
-[e =| _ADCON1 -> -> 15 `i `Vuc ]
 "404
-[; ;main.c: 404:     TRISAbits.RA1 = 0;
-[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+[; ;main.c: 404:     ADCON1 |= 0x0F;
+[e =| _ADCON1 -> -> 15 `i `Vuc ]
 "405
-[; ;main.c: 405:     LATAbits.LA1 = 0;
+[; ;main.c: 405:     TRISAbits.RA1 = 0;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+"406
+[; ;main.c: 406:     LATAbits.LA1 = 0;
 [e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-"407
-[; ;main.c: 407:     TRISAbits.RA4 = 1;
-[e = . . _TRISAbits 1 4 -> -> 1 `i `uc ]
 "408
-[; ;main.c: 408:     TRISEbits.TRISE2 = 0;
+[; ;main.c: 408:     TRISAbits.RA4 = 1;
+[e = . . _TRISAbits 1 4 -> -> 1 `i `uc ]
+"409
+[; ;main.c: 409:     TRISEbits.TRISE2 = 0;
 [e = . . _TRISEbits 0 2 -> -> 0 `i `uc ]
-"411
-[; ;main.c: 411: }
+"412
+[; ;main.c: 412: }
 [e :UE 511 ]
 }
-"413
-[; ;main.c: 413: static void Interrupt_Init(void) {
+"414
+[; ;main.c: 414: static void Interrupt_Init(void) {
 [v _Interrupt_Init `(v ~T0 @X0 1 sf ]
 {
 [e :U _Interrupt_Init ]
 [f ]
-"414
-[; ;main.c: 414:     INTCONbits.GIE = 1;
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "415
-[; ;main.c: 415:     INTCONbits.GIEH = 1;
-[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
+[; ;main.c: 415:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "416
-[; ;main.c: 416:     INTCONbits.GIEL = 1;
-[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
+[; ;main.c: 416:     INTCONbits.GIEH = 1;
+[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
 "417
-[; ;main.c: 417:     INTCONbits.PEIE = 1;
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 417:     INTCONbits.GIEL = 1;
+[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
 "418
-[; ;main.c: 418:     INTCONbits.PEIE_GIEL = 1;
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;main.c: 418:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
 "419
-[; ;main.c: 419:     RCONbits.IPEN = 1;
-[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+[; ;main.c: 419:     INTCONbits.PEIE_GIEL = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
 "420
-[; ;main.c: 420: }
+[; ;main.c: 420:     RCONbits.IPEN = 1;
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+"421
+[; ;main.c: 421: }
 [e :UE 512 ]
 }
-"422
-[; ;main.c: 422: static void timerZero_Init(void) {
+"423
+[; ;main.c: 423: static void timerZero_Init(void) {
 [v _timerZero_Init `(v ~T0 @X0 1 sf ]
 {
 [e :U _timerZero_Init ]
 [f ]
-"423
-[; ;main.c: 423:     TMR0H = 0xC2;
-[e = _TMR0H -> -> 194 `i `uc ]
 "424
-[; ;main.c: 424:     TMR0L = 0xF7;
-[e = _TMR0L -> -> 247 `i `uc ]
+[; ;main.c: 424:     TMR0H = 0xC2;
+[e = _TMR0H -> -> 194 `i `uc ]
 "425
-[; ;main.c: 425:     T0CON = 0b10000111;
-[e = _T0CON -> -> 135 `i `uc ]
+[; ;main.c: 425:     TMR0L = 0xF7;
+[e = _TMR0L -> -> 247 `i `uc ]
 "426
-[; ;main.c: 426:     INTCON2bits.TMR0IP = 0;
-[e = . . _INTCON2bits 1 2 -> -> 0 `i `uc ]
+[; ;main.c: 426:     T0CON = 0b10000111;
+[e = _T0CON -> -> 135 `i `uc ]
 "427
-[; ;main.c: 427:     INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 427:     INTCON2bits.TMR0IP = 0;
+[e = . . _INTCON2bits 1 2 -> -> 0 `i `uc ]
 "428
-[; ;main.c: 428:     INTCONbits.TMR0IE = 1;
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 428:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "429
-[; ;main.c: 429: }
+[; ;main.c: 429:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"430
+[; ;main.c: 430: }
 [e :UE 513 ]
 }
-"431
-[; ;main.c: 431: static void timer1_Init(void) {
+"432
+[; ;main.c: 432: static void timer1_Init(void) {
 [v _timer1_Init `(v ~T0 @X0 1 sf ]
 {
 [e :U _timer1_Init ]
 [f ]
-"432
-[; ;main.c: 432:     TMR1H = (uint8_t) (64037u >> 8);
-[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
 "433
-[; ;main.c: 433:     TMR1L = (64037u & 0xFF);
-[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
+[; ;main.c: 433:     TMR1H = (uint8_t) (64037u >> 8);
+[e = _TMR1H -> >> -> 64037 `ui -> 8 `i `uc ]
 "434
-[; ;main.c: 434:     T1CON = 0b10110001;
+[; ;main.c: 434:     TMR1L = (64037u & 0xFF);
+[e = _TMR1L -> & -> 64037 `ui -> -> 255 `i `ui `uc ]
+"435
+[; ;main.c: 435:     T1CON = 0b10110001;
 [e = _T1CON -> -> 177 `i `uc ]
-"436
-[; ;main.c: 436:     IPR1bits.TMR1IP = 1;
-[e = . . _IPR1bits 0 0 -> -> 1 `i `uc ]
 "437
-[; ;main.c: 437:     PIR1bits.TMR1IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 437:     IPR1bits.TMR1IP = 1;
+[e = . . _IPR1bits 0 0 -> -> 1 `i `uc ]
 "438
-[; ;main.c: 438:     PIE1bits.TMR1IE = 1;
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 438:     PIR1bits.TMR1IF = 0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 "439
-[; ;main.c: 439: }
+[; ;main.c: 439:     PIE1bits.TMR1IE = 1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"440
+[; ;main.c: 440: }
 [e :UE 514 ]
 }
-"441
-[; ;main.c: 441: static void Enable_Interrupt(void) {
+"442
+[; ;main.c: 442: static void Enable_Interrupt(void) {
 [v _Enable_Interrupt `(v ~T0 @X0 1 sf ]
 {
 [e :U _Enable_Interrupt ]
 [f ]
-"442
-[; ;main.c: 442:     INTCONbits.GIE = 1;
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "443
-[; ;main.c: 443:     INTCONbits.PEIE = 1;
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 443:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "444
-[; ;main.c: 444: }
+[; ;main.c: 444:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"445
+[; ;main.c: 445: }
 [e :UE 515 ]
 }
-"446
-[; ;main.c: 446: static void timerStart(void) {
+"447
+[; ;main.c: 447: static void timerStart(void) {
 [v _timerStart `(v ~T0 @X0 1 sf ]
 {
 [e :U _timerStart ]
 [f ]
-"447
-[; ;main.c: 447:     INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "448
-[; ;main.c: 448:     T0CONbits.TMR0ON = 1;
-[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 448:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "449
-[; ;main.c: 449:     INTCONbits.TMR0IE = 1;
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 449:     T0CONbits.TMR0ON = 1;
+[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
 "450
-[; ;main.c: 450: }
+[; ;main.c: 450:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"451
+[; ;main.c: 451: }
 [e :UE 516 ]
 }
-"452
-[; ;main.c: 452: static void timerStop(void) {
+"453
+[; ;main.c: 453: static void timerStop(void) {
 [v _timerStop `(v ~T0 @X0 1 sf ]
 {
 [e :U _timerStop ]
 [f ]
-"453
-[; ;main.c: 453:     T0CONbits.TMR0ON = 0;
-[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
 "454
-[; ;main.c: 454:     INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 454:     T0CONbits.TMR0ON = 0;
+[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
 "455
-[; ;main.c: 455:     INTCONbits.TMR0IE = 0;
-[e = . . _INTCONbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 455:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "456
-[; ;main.c: 456: }
+[; ;main.c: 456:     INTCONbits.TMR0IE = 0;
+[e = . . _INTCONbits 0 5 -> -> 0 `i `uc ]
+"457
+[; ;main.c: 457: }
 [e :UE 517 ]
 }
-"458
-[; ;main.c: 458: void USBCBInitEP(void) {
+"459
+[; ;main.c: 459: void USBCBInitEP(void) {
 [v _USBCBInitEP `(v ~T0 @X0 1 ef ]
 {
 [e :U _USBCBInitEP ]
 [f ]
-"460
-[; ;main.c: 460:     USBEnableEndpoint(1, 0x02 | 0x04 | 0x10 | 0x08);
+"461
+[; ;main.c: 461:     USBEnableEndpoint(1, 0x02 | 0x04 | 0x10 | 0x08);
 [e ( _USBEnableEndpoint (2 , -> -> 1 `i `uc -> | | | -> 2 `i -> 4 `i -> 16 `i -> 8 `i `uc ]
-"462
-[; ;main.c: 462:     USBOutHandle = (volatile void*) USBTransferOnePacket(1,0,(uint8_t *) & ReceivedDataBuffer,64);
-[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
 "463
-[; ;main.c: 463: }
+[; ;main.c: 463:     USBOutHandle = (volatile void*) USBTransferOnePacket(1,0,(uint8_t *) & ReceivedDataBuffer,64);
+[e = _USBOutHandle -> ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc -> &U _ReceivedDataBuffer `*uc -> -> 64 `i `uc `*Vv ]
+"464
+[; ;main.c: 464: }
 [e :UE 518 ]
 }
-"465
-[; ;main.c: 465: void UserInit(void) {
+"466
+[; ;main.c: 466: void UserInit(void) {
 [v _UserInit `(v ~T0 @X0 1 ef ]
 {
 [e :U _UserInit ]
 [f ]
-"468
-[; ;main.c: 468:     USBOutHandle = 0;
-[e = _USBOutHandle -> -> 0 `i `*Vv ]
 "469
-[; ;main.c: 469:     USBInHandle = 0;
-[e = _USBInHandle -> -> 0 `i `*Vv ]
+[; ;main.c: 469:     USBOutHandle = 0;
+[e = _USBOutHandle -> -> 0 `i `*Vv ]
 "470
-[; ;main.c: 470: }
+[; ;main.c: 470:     USBInHandle = 0;
+[e = _USBInHandle -> -> 0 `i `*Vv ]
+"471
+[; ;main.c: 471: }
 [e :UE 519 ]
 }
-"472
-[; ;main.c: 472: static void InitializeSystem(void) {
+"473
+[; ;main.c: 473: static void InitializeSystem(void) {
 [v _InitializeSystem `(v ~T0 @X0 1 sf ]
 {
 [e :U _InitializeSystem ]
 [f ]
-"474
-[; ;main.c: 474:     USBDeviceInit();
+"475
+[; ;main.c: 475:     USBDeviceInit();
 [e ( _USBDeviceInit ..  ]
-"476
-[; ;main.c: 476:     UserInit();
+"477
+[; ;main.c: 477:     UserInit();
 [e ( _UserInit ..  ]
-"478
-[; ;main.c: 478: }
+"479
+[; ;main.c: 479: }
 [e :UE 520 ]
 }
-"480
-[; ;main.c: 480: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
+"481
+[; ;main.c: 481: _Bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size) {
 [v _USER_USB_CALLBACK_EVENT_HANDLER `(a ~T0 @X0 1 ef3`E46`*v`us ]
 {
 [e :U _USER_USB_CALLBACK_EVENT_HANDLER ]
@@ -2012,90 +2012,90 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _pdata `*v ~T0 @X0 1 r2 ]
 [v _size `us ~T0 @X0 1 r3 ]
 [f ]
-"481
-[; ;main.c: 481:     switch (event) {
+"482
+[; ;main.c: 482:     switch (event) {
 [e $U 523  ]
 {
-"482
-[; ;main.c: 482:         case EVENT_CONFIGURED:
-[e :U 524 ]
 "483
-[; ;main.c: 483:             USBCBInitEP();
-[e ( _USBCBInitEP ..  ]
+[; ;main.c: 483:         case EVENT_CONFIGURED:
+[e :U 524 ]
 "484
-[; ;main.c: 484:             break;
-[e $U 522  ]
+[; ;main.c: 484:             USBCBInitEP();
+[e ( _USBCBInitEP ..  ]
 "485
-[; ;main.c: 485:         case EVENT_SET_DESCRIPTOR:
-[e :U 525 ]
+[; ;main.c: 485:             break;
+[e $U 522  ]
 "486
-[; ;main.c: 486:             USBCBStdSetDscHandler();
-[e ( _USBCBStdSetDscHandler ..  ]
+[; ;main.c: 486:         case EVENT_SET_DESCRIPTOR:
+[e :U 525 ]
 "487
-[; ;main.c: 487:             break;
-[e $U 522  ]
+[; ;main.c: 487:             USBCBStdSetDscHandler();
+[e ( _USBCBStdSetDscHandler ..  ]
 "488
-[; ;main.c: 488:         case EVENT_EP0_REQUEST:
-[e :U 526 ]
+[; ;main.c: 488:             break;
+[e $U 522  ]
 "489
-[; ;main.c: 489:             USBCBCheckOtherReq();
-[e ( _USBCBCheckOtherReq ..  ]
+[; ;main.c: 489:         case EVENT_EP0_REQUEST:
+[e :U 526 ]
 "490
-[; ;main.c: 490:             break;
-[e $U 522  ]
+[; ;main.c: 490:             USBCBCheckOtherReq();
+[e ( _USBCBCheckOtherReq ..  ]
 "491
-[; ;main.c: 491:         case EVENT_SOF:
-[e :U 527 ]
+[; ;main.c: 491:             break;
+[e $U 522  ]
 "492
-[; ;main.c: 492:             USBCB_SOF_Handler();
-[e ( _USBCB_SOF_Handler ..  ]
+[; ;main.c: 492:         case EVENT_SOF:
+[e :U 527 ]
 "493
-[; ;main.c: 493:             break;
-[e $U 522  ]
+[; ;main.c: 493:             USBCB_SOF_Handler();
+[e ( _USBCB_SOF_Handler ..  ]
 "494
-[; ;main.c: 494:         case EVENT_SUSPEND:
-[e :U 528 ]
+[; ;main.c: 494:             break;
+[e $U 522  ]
 "495
-[; ;main.c: 495:             USBCBSuspend();
-[e ( _USBCBSuspend ..  ]
+[; ;main.c: 495:         case EVENT_SUSPEND:
+[e :U 528 ]
 "496
-[; ;main.c: 496:             break;
-[e $U 522  ]
+[; ;main.c: 496:             USBCBSuspend();
+[e ( _USBCBSuspend ..  ]
 "497
-[; ;main.c: 497:         case EVENT_RESUME:
-[e :U 529 ]
+[; ;main.c: 497:             break;
+[e $U 522  ]
 "498
-[; ;main.c: 498:             USBCBWakeFromSuspend();
-[e ( _USBCBWakeFromSuspend ..  ]
+[; ;main.c: 498:         case EVENT_RESUME:
+[e :U 529 ]
 "499
-[; ;main.c: 499:             break;
-[e $U 522  ]
+[; ;main.c: 499:             USBCBWakeFromSuspend();
+[e ( _USBCBWakeFromSuspend ..  ]
 "500
-[; ;main.c: 500:         case EVENT_BUS_ERROR:
-[e :U 530 ]
+[; ;main.c: 500:             break;
+[e $U 522  ]
 "501
-[; ;main.c: 501:             USBCBErrorHandler();
-[e ( _USBCBErrorHandler ..  ]
+[; ;main.c: 501:         case EVENT_BUS_ERROR:
+[e :U 530 ]
 "502
-[; ;main.c: 502:             break;
-[e $U 522  ]
+[; ;main.c: 502:             USBCBErrorHandler();
+[e ( _USBCBErrorHandler ..  ]
 "503
-[; ;main.c: 503:         case EVENT_TRANSFER:
-[e :U 531 ]
+[; ;main.c: 503:             break;
+[e $U 522  ]
 "504
-[; ;main.c: 504:             __nop();
+[; ;main.c: 504:         case EVENT_TRANSFER:
+[e :U 531 ]
+"505
+[; ;main.c: 505:             __nop();
 [e ( ___nop ..  ]
-"506
-[; ;main.c: 506:             break;
-[e $U 522  ]
 "507
-[; ;main.c: 507:         default:
-[e :U 532 ]
-"508
-[; ;main.c: 508:             break;
+[; ;main.c: 507:             break;
 [e $U 522  ]
+"508
+[; ;main.c: 508:         default:
+[e :U 532 ]
 "509
-[; ;main.c: 509:     }
+[; ;main.c: 509:             break;
+[e $U 522  ]
+"510
+[; ;main.c: 510:     }
 }
 [e $U 522  ]
 [e :U 523 ]
@@ -2109,75 +2109,81 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> . `E46 16 `ui 531
  532 ]
 [e :U 522 ]
-"510
-[; ;main.c: 510:     return TRUE;
+"511
+[; ;main.c: 511:     return TRUE;
 [e ) -> . `E3631 1 `a ]
 [e $UE 521  ]
-"511
-[; ;main.c: 511: }
+"512
+[; ;main.c: 512: }
 [e :UE 521 ]
 }
-"513
-[; ;main.c: 513: void USBCBStdSetDscHandler(void) {
+"514
+[; ;main.c: 514: void USBCBStdSetDscHandler(void) {
 [v _USBCBStdSetDscHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _USBCBStdSetDscHandler ]
 [f ]
-"515
-[; ;main.c: 515: }
+"516
+[; ;main.c: 516: }
 [e :UE 533 ]
 }
-"517
-[; ;main.c: 517: void USBCBCheckOtherReq(void) {
+"518
+[; ;main.c: 518: void USBCBCheckOtherReq(void)
 [v _USBCBCheckOtherReq `(v ~T0 @X0 1 ef ]
+"519
+[; ;main.c: 519: {
 {
 [e :U _USBCBCheckOtherReq ]
 [f ]
-"518
-[; ;main.c: 518:     USBCheckHIDRequest();
+"520
+[; ;main.c: 520:     USBCheckHIDRequest();
 [e ( _USBCheckHIDRequest ..  ]
-"519
-[; ;main.c: 519: }
+"521
+[; ;main.c: 521: }
 [e :UE 534 ]
 }
-"521
-[; ;main.c: 521: void USBCBErrorHandler(void) {
+"523
+[; ;main.c: 523: void USBCBErrorHandler(void)
 [v _USBCBErrorHandler `(v ~T0 @X0 1 ef ]
+"524
+[; ;main.c: 524: {
 {
 [e :U _USBCBErrorHandler ]
 [f ]
-"540
-[; ;main.c: 540: }
+"543
+[; ;main.c: 543: }
 [e :UE 535 ]
 }
-"542
-[; ;main.c: 542: void USBCB_SOF_Handler(void) {
+"545
+[; ;main.c: 545: void USBCB_SOF_Handler(void)
 [v _USBCB_SOF_Handler `(v ~T0 @X0 1 ef ]
+"546
+[; ;main.c: 546: {
 {
 [e :U _USBCB_SOF_Handler ]
 [f ]
-"545
-[; ;main.c: 545: }
+"549
+[; ;main.c: 549: }
 [e :UE 536 ]
 }
-"547
-[; ;main.c: 547: void USBCBWakeFromSuspend(void) {
+"551
+[; ;main.c: 551: void USBCBWakeFromSuspend(void) {
 [v _USBCBWakeFromSuspend `(v ~T0 @X0 1 ef ]
 {
 [e :U _USBCBWakeFromSuspend ]
 [f ]
-"552
-[; ;main.c: 552: }
+"556
+[; ;main.c: 556: }
 [e :UE 537 ]
 }
-"554
-[; ;main.c: 554: void USBCBSuspend(void) {
+"558
+[; ;main.c: 558: void USBCBSuspend(void) {
 [v _USBCBSuspend `(v ~T0 @X0 1 ef ]
 {
 [e :U _USBCBSuspend ]
 [f ]
-"557
-[; ;main.c: 557: }
+"561
+[; ;main.c: 561: }
 [e :UE 538 ]
 }
 [p f _sprintf 8389632 ]
@@ -2193,6 +2199,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 6C 82 101 97 100 32 66 117 116 116 111 110 32 66 114 111 116 104 101 114 32 49 46 46 46 46 0 ]
 [a 15C 99 110 116 32 37 117 32 105 115 32 37 117 13 10 0 ]
 [a 1C 72 101 108 108 111 32 87 111 114 108 100 13 10 0 ]
-[a 3C 72 101 108 108 111 32 87 111 114 108 100 13 10 0 ]
+[a 3C 72 101 108 108 111 32 87 111 114 108 100 32 102 114 111 109 32 80 73 67 49 56 13 10 0 ]
 [a 2C 73 116 32 105 115 32 122 101 114 111 32 98 114 111 116 104 101 114 46 46 46 13 10 0 ]
 [a 14C 73 110 118 97 108 105 100 46 46 46 13 10 0 ]

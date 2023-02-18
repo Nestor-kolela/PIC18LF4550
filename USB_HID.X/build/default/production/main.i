@@ -7,13 +7,7 @@
 # 1 "C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
-
-
-
-
-
-
+# 10 "main.c"
 # 1 "./system.h" 1
 
 
@@ -83,7 +77,7 @@
 
 
 #pragma config EBTRB = OFF
-# 8 "main.c" 2
+# 10 "main.c" 2
 
 # 1 "./usb_device.h" 1
 # 41 "./usb_device.h"
@@ -6313,12 +6307,12 @@ _Bool USBHALSetEpConfiguration ( uint8_t ep_num, uint16_t max_pkt_size, uint16_t
 # 603 "./usb_hal.h"
 _Bool USBHALInitialize ( unsigned long flags );
 # 2056 "./usb_device.h" 2
-# 9 "main.c" 2
+# 11 "main.c" 2
 
 
 
 # 1 "./usb_start.h" 1
-# 12 "main.c" 2
+# 14 "main.c" 2
 
 # 1 "./GenericTypeDefs.h" 1
 # 63 "./GenericTypeDefs.h"
@@ -6770,7 +6764,7 @@ typedef union
                     BYTE b63:1;
     } bits;
 } QWORD_VAL;
-# 13 "main.c" 2
+# 15 "main.c" 2
 
 # 1 "./usb_function_hid.h" 1
 # 28 "./usb_function_hid.h"
@@ -7052,7 +7046,7 @@ typedef struct _USB_HID_DSC
 extern volatile CTRL_TRF_SETUP SetupPkt;
 extern const uint8_t configDescriptor1[];
 extern volatile uint8_t CtrlTrfData[8];
-# 14 "main.c" 2
+# 16 "main.c" 2
 
 
 
@@ -7080,7 +7074,7 @@ void UART_flush(void);
 void UART_write(uint8_t data);
 void UART_rx_complete_irq(void);
 void UART_tx_udr_empty_irq(void);
-# 17 "main.c" 2
+# 19 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 3
@@ -7226,7 +7220,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 18 "main.c" 2
+# 20 "main.c" 2
 
 static void gpioInitialize(void);
 static void Interrupt_Init(void);
@@ -7236,7 +7230,7 @@ static void Enable_Interrupt(void);
 static void timerZero_Init(void);
 static void timerStart(void);
 static void timer1_Init(void);
-# 36 "main.c"
+# 38 "main.c"
 uint8_t pushButtonCount = 0;
 
 
@@ -7260,7 +7254,7 @@ void USBCBSuspend(void);
 
 
 volatile _Bool runFlag = 0;
-# 71 "main.c"
+# 73 "main.c"
         unsigned char ReceivedDataBuffer[64] __attribute__((address(0x500)));
         unsigned char ToSendDataBuffer[64] __attribute__((address(0x600)));
 
@@ -7389,7 +7383,7 @@ void main(void) {
                     UART_putrs("It is zero brother...\r\n");
                 }
                 runFlag = 0;
-                UART_putrs("Hello World\r\n");
+                UART_putrs("Hello World from PIC18\r\n");
             }
 
 
@@ -7547,7 +7541,6 @@ void main(void) {
                             ToSendDataBuffer[0] = 0x42;
                             ToSendDataBuffer[1] = (BYTE) 6;
                             ToSendDataBuffer[2] = (BYTE) 8;
-
                             USBInHandle = USBTransferOnePacket(1,1,(BYTE*) & ToSendDataBuffer[0],64);
                         }
                     }
@@ -7707,15 +7700,18 @@ void USBCBStdSetDscHandler(void) {
 
 }
 
-void USBCBCheckOtherReq(void) {
+void USBCBCheckOtherReq(void)
+{
     USBCheckHIDRequest();
 }
 
-void USBCBErrorHandler(void) {
-# 540 "main.c"
+void USBCBErrorHandler(void)
+{
+# 543 "main.c"
 }
 
-void USBCB_SOF_Handler(void) {
+void USBCB_SOF_Handler(void)
+{
 
 
 }

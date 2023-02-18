@@ -1,3 +1,5 @@
+
+
 /*
  * File:   main.c
  * Author: kolel
@@ -196,7 +198,7 @@ void main(void) {
                     UART_putrs("It is zero brother...\r\n");
                 }
                 runFlag = false;
-                UART_putrs("Hello World\r\n");
+                UART_putrs("Hello World from PIC18\r\n");
             }
 
             //if (runFlag == true) {
@@ -354,7 +356,6 @@ void main(void) {
                             ToSendDataBuffer[0] = 0x42;
                             ToSendDataBuffer[1] = (BYTE) 6; //(regZ_LSB.val>>6);
                             ToSendDataBuffer[2] = (BYTE) 8; //(regZ_MSB.val);
-
                             USBInHandle = HIDTxPacket(HID_EP, (BYTE*) & ToSendDataBuffer[0], 64);
                         }
                     }
@@ -514,11 +515,13 @@ void USBCBStdSetDscHandler(void) {
     // Must claim session ownership if supporting this request
 }//end
 
-void USBCBCheckOtherReq(void) {
+void USBCBCheckOtherReq(void) 
+{
     USBCheckHIDRequest();
 }//end
 
-void USBCBErrorHandler(void) {
+void USBCBErrorHandler(void) 
+{
     // No need to clear UEIR to 0 here.
     // Callback caller is already doing that.
 
@@ -539,7 +542,8 @@ void USBCBErrorHandler(void) {
     // for debugging purposes.
 }
 
-void USBCB_SOF_Handler(void) {
+void USBCB_SOF_Handler(void) 
+{
     // No need to clear UIRbits.SOFIF to 0 here.
     // Callback caller is already doing that.
 }

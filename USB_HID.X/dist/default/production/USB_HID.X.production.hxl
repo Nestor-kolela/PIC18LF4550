@@ -12,14 +12,14 @@
   0h - 3h		(dist/default/production\USB_HID.X.production.hex)
   8h - Dh		(dist/default/production\USB_HID.X.production.hex)
   18h - 325Bh		(dist/default/production\USB_HID.X.production.hex)
-  7E04h - 7FFEh		(dist/default/production\USB_HID.X.production.hex)
+  7DECh - 7FFFh		(dist/default/production\USB_HID.X.production.hex)
   200000h - 200007h		(dist/default/production\USB_HID.X.production.hex)
   300000h - 30000Dh		(dist/default/production\USB_HID.X.production.hex)
  Unused ranges:
   4h - 7h
   Eh - 17h
-  325Ch - 7E03h
-  7FFFh - 1FFFFFh
+  325Ch - 7DEBh
+  8000h - 1FFFFFh
   200008h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -836,7 +836,9 @@
 00003240 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00003250 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
 ----------------------------------------------------------
-00007E00 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00007DE0 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
+00007DF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00007E00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007E10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007E20 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007E30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -867,7 +869,7 @@
 00007FC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007FD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 --
+00007FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
 ----------------------------------------------------------

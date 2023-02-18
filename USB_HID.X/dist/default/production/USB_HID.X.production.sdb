@@ -3,13 +3,13 @@
 [d edition pro ]
 [d chip 18LF4550 ]
 [d frameptr 4065 ]
-"44 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"46 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [e E4564 usbState `uc
 INITIALIZATION 0
 USB_RUN 1
 IDLE 2
 ]
-"180
+"182
 [e E105 . `uc
 DETACHED_STATE 0
 ATTACHED_STATE 1
@@ -19,7 +19,7 @@ ADR_PENDING_STATE 8
 ADDRESS_STATE 16
 CONFIGURED_STATE 32
 ]
-"480
+"481
 [e E46 . `ui
 EVENT_NONE 0
 EVENT_DEVICE_STACK_BASE 1
@@ -58,7 +58,7 @@ EVENT_AUDIO_BASE 1000
 EVENT_USER_BASE 10000
 EVENT_BUS_ERROR 32767
 ]
-"509
+"510
 [e E114 . `uc
 EVENT_CONFIGURED 1
 EVENT_SET_DESCRIPTOR 2
@@ -66,7 +66,7 @@ EVENT_EP0_REQUEST 3
 EVENT_ATTACH 4
 EVENT_TRANSFER_TERMINATED 5
 ]
-"510
+"511
 [e E3631 _BOOL `uc
 FALSE 0
 TRUE 1
@@ -179,43 +179,43 @@ EVENT_TRANSFER_TERMINATED 5
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"82 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"84 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _myISR_high myISR_high `IIH(v  1 e 1 0 ]
-"126
+"128
 [v _myISR_low myISR_low `IIL(v  1 e 1 0 ]
-"138
+"140
 [v _main main `(v  1 e 1 0 ]
-"402
+"403
 [v _gpioInitialize gpioInitialize `(v  1 s 1 gpioInitialize ]
-"413
+"414
 [v _Interrupt_Init Interrupt_Init `(v  1 s 1 Interrupt_Init ]
-"422
+"423
 [v _timerZero_Init timerZero_Init `(v  1 s 1 timerZero_Init ]
-"431
+"432
 [v _timer1_Init timer1_Init `(v  1 s 1 timer1_Init ]
-"441
+"442
 [v _Enable_Interrupt Enable_Interrupt `(v  1 s 1 Enable_Interrupt ]
-"446
+"447
 [v _timerStart timerStart `(v  1 s 1 timerStart ]
-"458
+"459
 [v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
-"465
+"466
 [v _UserInit UserInit `(v  1 e 1 0 ]
-"472
+"473
 [v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
-"480
+"481
 [v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
-"513
+"514
 [v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 1 0 ]
-"517
+"518
 [v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
-"521
+"523
 [v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 1 0 ]
-"542
+"545
 [v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 1 0 ]
-"547
+"551
 [v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
-"554
+"558
 [v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
 "16 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\uart.c
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
@@ -759,19 +759,19 @@ EVENT_TRANSFER_TERMINATED 5
 [v _flags flags `uc  1 s 1 flags ]
 "125
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
-"36 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"38 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _pushButtonCount pushButtonCount `uc  1 e 1 0 ]
-"44
+"46
 [v _usbTimerState usbTimerState `E4564  1 e 1 0 ]
-"58
+"60
 [v _runFlag runFlag `VEa  1 e 1 0 ]
-"71
+"73
 [v _ReceivedDataBuffer ReceivedDataBuffer `[64]uc  1 e 64 @1280 ]
-"72
+"74
 [v _ToSendDataBuffer ToSendDataBuffer `[64]uc  1 e 64 @1536 ]
-"79
+"81
 [v _USBOutHandle USBOutHandle `*.39VEv  1 e 2 0 ]
-"80
+"82
 [v _USBInHandle USBInHandle `*.39VEv  1 e 2 0 ]
 "6 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\uart.c
 [v __rx_buffer_head _rx_buffer_head `VEus  1 e 2 0 ]
@@ -791,20 +791,20 @@ EVENT_TRANSFER_TERMINATED 5
 "171
 [v _configDescriptor1 configDescriptor1 `C[41]uc  1 e 41 0 ]
 [s S2715 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
-"220
+"226
 [v _sd000 sd000 `CS2715  1 e 4 0 ]
 [s S2719 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
-"225
+"238
 [v _sd001 sd001 `CS2719  1 e 52 0 ]
 [s S2723 . 46 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[22]us 1 string 44 2 ]
-"232
+"251
 [v _sd002 sd002 `CS2723  1 e 46 0 ]
 [s S2670 . 29 `[29]uc 1 report 29 0 ]
-"239
+"261
 [v _hid_rpt01 hid_rpt01 `CS2670  1 e 29 0 ]
-"259
+"282
 [v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
-"265
+"287
 [v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
 "146 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_device.c
 [v _USBDeviceState USBDeviceState `E105  1 e 1 0 ]
@@ -983,41 +983,41 @@ EVENT_TRANSFER_TERMINATED 5
 [v _idle_rate idle_rate `uc  1 s 1 idle_rate ]
 "88
 [v _active_protocol active_protocol `uc  1 s 1 active_protocol ]
-"138 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"140 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"381
-[v main@temp temp `[100]uc  1 a 100 0 ]
 "382
+[v main@temp temp `[100]uc  1 a 100 0 ]
+"383
 [v main@cnt_877 cnt `uc  1 a 1 111 ]
-"297
+"299
 [v main@w_869 w `us  1 a 2 106 ]
-"280
+"282
 [v main@w_867 w `us  1 a 2 104 ]
-"264
+"266
 [v main@w_865 w `us  1 a 2 102 ]
-"248
+"250
 [v main@w w `us  1 a 2 100 ]
-"220
+"222
 [v main@potVoltage potVoltage `us  1 a 2 108 ]
-"187
+"189
 [v main@cnt cnt `uc  1 a 1 110 ]
-"400
+"401
 } 0
-"422
+"423
 [v _timerZero_Init timerZero_Init `(v  1 s 1 timerZero_Init ]
 {
-"429
+"430
 } 0
-"446
+"447
 [v _timerStart timerStart `(v  1 s 1 timerStart ]
 {
-"450
+"451
 } 0
-"431
+"432
 [v _timer1_Init timer1_Init `(v  1 s 1 timer1_Init ]
 {
-"439
+"440
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -1138,10 +1138,10 @@ EVENT_TRANSFER_TERMINATED 5
 [v ___lodiv@divisor divisor `uo  1 p 8 11 ]
 "32
 } 0
-"402 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"403 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _gpioInitialize gpioInitialize `(v  1 s 1 gpioInitialize ]
 {
-"411
+"412
 } 0
 "1004 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_device.c
 [v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
@@ -1228,20 +1228,20 @@ EVENT_TRANSFER_TERMINATED 5
 [v ___lldiv@divisor divisor `ul  1 p 4 7 ]
 "30
 } 0
-"413 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"414 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _Interrupt_Init Interrupt_Init `(v  1 s 1 Interrupt_Init ]
 {
-"420
+"421
 } 0
-"472
+"473
 [v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
 {
-"478
+"479
 } 0
-"465
+"466
 [v _UserInit UserInit `(v  1 e 1 0 ]
 {
-"470
+"471
 } 0
 "286 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_device.c
 [v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
@@ -1263,20 +1263,20 @@ EVENT_TRANSFER_TERMINATED 5
 [v memset@n n `ui  1 p 2 7 ]
 "90
 } 0
-"441 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"442 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _Enable_Interrupt Enable_Interrupt `(v  1 s 1 Enable_Interrupt ]
 {
-"444
+"445
 } 0
-"126
+"128
 [v _myISR_low myISR_low `IIL(v  1 e 1 0 ]
 {
-"136
+"138
 } 0
-"82
+"84
 [v _myISR_high myISR_high `IIH(v  1 e 1 0 ]
 {
-"124
+"126
 } 0
 "486 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_device.c
 [v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
@@ -1451,38 +1451,38 @@ EVENT_TRANSFER_TERMINATED 5
 [v USBStdFeatureReqHandler@current_ep_data current_ep_data `S1041  1 a 1 26 ]
 "2968
 } 0
-"480 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"481 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
 {
 [v USER_USB_CALLBACK_EVENT_HANDLER@event event `E46  1 p 2 14 ]
 [v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 16 ]
 [v USER_USB_CALLBACK_EVENT_HANDLER@size size `us  1 p 2 18 ]
-"511
+"512
 } 0
-"542
+"545
 [v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 1 0 ]
 {
-"545
+"549
 } 0
-"547
+"551
 [v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
 {
-"552
+"556
 } 0
-"554
+"558
 [v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
 {
-"557
+"561
 } 0
-"513
+"514
 [v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 1 0 ]
 {
-"515
+"516
 } 0
-"458
+"459
 [v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
 {
-"463
+"464
 } 0
 "1004 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_device.c
 [v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
@@ -1577,15 +1577,15 @@ EVENT_TRANSFER_TERMINATED 5
 [v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 7 ]
 "1604
 } 0
-"521 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
+"523 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\main.c
 [v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 1 0 ]
 {
-"540
+"543
 } 0
-"517
+"518
 [v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
 {
-"519
+"521
 } 0
 "161 C:\Users\kolel\OneDrive\Documents\GitHub\PIC18LF4550\USB_HID.X\usb_function_hid.c
 [v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]

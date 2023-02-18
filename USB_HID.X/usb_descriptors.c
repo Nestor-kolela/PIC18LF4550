@@ -217,56 +217,77 @@ const uint8_t configDescriptor1[]={
 };
 
 //Language code string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[1];}sd000={
-sizeof(sd000),USB_DESCRIPTOR_STRING,{0x0409
-}};
+
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[1];
+}
+sd000 = {
+    sizeof (sd000), USB_DESCRIPTOR_STRING, {
+        0x0409}
+};
 
 //Manufacturer string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[25];}sd001={
-sizeof(sd001),USB_DESCRIPTOR_STRING,
-{'M','i','c','r','o','c','h','i','p',' ',
-'T','e','c','h','n','o','l','o','g','y',' ','I','n','c','.'
-}};
+
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[25];
+}
+sd001 = {
+    sizeof (sd001), USB_DESCRIPTOR_STRING, {
+        'M', 'i', 'c', 'r', 'o', 'c', 'h', 'i', 'p', ' ',
+        'T', 'e', 'c', 'h', 'n', 'o', 'l', 'o', 'g', 'y', ' ', 'I', 'n', 'c', '.'}
+};
 
 //Product string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[22];}sd002={
-sizeof(sd002),USB_DESCRIPTOR_STRING,
-{'S','i','m','p','l','e',' ','H','I','D',' ',
-'D','e','v','i','c','e',' ','D','e','m','o'
-}};
+
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[22];
+}
+sd002 = {
+    sizeof (sd002), USB_DESCRIPTOR_STRING, {
+        'S', 'i', 'm', 'p', 'l', 'e', ' ', 'H', 'I', 'D', ' ',
+        'D', 'e', 'v', 'i', 'c', 'e', ' ', 'D', 'e', 'm', 'o'}
+};
 
 //Class specific descriptor - HID 
-const struct{uint8_t report[HID_RPT01_SIZE];}hid_rpt01={
-{
-    0x06, 0x00, 0xFF,       // Usage Page = 0xFF00 (Vendor Defined Page 1)
-    0x09, 0x01,             // Usage (Vendor Usage 1)
-    0xA1, 0x01,             // Collection (Application)
-    0x19, 0x01,             //      Usage Minimum 
-    0x29, 0x40,             //      Usage Maximum   //64 input usages total (0x01 to 0x40)
-    0x15, 0x00,             //      Logical Minimum (data bytes in the report may have minimum value = 0x00)
-    0x26, 0xFF, 0x00,       //      Logical Maximum (data bytes in the report may have maximum value = 0x00FF = unsigned 255)
-    0x75, 0x08,             //      Report Size: 8-bit field size
-    0x95, 0x40,             //      Report Count: Make sixty-four 8-bit fields (the next time the parser hits an "Input", "Output", or "Feature" item)
-    0x81, 0x00,             //      Input (Data, Array, Abs): Instantiates input packet fields based on the above report size, count, logical min/max, and usage.
-    0x19, 0x01,             //      Usage Minimum 
-    0x29, 0x40,             //      Usage Maximum 	//64 output usages total (0x01 to 0x40)
-    0x91, 0x00,             //      Output (Data, Array, Abs): Instantiates output packet fields.  Uses same report size and count as "Input" fields, since nothing new/different was specified to the parser since the "Input" item.
-    0xC0}                   // End Collection
-};                  
+
+const struct {
+    uint8_t report[HID_RPT01_SIZE];
+} hid_rpt01 = {
+    {
+        0x06, 0x00, 0xFF, // Usage Page = 0xFF00 (Vendor Defined Page 1)
+        0x09, 0x01, // Usage (Vendor Usage 1)
+        0xA1, 0x01, // Collection (Application)
+        0x19, 0x01, //      Usage Minimum 
+        0x29, 0x40, //      Usage Maximum   //64 input usages total (0x01 to 0x40)
+        0x15, 0x00, //      Logical Minimum (data bytes in the report may have minimum value = 0x00)
+        0x26, 0xFF, 0x00, //      Logical Maximum (data bytes in the report may have maximum value = 0x00FF = unsigned 255)
+        0x75, 0x08, //      Report Size: 8-bit field size
+        0x95, 0x40, //      Report Count: Make sixty-four 8-bit fields (the next time the parser hits an "Input", "Output", or "Feature" item)
+        0x81, 0x00, //      Input (Data, Array, Abs): Instantiates input packet fields based on the above report size, count, logical min/max, and usage.
+        0x19, 0x01, //      Usage Minimum 
+        0x29, 0x40, //      Usage Maximum 	//64 output usages total (0x01 to 0x40)
+        0x91, 0x00, //      Output (Data, Array, Abs): Instantiates output packet fields.  Uses same report size and count as "Input" fields, since nothing new/different was specified to the parser since the "Input" item.
+        0xC0
+    } // End Collection
+};
 
 
 //Array of configuration descriptors
-const uint8_t *const USB_CD_Ptr[]=
-{
-    (const uint8_t *const)&configDescriptor1
+const uint8_t * const USB_CD_Ptr[] ={
+    (const uint8_t * const) &configDescriptor1
 };
 
 //Array of string descriptors
-const uint8_t *const USB_SD_Ptr[]=
-{
-    (const uint8_t *const)&sd000,
-    (const uint8_t *const)&sd001,
-    (const uint8_t *const)&sd002
+const uint8_t * const USB_SD_Ptr[] ={
+    (const uint8_t * const) &sd000,
+    (const uint8_t * const) &sd001,
+    (const uint8_t * const) &sd002
 };
 
 /** EOF usb_descriptors.c ***************************************************/

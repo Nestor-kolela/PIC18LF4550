@@ -3,20 +3,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./usb_ch9.h: 72: {
 [s S34 `uc 1 `uc 1 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `us 1 `us 1 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S34 _USB_DEVICE_DESCRIPTOR bLength bDescriptorType bcdUSB bDeviceClass bDeviceSubClass bDeviceProtocol bMaxPacketSize0 idVendor idProduct bcdDevice iManufacturer iProduct iSerialNumber bNumConfigurations ]
-"220 usb_descriptors.c
-[; ;usb_descriptors.c: 220: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[1];}sd000={
+"221 usb_descriptors.c
+[; ;usb_descriptors.c: 221: const struct {
 [s S451 `uc 1 `uc 1 `us -> -> 1 `i `ux ]
 [n S451 . bLength bDscType string ]
-"225
-[; ;usb_descriptors.c: 225: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[25];}sd001={
+"233
+[; ;usb_descriptors.c: 233: const struct {
 [s S452 `uc 1 `uc 1 `us -> 25 `i ]
 [n S452 . bLength bDscType string ]
-"232
-[; ;usb_descriptors.c: 232: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[22];}sd002={
+"246
+[; ;usb_descriptors.c: 246: const struct {
 [s S453 `uc 1 `uc 1 `us -> 22 `i ]
 [n S453 . bLength bDscType string ]
-"239
-[; ;usb_descriptors.c: 239: const struct{uint8_t report[29];}hid_rpt01={
+"259
+[; ;usb_descriptors.c: 259: const struct {
 [s S454 `uc -> 29 `i ]
 [n S454 . report ]
 "55 C:/Users/kolel/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18lf4550.h
@@ -600,8 +600,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 ..
 ]
-"220
-[; ;usb_descriptors.c: 220: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[1];}sd000={
+"226
+[; ;usb_descriptors.c: 226: sd000 = {
 [v _sd000 `CS451 ~T0 @X0 1 e ]
 [i _sd000
 :U ..
@@ -614,8 +614,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"225
-[; ;usb_descriptors.c: 225: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[25];}sd001={
+"238
+[; ;usb_descriptors.c: 238: sd001 = {
 [v _sd001 `CS452 ~T0 @X0 1 e ]
 [i _sd001
 :U ..
@@ -652,8 +652,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"232
-[; ;usb_descriptors.c: 232: const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[22];}sd002={
+"251
+[; ;usb_descriptors.c: 251: sd002 = {
 [v _sd002 `CS453 ~T0 @X0 1 e ]
 [i _sd002
 :U ..
@@ -687,8 +687,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"239
-[; ;usb_descriptors.c: 239: const struct{uint8_t report[29];}hid_rpt01={
+"261
+[; ;usb_descriptors.c: 261: } hid_rpt01 = {
 [v _hid_rpt01 `CS454 ~T0 @X0 1 e ]
 [i _hid_rpt01
 :U ..
@@ -728,8 +728,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v F4241 `*Cuc ~T0 @X0 1 t ]
-"259
-[; ;usb_descriptors.c: 259: const uint8_t *const USB_CD_Ptr[]=
+"282
+[; ;usb_descriptors.c: 282: const uint8_t * const USB_CD_Ptr[] ={
 [v _USB_CD_Ptr `C*Cuc ~T0 @X0 -> -> 1 `i `ux e ]
 [i _USB_CD_Ptr
 :U ..
@@ -737,8 +737,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v F4245 `*Cuc ~T0 @X0 1 t ]
-"265
-[; ;usb_descriptors.c: 265: const uint8_t *const USB_SD_Ptr[]=
+"287
+[; ;usb_descriptors.c: 287: const uint8_t * const USB_SD_Ptr[] ={
 [v _USB_SD_Ptr `C*Cuc ~T0 @X0 -> 3 `i e ]
 [i _USB_SD_Ptr
 :U ..

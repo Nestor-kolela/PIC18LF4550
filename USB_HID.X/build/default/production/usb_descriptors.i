@@ -7042,54 +7042,75 @@ const uint8_t configDescriptor1[]={
 };
 
 
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[1];}sd000={
-sizeof(sd000),0x03,{0x0409
-}};
 
-
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[25];}sd001={
-sizeof(sd001),0x03,
-{'M','i','c','r','o','c','h','i','p',' ',
-'T','e','c','h','n','o','l','o','g','y',' ','I','n','c','.'
-}};
-
-
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[22];}sd002={
-sizeof(sd002),0x03,
-{'S','i','m','p','l','e',' ','H','I','D',' ',
-'D','e','v','i','c','e',' ','D','e','m','o'
-}};
-
-
-const struct{uint8_t report[29];}hid_rpt01={
-{
-    0x06, 0x00, 0xFF,
-    0x09, 0x01,
-    0xA1, 0x01,
-    0x19, 0x01,
-    0x29, 0x40,
-    0x15, 0x00,
-    0x26, 0xFF, 0x00,
-    0x75, 0x08,
-    0x95, 0x40,
-    0x81, 0x00,
-    0x19, 0x01,
-    0x29, 0x40,
-    0x91, 0x00,
-    0xC0}
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[1];
+}
+sd000 = {
+    sizeof (sd000), 0x03, {
+        0x0409}
 };
 
 
 
-const uint8_t *const USB_CD_Ptr[]=
-{
-    (const uint8_t *const)&configDescriptor1
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[25];
+}
+sd001 = {
+    sizeof (sd001), 0x03, {
+        'M', 'i', 'c', 'r', 'o', 'c', 'h', 'i', 'p', ' ',
+        'T', 'e', 'c', 'h', 'n', 'o', 'l', 'o', 'g', 'y', ' ', 'I', 'n', 'c', '.'}
 };
 
 
-const uint8_t *const USB_SD_Ptr[]=
-{
-    (const uint8_t *const)&sd000,
-    (const uint8_t *const)&sd001,
-    (const uint8_t *const)&sd002
+
+const struct {
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[22];
+}
+sd002 = {
+    sizeof (sd002), 0x03, {
+        'S', 'i', 'm', 'p', 'l', 'e', ' ', 'H', 'I', 'D', ' ',
+        'D', 'e', 'v', 'i', 'c', 'e', ' ', 'D', 'e', 'm', 'o'}
+};
+
+
+
+const struct {
+    uint8_t report[29];
+} hid_rpt01 = {
+    {
+        0x06, 0x00, 0xFF,
+        0x09, 0x01,
+        0xA1, 0x01,
+        0x19, 0x01,
+        0x29, 0x40,
+        0x15, 0x00,
+        0x26, 0xFF, 0x00,
+        0x75, 0x08,
+        0x95, 0x40,
+        0x81, 0x00,
+        0x19, 0x01,
+        0x29, 0x40,
+        0x91, 0x00,
+        0xC0
+    }
+};
+
+
+
+const uint8_t * const USB_CD_Ptr[] ={
+    (const uint8_t * const) &configDescriptor1
+};
+
+
+const uint8_t * const USB_SD_Ptr[] ={
+    (const uint8_t * const) &sd000,
+    (const uint8_t * const) &sd001,
+    (const uint8_t * const) &sd002
 };

@@ -6,9 +6,9 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
   -cn -h+dist/default/production\USB_HID.X.production.sym \
   --cmf=dist/default/production\USB_HID.X.production.cmf -z -Q18LF4550 \
-  -oC:\Users\kolel\AppData\Local\Temp\xcAsduc.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\kolel\AppData\Local\Temp\xcAs6e0.4 --defsym=__MPLAB_BUILD=1 \
   --fixupoverflow=error -Mdist/default/production/USB_HID.X.production.map \
-  --md=C:\Users\kolel\AppData\Local\Temp\xcAsduc.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\kolel\AppData\Local\Temp\xcAs6e0.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
@@ -24,7 +24,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\kolel\AppData\Local\Temp\xcAsduc.o \
+  C:\Users\kolel\AppData\Local\Temp\xcAs6e0.o \
   dist/default/production\USB_HID.X.production.o 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Machine type is 18LF4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\kolel\AppData\Local\Temp\xcAsduc.o
+C:\Users\kolel\AppData\Local\Temp\xcAs6e0.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                 64       64        4        C       0
@@ -45,7 +45,7 @@ dist/default/production\USB_HID.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 temp                                 4B       4B        1        1       1
-                mediumconst                        7E04     7E04      1FC     3F02       0
+                mediumconst                        7DEC     7DEC      214     3EF6       0
                 text64                             2D24     2D24       76        C       0
                 text63                             3152     3152       30        C       0
                 text62                             2230     2230      110        C       0
@@ -196,7 +196,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   SMALLCONST     
 
         CLASS   MEDIUMCONST    
-                mediumconst                        7E04     7E04      1FC         0
+                mediumconst                        7DEC     7DEC      214         0
 
         CLASS   COMRAM         
                 temp                                 4B       4B        1         1
@@ -262,7 +262,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackBANK0                    000060  000096  0000F6        60       1  BANK0   
                 cstackBANK1                    000100  0000D7  0001D7       100       1  BANK1   
                 bssBIGRAMll                    0001D7  000200  0003D7       1D7       1  BIGRAM  
-                mediumconst                    007E04  0001FC  008000      3F02       0  MEDIUMCO
+                mediumconst                    007DEC  000214  008000      3EF6       0  MEDIUMCO
 
 
 UNUSED ADDRESS RANGES
@@ -283,20 +283,20 @@ UNUSED ADDRESS RANGES
         BIGSFR           000F60-000FFF               A0
         CODE             000004-000007                4
                          00000E-000017                A
-                         00325C-007E03             4BA8
+                         00325C-007DEB             4B90
         COMRAM           00004C-00005F               14
         CONST            000004-000007                4
                          00000E-000017                A
-                         00325C-007E03             4BA8
+                         00325C-007DEB             4B90
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      00325C-007E03             4BA8
+        MEDIUMCONST      00325C-007DEB             4B90
         RAM              0000F6-0000FF                A
                          0003D7-0003FF               29
                          000430-0004FF               D0
                          000540-0005FF               C0
                          000640-0007FF               C0
         SFR              000F60-000FFF               A0
-        SMALLCONST       00325C-007E03              100
+        SMALLCONST       00325C-007DEB              100
 
                                   Symbol Table
 
@@ -448,8 +448,8 @@ _USBSuspend                              text32       003182
 _USBTicksSinceSuspendEnd                 bssBANK0     0000F4
 _USBTransferOnePacket                    text15       001B1C
 _USBWakeFromSuspend                      text31       00303C
-_USB_CD_Ptr                              mediumconst  007E0B
-_USB_SD_Ptr                              mediumconst  007E05
+_USB_CD_Ptr                              mediumconst  007DF3
+_USB_SD_Ptr                              mediumconst  007DED
 _USER_USB_CALLBACK_EVENT_HANDLER         text46       002AC2
 _USTAT                                   (abs)        000F6C
 _USTATcopy                               bssCOMRAM    000048
@@ -628,7 +628,7 @@ __Lintentry                              intentry     000000
 __Lintret                                intret       000000
 __Lintsave_regs                          intsave_regs 000000
 __Lirdata                                irdata       000000
-__Lmediumconst                           mediumconst  007E04
+__Lmediumconst                           mediumconst  007DEC
 __LnvFARRAM                              nvFARRAM     000000
 __Lnvbit                                 nvbit        000000
 __Lnvrram                                nvrram       000000
@@ -781,20 +781,20 @@ __end_of_USBStdSetCfgHandler             text41       00270C
 __end_of_USBSuspend                      text32       0031B0
 __end_of_USBTransferOnePacket            text15       001C5E
 __end_of_USBWakeFromSuspend              text31       00307E
-__end_of_USB_CD_Ptr                      mediumconst  007E0D
-__end_of_USB_SD_Ptr                      mediumconst  007E0B
+__end_of_USB_CD_Ptr                      mediumconst  007DF5
+__end_of_USB_SD_Ptr                      mediumconst  007DF3
 __end_of_USER_USB_CALLBACK_EVENT_HANDLER text46       002B70
 __end_of_UserInit                        text23       003216
 __end_of___lldiv                         text20       002C16
 __end_of___lodiv                         text13       00252C
 __end_of___lomod                         text12       0027DE
 __end_of__initialization                 cinit        00302E
-__end_of_configDescriptor1               mediumconst  007E98
-__end_of_device_dsc                      mediumconst  007EC7
+__end_of_configDescriptor1               mediumconst  007E80
+__end_of_device_dsc                      mediumconst  007EAF
 __end_of_fputc                           text10       0028AA
 __end_of_fputs                           text9        002FF6
 __end_of_gpioInitialize                  text14       003224
-__end_of_hid_rpt01                       mediumconst  007EB5
+__end_of_hid_rpt01                       mediumconst  007E9D
 __end_of_main                            text0        0006F4
 __end_of_memcpy                          text36       002F62
 __end_of_memset                          text25       001192
@@ -802,9 +802,9 @@ __end_of_myISR_high                      intcode_body 00243A
 __end_of_myISR_low                       intcodelo    000064
 __end_of_pad                             text8        002D24
 __end_of_putch                           text11       003252
-__end_of_sd000                           mediumconst  007ECB
-__end_of_sd001                           mediumconst  007E41
-__end_of_sd002                           mediumconst  007E6F
+__end_of_sd000                           mediumconst  007EB3
+__end_of_sd001                           mediumconst  007E29
+__end_of_sd002                           mediumconst  007E57
 __end_of_sprintf                         text4        002EC0
 __end_of_timer1_Init                     text3        003202
 __end_of_timerStart                      text2        003244
@@ -816,7 +816,7 @@ __end_ofi2_USBDeviceInit                 text30       0019D8
 __end_ofi2_USBTransferOnePacket          text52       001EDE
 __end_ofi2_memset                        text42       001308
 __initialization                         cinit        002FF6
-__mediumconst                            mediumconst  007E04
+__mediumconst                            mediumconst  007DEC
 __pbssBANK0                              bssBANK0     0000D1
 __pbssBANK1                              bssBANK1     000170
 __pbssBIGRAMll                           bssBIGRAMll  0001D7
@@ -828,7 +828,7 @@ __pcstackCOMRAM                          cstackCOMRAM 000001
 __pintcode                               intcode      000008
 __pintcode_body                          intcode_body 002340
 __pintcodelo                             intcodelo    000018
-__pmediumconst                           mediumconst  007E04
+__pmediumconst                           mediumconst  007DEC
 __ptext0                                 text0        000068
 __ptext1                                 text1        0031DA
 __ptext10                                text10       0027DE
@@ -901,10 +901,10 @@ __tx_buffer                              bssBANK1     000170
 __tx_buffer_head                         bssCOMRAM    000039
 __tx_buffer_tail                         bssCOMRAM    000038
 _active_protocol                         bssCOMRAM    000046
-_configDescriptor1                       mediumconst  007E6F
+_configDescriptor1                       mediumconst  007E57
 _controlTransferState                    bssCOMRAM    000043
 _dbuf                                    bssBANK1     0001B7
-_device_dsc                              mediumconst  007EB5
+_device_dsc                              mediumconst  007E9D
 _endpoint_number                         bssCOMRAM    000041
 _ep_data_in                              bssBANK0     0000F1
 _ep_data_out                             bssBANK0     0000EF
@@ -912,7 +912,7 @@ _flags                                   bssBANK0     0000F3
 _fputc                                   text10       0027DE
 _fputs                                   text9        002FAE
 _gpioInitialize                          text14       003216
-_hid_rpt01                               mediumconst  007E98
+_hid_rpt01                               mediumconst  007E80
 _idle_rate                               bssCOMRAM    000047
 _inPipes                                 bssBANK0     0000D9
 _main                                    text0        000068
@@ -931,9 +931,9 @@ _prec                                    bssBANK0     0000ED
 _pushButtonCount                         bssBANK1     0001B5
 _putch                                   text11       003250
 _runFlag                                 bssBANK1     0001B4
-_sd000                                   mediumconst  007EC7
-_sd001                                   mediumconst  007E0D
-_sd002                                   mediumconst  007E41
+_sd000                                   mediumconst  007EAF
+_sd001                                   mediumconst  007DF5
+_sd002                                   mediumconst  007E29
 _shortPacketStatus                       bssCOMRAM    000044
 _sprintf                                 text4        002E6E
 _timer1_Init                             text3        0031EE
@@ -1076,17 +1076,17 @@ C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c estimated size: 210
 
 shared
-		_configDescriptor1		MEDIUMCONST    	7E6F	0000	41
-		_USB_CD_Ptr    		MEDIUMCONST    	7E0B	0000	2
-		_sd001         		MEDIUMCONST    	7E0D	0000	52
-		_sd002         		MEDIUMCONST    	7E41	0000	46
+		_configDescriptor1		MEDIUMCONST    	7E57	0000	41
+		_USB_CD_Ptr    		MEDIUMCONST    	7DF3	0000	2
+		_sd001         		MEDIUMCONST    	7DF5	0000	52
+		_sd002         		MEDIUMCONST    	7E29	0000	46
 		i2_USBDeviceInit		CODE           	188A	0000	334
 		__initialization		CODE           	2FF6	0000	56
-		_device_dsc    		MEDIUMCONST    	7EB5	0000	18
-		_USB_SD_Ptr    		MEDIUMCONST    	7E05	0000	6
-		_hid_rpt01     		MEDIUMCONST    	7E98	0000	29
+		_device_dsc    		MEDIUMCONST    	7E9D	0000	18
+		_USB_SD_Ptr    		MEDIUMCONST    	7DED	0000	6
+		_hid_rpt01     		MEDIUMCONST    	7E80	0000	29
 		i2_memset      		CODE           	1192	0000	374
-		_sd000         		MEDIUMCONST    	7EC7	0000	4
+		_sd000         		MEDIUMCONST    	7EAF	0000	4
 		i2_USBTransferOnePacket		CODE           	1DA0	0000	318
 
 shared estimated size: 1280
